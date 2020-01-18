@@ -7,6 +7,20 @@
 #include <thread>
 #include <vector>
 
+bool sortcol(std::vector<long long>& v1, std::vector<long long>& v2, int columnnum){
+  return v1[columnnum] < v2[columnnum];
+}
+
+// 小さいもの順
+bool sortcol3(std::vector<long long>& v1, std::vector<long long>& v2 ) {
+  return sortcol(v1, v2, 3);
+}
+
+// 大きいもの順
+bool sortcol3_inv(std::vector<long long>& v1, std::vector<long long>& v2){
+  return sortcol(v2, v1, 3);
+}
+
 long long mod = 1000000007;
 
 // aとbの最大公約数を求める
