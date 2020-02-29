@@ -34,6 +34,17 @@ long long evalmod(long long a, long long b){
   return evalmod(minval, tmpval);
 }
 
+bool isprime(int n){
+  bool prime = true;
+  for (int i=2; i*i<=n; i++){
+    if (n%i==0){
+      prime=false;
+      break;
+    }
+  }
+  return prime;
+}
+
 // a^n mod を計算する
 long long modpow(long long a, long long n, long long mod) {
   long long res = 1;
