@@ -49,3 +49,17 @@ long long modpow(long long a, long long n, long long mod) {
 long long modinv(long long a, long long mod) {
   return modpow(a, mod - 2, mod);
 }
+
+// nCk @mod を計算する
+long long nCk(long long n, long k, long long mod){
+  long long retval = 1;
+  for (int i=0; i<k; i++){
+    retval *= (n-i);
+    retval %= mod;
+  }
+  for (int i=1; i<=k; i++){
+    retval *= modinv(i, mod);
+    retval %= mod;
+  }
+  return retval;
+}
