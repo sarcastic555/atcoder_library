@@ -25,13 +25,14 @@ public:
     return *this;
   }
 
-
   // a^n mod を計算する
+  // Useaeg: Mint z = y.pow(y, n);
   Mint pow(Mint a, long long n) const {
     Mint y(1);
+    Mint b(a);
     while (n > 0) {
-      if (n & 1) y *= a;
-      a *= a;
+      if (n & 1) y *= b;
+      b *= b;
       n >>= 1;
     }
     return y;
