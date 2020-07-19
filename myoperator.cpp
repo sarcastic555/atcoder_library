@@ -32,6 +32,16 @@ public:
   }
 };
 
+struct point {
+  int i;
+  int x;
+  int y;
+};
+
+bool SortXMin (const point &p1, const point &p2){
+  return p1.x < p2.x;
+}
+
 int main(){
   // Case #1
   // priority_queueに(距離(long long型)，座標(int, int))を配置するときに，距離が小さい順に取り出したい
@@ -60,6 +70,19 @@ int main(){
     auto entry = queue2.top();
     queue2.pop();
     printf("(%d, %d)\n", entry.first, entry.second);
+  }
+
+  // Case #3
+  // 構造体を要素にもつvectorに対してxが小さい順にソートする
+  std::vector<point> data;
+  data.push_back((point){0, 3, 5}); // {i, x, y}
+  data.push_back((point){1, 7, 6}); // {i, x, y}
+  data.push_back((point){2, 1, 3}); // {i, x, y}
+  data.push_back((point){3, 2, 5}); // {i, x, y}
+  std::sort(data.begin(), data.end(), SortXMin);
+  printf("=========\n");
+  for (auto &entry : data) {
+    printf("#%d, (%d, %d)\n", entry.i, entry.x, entry.y);
   }
 
   return 0;
