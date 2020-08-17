@@ -47,3 +47,20 @@ long long nCk(long long n, long long k)	{
   }
   return retval;
 }
+
+// パスカルの三角形によるnCkの計算
+// n<=N, k<=nを満たす全てのnCkを前計算する
+long long NCK[54][54];
+void init(int N=54)	{
+  for (int i=0; i<N; i++) {
+    for (int j=0; j<=i; j++) {
+      if (j==0 || j==i) {
+        NCK[i][j] = 1;
+      } else {
+        // パスカルの三角形の性質 nCk = (n-1)C(k-1) + (n-1)Ck を利用
+        NCK[i][j] = NCK[i-1][j-1] + NCK[i-1][j];
+      }
+    }
+  }
+  return;
+}
