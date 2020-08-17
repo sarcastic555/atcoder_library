@@ -76,9 +76,10 @@ public:
   // nCk @mod を計算する
   Mint nCk(Mint &n, const long long k) const {
     Mint y = Mint(1);
+    Mint one = Mint(1);
     for (Mint i(0); (i.x)<k; i.x++){
       y *= (n-i);
-      y /= i;
+      y /= (i + one);
     }
     return y;
   }
