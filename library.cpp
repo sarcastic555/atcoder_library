@@ -31,3 +31,19 @@ bool isprime(int n){
   }
   return prime;
 }
+
+// modを取らないnCkの計算
+// 全体としてはオーバーフローしないはずでも、先に分子だけ計算したときに
+// オーバーフローする可能性があることに注意
+long long nCk(long long n, long long k)	{
+  if (k>n) return -1;
+  if (2*k>n) return nCk(n, n-k);
+  long long retval = 1;
+  for (int i=0; i<k; i++) {
+    retval *= (n-i);
+  }
+  for (int i=0; i<k; i++) {
+    retval /= (i+1);
+  }
+  return retval;
+}
