@@ -26,21 +26,18 @@ public:
   }
 
   // a^n mod を計算する
-  // Useaeg: Mint z = y.pow(y, n);
-  Mint pow(Mint a, long long n) const {
-    Mint y(1);
-    Mint b(a);
-    while (n > 0) {
-      if (n & 1) y *= b;
-      b *= b;
-      n >>= 1;
-    }
+  // Useaeg: Mint z = Mint(2).pow(n);
+  Mint pow(long long n) const {
+    if (n==0) return Mint(1);
+    Mint y = pow(n>>1); // pow(n/2)を計算する
+    y *= y;
+    if (n%2==1) y *= *this;
     return y;
   }
 
   // a^{-1} mod を計算する
   Mint modinv(const Mint &a) const {
-    return pow(a, mod-2);
+    return a.pow(mod-2);
   }
 
   Mint& operator /= (const Mint &a) {
