@@ -1,8 +1,8 @@
 #!/bin/zsh
 
 docker run \
-       -v ${DEVELOP_PATH}/atcoder_library:/home/atcoder_library \
+       -v ${DEVELOP_PATH}/atcoder_library/example_checker:/home/example_checker \
        -e TZ=Asia/Tokyo \
        -it \
        --rm \
-       atcoder_library
+       example_checker

@@ -29,4 +29,4 @@ RUN pip install -r /tmp/requirements.txt
 ENV LANG ja_JP.UTF-8
 ENV LESSCHARSET utf-8
 
-WORKDIR /home/atcoder_library
+WORKDIR /home/example_checker
