@@ -3,9 +3,15 @@
 
 # 使い方
 
+clone
+```
+git clone https://github.com/sarcastic555/atcoder_library.git
+export DEVELOP_PATH="${PWD}"
+```
+
 docker環境に入る
 ```
-cd docker
+cd atcoder_library/example_checker/docker
 source docker_build.sh
 source docker_run.sh
 ```
