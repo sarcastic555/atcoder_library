@@ -1,3 +1,6 @@
+# example_chcker
+[Atcoder](https://atcoder.jp/home)のコンテスト問題の解答となるcppファイルを入力とし、問題に付与されているexample入力に対して正しい答えが出力されるかをチェックするpythonツールである。
+
 # 使い方
 
 docker環境に入る
@@ -12,7 +15,7 @@ source docker_run.sh
 python3 write_examples.py --contest='abc184' --outdir ./examples # ABC184の場合
 ```
 
-example入力に対する出力が正しいかのチェック
+作成した`./test.cpp`に対してexampleを入力した時の出力が正しいかのチェック
 ```
 python checker.py --source_file ./test.cpp --problem a --example_dir ./examples # 問題Aの場合
 ```
