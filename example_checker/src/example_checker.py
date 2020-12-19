@@ -18,7 +18,6 @@ class ExampleChecker:
 
   def _compile(self) -> bool:
     status = subprocess.call(['g++', '-std=c++17', self.source_file, '-o', self.executer])
-    print(f"status={status}")
     return (status == 0)
 
   def _execute(self) -> bool:
@@ -58,6 +57,8 @@ class ExampleChecker:
     return result_summary, result_dict
 
   def run(self) -> dict:
-    self._compile()
-    self._execute()
+    if not self._compile():
+      raise Exception("compile error!")
+    if not self._execute():
+      raise Exception ("execution error!")
     return self._check()
