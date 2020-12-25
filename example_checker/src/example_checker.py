@@ -2,6 +2,7 @@ import logging
 import os
 import pathlib
 import subprocess
+import shutil
 from collections import OrderedDict
 
 
@@ -15,6 +16,10 @@ class ExampleChecker:
     logging.debug(f'base_dir = {self.base_dir}')
     self.executer = os.path.join(self.base_dir, 'execute.out')
     self.result_dir = os.path.join(self.base_dir, 'results', problem)
+
+  def _clean(self) -> None:
+    if os.path.exists(self.result_dir):
+      shutil.rmtree(self.result_dir)
 
   def _compile(self) -> bool:
     status = subprocess.call(['g++', '-std=c++17', self.source_file, '-o', self.executer])
@@ -57,6 +62,7 @@ class ExampleChecker:
     return result_summary, result_dict
 
   def run(self) -> dict:
+    self._clean()
     if not self._compile():
       raise Exception("compile error!")
     if not self._execute():
