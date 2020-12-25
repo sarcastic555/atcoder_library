@@ -3,6 +3,7 @@ import logging
 import os
 import shutil
 import sys
+import warnings
 
 from src.example_download import ExampleDownload
 
@@ -23,8 +24,12 @@ def main(options: argparse) -> None:
     shutil.rmtree(options.outdir)
   for problem in problems:
     examples = downloader.get_examples(problem=problem)
+    if len(examples) == 0:
+      warnings.warn(f'Problem {problem}: Example size is 0')
+    logging.info(f"Problem {problem}: find {len(examples)} examples.")
     for example in examples:
       output_dir = os.path.join(options.outdir, problem)
+      logging.debug("Problem {problem}: output directory = {output_dir}")
       os.makedirs(output_dir, exist_ok=True)
       filename_in = os.path.join(output_dir, f'input{example.id}.txt')
       filename_out = os.path.join(output_dir, f'output{example.id}.txt')

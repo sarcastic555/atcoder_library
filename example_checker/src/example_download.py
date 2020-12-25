@@ -48,18 +48,27 @@ class ExampleDownload:
       logging.error(f'Cannot get {problem_url}')
       return None
     statement = bs4.BeautifulSoup(r.text, 'html.parser').find(id='task-statement')
+    # Recent contests have "part" class, while old contests (ex. ARC-050) have "section" tag.
+    # Try to handle both cases.
     parts = statement.find_all(class_='part')
+    if len(parts) == 0:
+      parts = statement.find_all('section')
     logging.debug('parts size = %d' % len(parts))
     inout_pairs = []
     ret = ExampleData(-1, None, None)
     for part in parts:
       title = part.find('h3').text
       if title.startswith('入力例'):
-        ret.id = int(title.replace('入力例 ', ''))
-        ret.input_data = part.find('pre').text
+        # Recent contests have "入力例 1" format, while old contests (ex. ARC-050) have "入力例1" format.
+        # Try to handle both cases.
+        problem_id = title.replace('入力例 ', '').replace('入力例', '')
+        ret.id = int(problem_id)
+        # Remove initial space and new line code
+        ret.input_data = part.find('pre').text.lstrip()
         logging.debug(f'input data ={ret.input_data}')
       elif title.startswith('出力例'):
-        ret.output_data = part.find('pre').text
+        # Remove initial space and new line code
+        ret.output_data = part.find('pre').text.lstrip()
         logging.debug(f'output data ={ret.output_data}')
         if ret.input_data is not None and ret.output_data is not None:
           # Need to be appended using copy.copy, otherwise it will be overwritten
