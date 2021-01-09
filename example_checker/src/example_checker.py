@@ -66,5 +66,5 @@ class ExampleChecker:
     if not self._compile():
       raise Exception("compile error!")
     if not self._execute():
-      raise Exception ("execution error!")
+      raise Exception("execution error!")
     return self._check()

@@ -26,8 +26,9 @@ class ExampleDownload:
   def get_problem_list(self) -> List[str]:
     time.sleep(self.sleep)
     r = requests.get(self.base_url)
-    if not r.ok:
-      return None
+    if not r.ok or r.status_code == 404:
+      logging.warning('Could not get contest page.')
+      return []
     soup = bs4.BeautifulSoup(r.text, 'html.parser')
     problems = soup.find(class_='table table-bordered table-striped').find('tbody').find_all('tr')
     problem_list = []
