@@ -1,0 +1,7 @@
+result
+*txt
+__pycache__
+results
+*.out
+test.cpp
+test2.cpp
