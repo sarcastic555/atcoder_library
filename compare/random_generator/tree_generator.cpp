@@ -8,7 +8,7 @@
 
 int main(int argc, char *argv[]) {
   if (argc!=3) {
-    printf("Useage: ./tree_generator N output_filename\n");
+    printf("Useage: ./tree_generator.out N output_filename\n");
     return -1;
   }
   int N = atoi(argv[1]);

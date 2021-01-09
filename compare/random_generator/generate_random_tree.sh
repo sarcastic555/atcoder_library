@@ -16,14 +16,14 @@
 ## Parameters
 OUTFILE=$1
 SCRIPTDIR=$(cd $(dirname $0); pwd)
-N=20
+N=16
 
 ## Compile
-g++ -std=c++17 ${SCRIPTDIR}/tree_generator.cpp -o ${SCRIPTDIR}/tree_generator
+g++ -std=c++17 ${SCRIPTDIR}/tree_generator.cpp -o ${SCRIPTDIR}/tree_generator.out
 
 ## Main
 echo $N > $OUTFILE
-${SCRIPTDIR}/tree_generator $N $OUTFILE
+${SCRIPTDIR}/tree_generator.out $N $OUTFILE
 echo 1 >> $OUTFILE
 rand1=`expr ${RANDOM} % ${N} + 1`
 rand2=`expr ${RANDOM} % ${N} + 1`
