@@ -13,7 +13,9 @@ MAXVALUE=20
 SIZE=`expr ${RANDOM} % ${MAXSIZE} + 2`
 echo $SIZE > ${INPUTFILE}
 for i in `seq ${SIZE}`; do
-    rand=`expr ${RANDOM} % ${MAXVALUE} + 1`
-    echo $rand >> ${INPUTFILE}
+    rand=${RANDOM}
+    denomerator=`expr ${SIZE} - 1`
+    value=`expr ${rand} % ${denomerator} + 1`
+    echo $value >> ${INPUTFILE}
 done
 
