@@ -1,5 +1,4 @@
 #!/bin/bash
-set -eu
 
 INPUTFILE="${PWD}/input.txt"
 TARGET1="test.cpp"
@@ -31,7 +30,7 @@ while true; do
     if [ $diffcount -ne 0 ]; then
 	echo "Diff found===:"
 	diff -u ${RESULT1} ${RESULT2}
-	break
+	return
     fi
     sleep 0.1
     count=`expr $count + 1`
