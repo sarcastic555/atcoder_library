@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['calcchoosepermutation_2',['CalcChoosePermutation',['../class_calc_choose_permutation.html',1,'CalcChoosePermutation'],['../class_calc_choose_permutation.html#ae4789f5c078c800bf3c31f32358b33cc',1,'CalcChoosePermutation::CalcChoosePermutation()']]]
+  ['base_3',['base',['../struct_trie_node.html#a53684e473cdd05d7fb80758f667bd2ba',1,'TrieNode']]]
 ];

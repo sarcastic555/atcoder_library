@@ -62,7 +62,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_my_lazy_segment_tree-members.html">List of all members</a>  </div>
@@ -70,6 +69,9 @@ $(function() {
 <div class="title">MyLazySegmentTree Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>遅延セグメントツリー (更新クエリで一律に値を変更ができる) の実装  
+ <a href="class_my_lazy_segment_tree.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -85,7 +87,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf3019525eb95fafde165902fbfb4295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a954a2e59ca9b805c91d4e1b603f68a9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mint.html">Mint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_lazy_segment_tree.html#a954a2e59ca9b805c91d4e1b603f68a9a">GetSum</a> (int l, int r)</td></tr>
 <tr class="separator:a954a2e59ca9b805c91d4e1b603f68a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4112a0c3b1a1103a21bbef9e5d58f818"><td class="memItemLeft" align="right" valign="top">mynode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_lazy_segment_tree.html#a4112a0c3b1a1103a21bbef9e5d58f818">GetNode</a> (int <a class="el" href="class_my_lazy_segment_tree.html#a7a21555a0007efd80fef9883cc1724cb">n</a>)</td></tr>
+<tr class="memitem:a4112a0c3b1a1103a21bbef9e5d58f818"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmynode.html">mynode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_lazy_segment_tree.html#a4112a0c3b1a1103a21bbef9e5d58f818">GetNode</a> (int <a class="el" href="class_my_lazy_segment_tree.html#a7a21555a0007efd80fef9883cc1724cb">n</a>)</td></tr>
 <tr class="separator:a4112a0c3b1a1103a21bbef9e5d58f818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -100,10 +102,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1e4643ec2d934619d5fa1f2dc5900179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37f9a450568982710f441f42a20d7a27"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_lazy_segment_tree.html#a37f9a450568982710f441f42a20d7a27">lazy</a></td></tr>
 <tr class="separator:a37f9a450568982710f441f42a20d7a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dd6e7b58888f8d6b2bbc62c9c65ffc0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; mynode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_lazy_segment_tree.html#a1dd6e7b58888f8d6b2bbc62c9c65ffc0">node</a></td></tr>
+<tr class="memitem:a1dd6e7b58888f8d6b2bbc62c9c65ffc0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structmynode.html">mynode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_lazy_segment_tree.html#a1dd6e7b58888f8d6b2bbc62c9c65ffc0">node</a></td></tr>
 <tr class="separator:a1dd6e7b58888f8d6b2bbc62c9c65ffc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>遅延セグメントツリー (更新クエリで一律に値を変更ができる) の実装 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0dd324262da88098aaaaff959d5ae9b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0dd324262da88098aaaaff959d5ae9b0">&#9670;&nbsp;</a></span>MyLazySegmentTree()</h2>
 
@@ -177,7 +181,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mynode MyLazySegmentTree::GetNode </td>
+          <td class="memname"><a class="el" href="structmynode.html">mynode</a> MyLazySegmentTree::GetNode </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -463,7 +467,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;mynode&gt; MyLazySegmentTree::node</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structmynode.html">mynode</a>&gt; MyLazySegmentTree::node</td>
         </tr>
       </table>
 </div><div class="memdoc">

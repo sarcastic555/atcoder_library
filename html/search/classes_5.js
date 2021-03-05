@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unionfind_72',['UnionFind',['../class_union_find.html',1,'']]]
+  ['trienode_96',['TrieNode',['../struct_trie_node.html',1,'']]],
+  ['trietree_97',['TrieTree',['../class_trie_tree.html',1,'']]]
 ];

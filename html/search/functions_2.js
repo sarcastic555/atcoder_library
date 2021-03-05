@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['evaluate_77',['Evaluate',['../class_lazy_segment_tree_sum.html#a337981cf4d6c3d1e074da51059a985da',1,'LazySegmentTreeSum']]],
-  ['extgcd_78',['extGCD',['../test_8cpp.html#aebc0b9077b4a7e299e9951336574fb1f',1,'test.cpp']]]
+  ['evaluate_107',['Evaluate',['../class_lazy_segment_tree_sum.html#a337981cf4d6c3d1e074da51059a985da',1,'LazySegmentTreeSum::Evaluate()'],['../class_my_lazy_segment_tree.html#a06eedb698c0b68aaa19bbba07753b5bb',1,'MyLazySegmentTree::Evaluate()']]],
+  ['ext_5fgcd_108',['ext_gcd',['../test_8cpp.html#afa9d461d307cfcf285cf2fac0c362132',1,'test.cpp']]]
 ];
