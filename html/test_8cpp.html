@@ -159,6 +159,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a77db8498eb34f9ed94fd3d0a6fcd6fef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a77db8498eb34f9ed94fd3d0a6fcd6fef">can_ext_gcd</a> (long long a, long long b, long long c, long long &amp;x, long long &amp;y)</td></tr>
 <tr class="memdesc:a77db8498eb34f9ed94fd3d0a6fcd6fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">拡張ユークリッド互除法の解が存在するか判定し存在すれば求める  <a href="test_8cpp.html#a77db8498eb34f9ed94fd3d0a6fcd6fef">More...</a><br /></td></tr>
 <tr class="separator:a77db8498eb34f9ed94fd3d0a6fcd6fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bad6950d8f73693a3c9b2cf57c834f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a63bad6950d8f73693a3c9b2cf57c834f">chinese_remainder_theorem</a> (std::vector&lt; std::pair&lt; long long, long long &gt; &gt; pairs, long long &amp;ans)</td></tr>
+<tr class="memdesc:a63bad6950d8f73693a3c9b2cf57c834f"><td class="mdescLeft">&#160;</td><td class="mdescRight">中国剰余の定理の解を求める  <a href="test_8cpp.html#a63bad6950d8f73693a3c9b2cf57c834f">More...</a><br /></td></tr>
+<tr class="separator:a63bad6950d8f73693a3c9b2cf57c834f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28562e4f5dceb133c79973dc5d01d7cd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a28562e4f5dceb133c79973dc5d01d7cd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a28562e4f5dceb133c79973dc5d01d7cd">on_line_segment</a> (const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;p1, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;p2, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;q)</td></tr>
 <tr class="memdesc:a28562e4f5dceb133c79973dc5d01d7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">点qが線分p1p2上に存在するかを判定する  <a href="test_8cpp.html#a28562e4f5dceb133c79973dc5d01d7cd">More...</a><br /></td></tr>
@@ -255,6 +258,44 @@ Variables</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>右辺値 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>解 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td>解 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>判定結果（trueなら解が存在） </dd></dl>
+
+</div>
+</div>
+<a id="a63bad6950d8f73693a3c9b2cf57c834f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63bad6950d8f73693a3c9b2cf57c834f">&#9670;&nbsp;</a></span>chinese_remainder_theorem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chinese_remainder_theorem </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; long long, long long &gt; &gt;&#160;</td>
+          <td class="paramname"><em>pairs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long &amp;&#160;</td>
+          <td class="paramname"><em>ans</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>中国剰余の定理の解を求める </p>
+<p>x ≡ a_i (mod m_i) (i=1, 2, ... n) となるxを 0 &lt;= x &lt; LCM(m_1, m_2, ... m_n)で求める </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pairs</td><td>[(a_1, m_1), (a_2, m_2), ... , (a_n, m_n)]のペア </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ans</td><td>解x (0 &lt;= x &lt; LCM(m_1, m_2, ... m_n)の範囲にあることを保証) </td></tr>
   </table>
   </dd>
 </dl>

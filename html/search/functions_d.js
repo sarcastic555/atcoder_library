@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['xor_157',['XOR',['../test_8cpp.html#a890e1894306ffdd4d60fe17c4cf8b1e7',1,'test.cpp']]]
+  ['trienode_187',['TrieNode',['../struct_trie_node.html#ab8e57740a8347d31bb97eac5fa617f17',1,'TrieNode']]],
+  ['trietree_188',['TrieTree',['../class_trie_tree.html#a54ab282bb9ed9abcd02da5189b64a6f8',1,'TrieTree']]]
 ];

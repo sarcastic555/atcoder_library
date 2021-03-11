@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['calcchoosepermutation_86',['CalcChoosePermutation',['../class_calc_choose_permutation.html',1,'']]]
+  ['barrett_106',['barrett',['../structatcoder_1_1internal_1_1barrett.html',1,'atcoder::internal']]]
 ];

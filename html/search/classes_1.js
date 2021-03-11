@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lazysegmenttreesum_87',['LazySegmentTreeSum',['../class_lazy_segment_tree_sum.html',1,'']]]
+  ['calcchoosepermutation_107',['CalcChoosePermutation',['../class_calc_choose_permutation.html',1,'']]]
 ];

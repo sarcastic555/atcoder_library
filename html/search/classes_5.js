@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['trienode_96',['TrieNode',['../struct_trie_node.html',1,'']]],
-  ['trietree_97',['TrieTree',['../class_trie_tree.html',1,'']]]
+  ['segmenttree_116',['SegmentTree',['../class_segment_tree.html',1,'']]]
 ];
