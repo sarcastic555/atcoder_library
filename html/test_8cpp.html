@@ -74,6 +74,7 @@ $(function() {
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;bitset&gt;</code><br />
@@ -85,6 +86,7 @@ $(function() {
 <code>#include &lt;stack&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;typeinfo&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -135,6 +137,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a7ccaec525cfc4a7dc7137d8cad957220"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a7ccaec525cfc4a7dc7137d8cad957220">multiple_overflow</a> (long long a, long long b)</td></tr>
+<tr class="memdesc:a7ccaec525cfc4a7dc7137d8cad957220"><td class="mdescLeft">&#160;</td><td class="mdescRight">2つの数の積がlong longをオーバーフローする（10^18を超える）か判定  <a href="test_8cpp.html#a7ccaec525cfc4a7dc7137d8cad957220">More...</a><br /></td></tr>
+<tr class="separator:a7ccaec525cfc4a7dc7137d8cad957220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6efa7642ccc588033b7acb57e873b8d8"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a6efa7642ccc588033b7acb57e873b8d8">getgcd</a> (long long a, long long b)</td></tr>
 <tr class="memdesc:a6efa7642ccc588033b7acb57e873b8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ユークリッド互助法により最大公約数を求める  <a href="test_8cpp.html#a6efa7642ccc588033b7acb57e873b8d8">More...</a><br /></td></tr>
 <tr class="separator:a6efa7642ccc588033b7acb57e873b8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,7 +297,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>中国剰余の定理の解を求める </p>
-<p>x ≡ a_i (mod m_i) (i=1, 2, ... n) となるxを 0 &lt;= x &lt; LCM(m_1, m_2, ... m_n)で求める </p><dl class="params"><dt>Parameters</dt><dd>
+<p>x ≡ a_i (mod m_i) (i=1, 2, ... n) となるxを 0 &lt;= x &lt; LCM(m_1, m_2, ... m_n)で求める Garnerの方法により数倍高速化できるらしいので時間があるときに取り組む <a href="https://qiita.com/drken/items/ae02240cd1f8edfc86fd">https://qiita.com/drken/items/ae02240cd1f8edfc86fd</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pairs</td><td>[(a_1, m_1), (a_2, m_2), ... , (a_n, m_n)]のペア </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">ans</td><td>解x (0 &lt;= x &lt; LCM(m_1, m_2, ... m_n)の範囲にあることを保証) </td></tr>
@@ -727,6 +732,44 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>大きい方の値 </dd></dl>
+
+</div>
+</div>
+<a id="a7ccaec525cfc4a7dc7137d8cad957220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ccaec525cfc4a7dc7137d8cad957220">&#9670;&nbsp;</a></span>multiple_overflow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool multiple_overflow </td>
+          <td>(</td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2つの数の積がlong longをオーバーフローする（10^18を超える）か判定 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>1つめの数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>2つめの数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>判定結果（trueならオーバーフローする） </dd></dl>
 
 </div>
 </div>

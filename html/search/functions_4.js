@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['floor_5fsum_136',['floor_sum',['../namespaceatcoder.html#aba8b8deffd614393afcbe96f39ea7a83',1,'atcoder']]]
+  ['floor_5fsum_137',['floor_sum',['../namespaceatcoder.html#aba8b8deffd614393afcbe96f39ea7a83',1,'atcoder']]]
 ];

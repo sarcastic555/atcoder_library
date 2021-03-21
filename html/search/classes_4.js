@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pascaltriangle_113',['PascalTriangle',['../class_pascal_triangle.html',1,'']]],
-  ['point2d_114',['Point2D',['../class_point2_d.html',1,'']]],
-  ['power_115',['Power',['../class_power.html',1,'']]]
+  ['pascaltriangle_114',['PascalTriangle',['../class_pascal_triangle.html',1,'']]],
+  ['point2d_115',['Point2D',['../class_point2_d.html',1,'']]],
+  ['power_116',['Power',['../class_power.html',1,'']]]
 ];
