@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['umod_191',['umod',['../structatcoder_1_1internal_1_1barrett.html#a158b4ddbe843d0461729720768d6ab62',1,'atcoder::internal::barrett']]],
-  ['unionfind_192',['UnionFind',['../class_union_find.html#a5a6a3f5f61e15b418c3b4021521a1cb8',1,'UnionFind']]],
-  ['unite_193',['Unite',['../class_union_find.html#ae7b5c3da0ef64f643c311b1f257cbc9d',1,'UnionFind']]],
-  ['update_194',['Update',['../class_segment_tree.html#a6d8b9a5d168f8b37f6096414220cbacc',1,'SegmentTree::Update()'],['../class_my_lazy_segment_tree.html#a35f37104e67553107f633ddf3a68d095',1,'MyLazySegmentTree::Update(int l, int r, int value)']]],
-  ['updatenode_195',['UpdateNode',['../class_my_lazy_segment_tree.html#a14608565b71242bf36bc41320d5e2423',1,'MyLazySegmentTree']]]
+  ['query_489',['query',['../struct_seg_tree___lazy.html#a0445857615bba0a000c27f9220e8d392',1,'SegTree_Lazy::query()'],['../struct_seg_tree.html#add459029f55e6f564c4075a178417a06',1,'SegTree::query()'],['../struct_doubling.html#acc83d89dcb3cba321ed96bc3b88ceed6',1,'Doubling::query()']]],
+  ['quickpow_490',['quickpow',['../struct_mint0.html#a97dd162789e55b1ce7637de161471177',1,'Mint0::quickpow()'],['../class_mint.html#a308e929925563674e87ccec6d392dfa4',1,'Mint::quickpow()']]],
+  ['quickpow_491',['Quickpow',['../test2_8cpp.html#aaeecf98320143fc8c816917add9d22d9',1,'test2.cpp']]]
 ];

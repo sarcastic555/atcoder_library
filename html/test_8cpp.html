@@ -77,6 +77,7 @@ $(function() {
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
+<code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &lt;bitset&gt;</code><br />
 <code>#include &lt;deque&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
@@ -87,17 +88,18 @@ $(function() {
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;typeinfo&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mint.html">Mint</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mint.html">Mint&lt; Md &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ある素数（デフォルトは100000007）で割った余りを求めるためのクラス  <a href="class_mint.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_union_find.html">UnionFind</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードを結合していきながら同じグループかどうかを高速に判定するためのクラス  <a href="class_union_find.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calc_choose_permutation.html">CalcChoosePermutation</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">二項係数(nCk)、順列(nPk)の計算  <a href="class_calc_choose_permutation.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定したn、k&lt;=Kを満たす任意のkに対して二項係数(nCk)、順列(nPk)の計算  <a href="class_calc_choose_permutation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pascal_triangle.html">PascalTriangle&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">パスカルの三角形により二項係数を計算する  <a href="class_pascal_triangle.html#details">More...</a><br /></td></tr>
@@ -125,8 +127,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_power.html">Power&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">指数計算を行う  <a href="class_power.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html">Matrix&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html">Matrix&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">行列計算クラス  <a href="class_matrix.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_cost_flow.html">MinCostFlow&lt; CostType, FlowLimitType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -146,6 +150,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a60bacfec96b4b84fe4854220c2af6706"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a60bacfec96b4b84fe4854220c2af6706">IntMax</a> (int a, int b)</td></tr>
 <tr class="memdesc:a60bacfec96b4b84fe4854220c2af6706"><td class="mdescLeft">&#160;</td><td class="mdescRight">int型の大きい方の値を返す  <a href="test_8cpp.html#a60bacfec96b4b84fe4854220c2af6706">More...</a><br /></td></tr>
 <tr class="separator:a60bacfec96b4b84fe4854220c2af6706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233934e7165e06f2917ccaa562fd8472"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a233934e7165e06f2917ccaa562fd8472">IntMin</a> (int a, int b)</td></tr>
+<tr class="memdesc:a233934e7165e06f2917ccaa562fd8472"><td class="mdescLeft">&#160;</td><td class="mdescRight">int型の小さい方の値を返す  <a href="test_8cpp.html#a233934e7165e06f2917ccaa562fd8472">More...</a><br /></td></tr>
+<tr class="separator:a233934e7165e06f2917ccaa562fd8472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcd1d24bff970aa9340bf5803c5f4981"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#afcd1d24bff970aa9340bf5803c5f4981">IntSum</a> (int a, int b)</td></tr>
 <tr class="memdesc:afcd1d24bff970aa9340bf5803c5f4981"><td class="mdescLeft">&#160;</td><td class="mdescRight">int型の足し算の結果を返す  <a href="test_8cpp.html#afcd1d24bff970aa9340bf5803c5f4981">More...</a><br /></td></tr>
 <tr class="separator:afcd1d24bff970aa9340bf5803c5f4981"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +188,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a87e9feb411be92afed3326735e71cfde"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a87e9feb411be92afed3326735e71cfde">has_intersection_for_line_segments</a> (const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;p1, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;p2, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;q1, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;q2)</td></tr>
 <tr class="memdesc:a87e9feb411be92afed3326735e71cfde"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分p1p2と線分q1q2に交点が存在するかの判定する  <a href="test_8cpp.html#a87e9feb411be92afed3326735e71cfde">More...</a><br /></td></tr>
 <tr class="separator:a87e9feb411be92afed3326735e71cfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4c861cb8f3456b680a06ffc2c7345d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abd4c861cb8f3456b680a06ffc2c7345d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#abd4c861cb8f3456b680a06ffc2c7345d">print</a> (std::vector&lt; T &gt; vec, int line, const std::string name=&quot;vector&quot;)</td></tr>
+<tr class="separator:abd4c861cb8f3456b680a06ffc2c7345d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0e0150d67fc33027b6d34843d42fa2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aca0e0150d67fc33027b6d34843d42fa2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#aca0e0150d67fc33027b6d34843d42fa2">print</a> (std::multiset&lt; T &gt; st, int line, const std::string name=&quot;set&quot;)</td></tr>
+<tr class="separator:aca0e0150d67fc33027b6d34843d42fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72ef7935f741e737b8da7cf8b78742c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab72ef7935f741e737b8da7cf8b78742c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ab72ef7935f741e737b8da7cf8b78742c">print</a> (std::set&lt; T &gt; st, int line, const std::string name=&quot;set&quot;)</td></tr>
+<tr class="separator:ab72ef7935f741e737b8da7cf8b78742c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047e9d81d583363186b8dcaf59d30c93"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a047e9d81d583363186b8dcaf59d30c93"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a047e9d81d583363186b8dcaf59d30c93">print</a> (T a, int line, const std::string name=&quot;value&quot;)</td></tr>
+<tr class="separator:a047e9d81d583363186b8dcaf59d30c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699208884fc5d413c06f987332c735b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a699208884fc5d413c06f987332c735b6">print</a> (int line, const std::string name=&quot;value&quot;)</td></tr>
+<tr class="separator:a699208884fc5d413c06f987332c735b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -192,6 +213,8 @@ Variables</h2></td></tr>
 <tr class="separator:af07d801074531f63910bd3efb92f8ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d5af252d11536d8991ef65535df15e"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ad8d5af252d11536d8991ef65535df15e">INF2</a> = 1001001001001001001</td></tr>
 <tr class="separator:ad8d5af252d11536d8991ef65535df15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43139a641c6677a9f9e393efca85148c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a43139a641c6677a9f9e393efca85148c">edges</a> [100004]</td></tr>
+<tr class="separator:a43139a641c6677a9f9e393efca85148c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a22b4927ee63317210a9969d17f3c9a49"></a>
@@ -297,7 +320,10 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>中国剰余の定理の解を求める </p>
-<p>x ≡ a_i (mod m_i) (i=1, 2, ... n) となるxを 0 &lt;= x &lt; LCM(m_1, m_2, ... m_n)で求める Garnerの方法により数倍高速化できるらしいので時間があるときに取り組む <a href="https://qiita.com/drken/items/ae02240cd1f8edfc86fd">https://qiita.com/drken/items/ae02240cd1f8edfc86fd</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>x ≡ a_i (mod m_i) (i=1, 2, ... n) となるxを 0 &lt;= x &lt; LCM(m_1, m_2, ... m_n)で求める <br  />
+ Garnerの方法により数倍高速化できるらしいので時間があるときに取り組む <br  />
+ <a href="https://qiita.com/drken/items/ae02240cd1f8edfc86fd">https://qiita.com/drken/items/ae02240cd1f8edfc86fd</a> <br  />
+ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pairs</td><td>[(a_1, m_1), (a_2, m_2), ... , (a_n, m_n)]のペア </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">ans</td><td>解x (0 &lt;= x &lt; LCM(m_1, m_2, ... m_n)の範囲にあることを保証) </td></tr>
@@ -467,10 +493,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>交点の座標</dd></dl>
-<p>直線p1p2と直線q1q2が平行でないことが前提</p>
-<p>交点座標は整数で表現できない可能性があるためdouble型に限定</p>
-<p>例: Point2D&lt;int&gt; p1 = <a class="el" href="class_point2_d.html" title="平面上での点を扱うクラス">Point2D(3, 4)</a>;</p>
-<p>Point2D&lt;double&gt; hoge = get_intersection&lt;double&gt;(p1, p2, p3, p4); </p>
+<p>直線p1p2と直線q1q2が平行でないことが前提 <br  />
+ 交点座標は整数で表現できない可能性があるためdouble型に限定 <br  />
+ 例 Point2D&lt;int&gt; p1 = <a class="el" href="class_point2_d.html" title="平面上での点を扱うクラス">Point2D(3, 4)</a>; <br  />
+ Point2D&lt;double&gt; hoge = get_intersection&lt;double&gt;(p1, p2, p3, p4); <br  />
+ </p>
 
 </div>
 </div>
@@ -601,6 +628,44 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>大きい方の値 </dd></dl>
+
+</div>
+</div>
+<a id="a233934e7165e06f2917ccaa562fd8472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233934e7165e06f2917ccaa562fd8472">&#9670;&nbsp;</a></span>IntMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IntMin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>int型の小さい方の値を返す </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">入力1</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">入力2</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>小さい方の値 </dd></dl>
 
 </div>
 </div>
@@ -821,6 +886,178 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a699208884fc5d413c06f987332c735b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699208884fc5d413c06f987332c735b6">&#9670;&nbsp;</a></span>print() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;value&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca0e0150d67fc33027b6d34843d42fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0e0150d67fc33027b6d34843d42fa2">&#9670;&nbsp;</a></span>print() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void print </td>
+          <td>(</td>
+          <td class="paramtype">std::multiset&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>st</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;set&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab72ef7935f741e737b8da7cf8b78742c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72ef7935f741e737b8da7cf8b78742c">&#9670;&nbsp;</a></span>print() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void print </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>st</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;set&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd4c861cb8f3456b680a06ffc2c7345d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4c861cb8f3456b680a06ffc2c7345d">&#9670;&nbsp;</a></span>print() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void print </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;vector&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a047e9d81d583363186b8dcaf59d30c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047e9d81d583363186b8dcaf59d30c93">&#9670;&nbsp;</a></span>print() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void print </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;value&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a890e1894306ffdd4d60fe17c4cf8b1e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a890e1894306ffdd4d60fe17c4cf8b1e7">&#9670;&nbsp;</a></span>XOR()</h2>
 
@@ -860,6 +1097,20 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a43139a641c6677a9f9e393efca85148c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43139a641c6677a9f9e393efca85148c">&#9670;&nbsp;</a></span>edges</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;int, int&gt; &gt; edges[100004]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af07d801074531f63910bd3efb92f8ce5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af07d801074531f63910bd3efb92f8ce5">&#9670;&nbsp;</a></span>INF</h2>
 

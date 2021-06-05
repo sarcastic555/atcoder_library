@@ -98,9 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a38276f48e26a923f55bc955edfc89523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9793887c4baaa8e6487aadb2de8cebfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point2_d.html#a9793887c4baaa8e6487aadb2de8cebfe">operator==</a> (const <a class="el" href="class_point2_d.html">Point2D</a> &amp;a) const</td></tr>
 <tr class="separator:a9793887c4baaa8e6487aadb2de8cebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab48895613870ecb234f78bdfbdc37430"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point2_d.html#ab48895613870ecb234f78bdfbdc37430">inner_product</a> (const <a class="el" href="class_point2_d.html">Point2D</a> &amp;a) const</td></tr>
-<tr class="memdesc:ab48895613870ecb234f78bdfbdc37430"><td class="mdescLeft">&#160;</td><td class="mdescRight">内積を計算する  <a href="class_point2_d.html#ab48895613870ecb234f78bdfbdc37430">More...</a><br /></td></tr>
-<tr class="separator:ab48895613870ecb234f78bdfbdc37430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point2_d.html#a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c">iMMer_product</a> (const <a class="el" href="class_point2_d.html">Point2D</a> &amp;a) const</td></tr>
+<tr class="memdesc:a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">内積を計算する  <a href="class_point2_d.html#a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c">More...</a><br /></td></tr>
+<tr class="separator:a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeb81de6ffc2e5ca8a0d996237257cdd"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point2_d.html#abeb81de6ffc2e5ca8a0d996237257cdd">outer_product</a> (const <a class="el" href="class_point2_d.html">Point2D</a> &amp;a) const</td></tr>
 <tr class="memdesc:abeb81de6ffc2e5ca8a0d996237257cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">外積を計算する  <a href="class_point2_d.html#abeb81de6ffc2e5ca8a0d996237257cdd">More...</a><br /></td></tr>
 <tr class="separator:abeb81de6ffc2e5ca8a0d996237257cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,8 +187,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab48895613870ecb234f78bdfbdc37430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab48895613870ecb234f78bdfbdc37430">&#9670;&nbsp;</a></span>inner_product()</h2>
+<a id="a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c">&#9670;&nbsp;</a></span>iMMer_product()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,7 +199,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt;::inner_product </td>
+          <td class="memname">T <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt;::iMMer_product </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
@@ -221,9 +221,9 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>内積の計算結果</dd></dl>
-<p>内積などのために"prod"という演算子をつくってA prod Bとしたいがprodという演算子はもともとないのでオーバーライドできない。</p>
-<p>なのでinner_productという名前の関数を定義する。</p>
-<p>例：A.inner_product(B); </p>
+<p>内積などのために"prod"という演算子をつくってA prod Bとしたいがprodという演算子はもともとないのでオーバーライドできないため、iMMer_productという名前の関数を定義する。 <br  />
+ 例 A.iMMer_product(B); <br  />
+ </p>
 
 </div>
 </div>

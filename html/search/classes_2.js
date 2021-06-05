@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lazysegmenttreesum_109',['LazySegmentTreeSum',['../class_lazy_segment_tree_sum.html',1,'']]]
+  ['dinic_298',['Dinic',['../struct_dinic.html',1,'']]],
+  ['doubling_299',['Doubling',['../struct_doubling.html',1,'']]]
 ];

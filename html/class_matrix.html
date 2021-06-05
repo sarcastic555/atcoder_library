@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Matrix&lt; T &gt; Class Template Reference</title>
+<title>My Project: Matrix&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_matrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Matrix&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">Matrix&lt; T &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -98,21 +98,69 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2bf2f28e56bb1376aa6dc979d649fdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8332421c1003a8a61a5c9f3a2f270d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a8332421c1003a8a61a5c9f3a2f270d5f">Print</a> ()</td></tr>
 <tr class="separator:a8332421c1003a8a61a5c9f3a2f270d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d567e3a121b1be0c3f9c461cab524fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a9d567e3a121b1be0c3f9c461cab524fe">Matrix</a> ()</td></tr>
+<tr class="separator:a9d567e3a121b1be0c3f9c461cab524fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8599bc01bb607d25f2cb1c9859558f41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a8599bc01bb607d25f2cb1c9859558f41">Matrix</a> (int h, int w, T init=T())</td></tr>
+<tr class="separator:a8599bc01bb607d25f2cb1c9859558f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f2b59abaebd0c2f2c898304123c0ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#aa6f2b59abaebd0c2f2c898304123c0ce">Matrix</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;mat)</td></tr>
+<tr class="separator:aa6f2b59abaebd0c2f2c898304123c0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779d659f81083c11d622e6d2bad469f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a779d659f81083c11d622e6d2bad469f6">Matrix</a> (const std::initializer_list&lt; std::initializer_list&lt; T &gt;&gt; &amp;init_list)</td></tr>
+<tr class="separator:a779d659f81083c11d622e6d2bad469f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4578a2c037444a073787edf330405d53"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a4578a2c037444a073787edf330405d53">operator[]</a> (const int idx)</td></tr>
+<tr class="separator:a4578a2c037444a073787edf330405d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0666dcd8270d10d7b48bcae49bba5796"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a0666dcd8270d10d7b48bcae49bba5796">operator=</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;mat)</td></tr>
+<tr class="separator:a0666dcd8270d10d7b48bcae49bba5796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027d7a156d24be47d0524ff8562503f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a027d7a156d24be47d0524ff8562503f3">operator==</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;mat) const</td></tr>
+<tr class="separator:a027d7a156d24be47d0524ff8562503f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43db6235b606fab67c273ff363e99adf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a43db6235b606fab67c273ff363e99adf">operator!=</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;mat) const</td></tr>
+<tr class="separator:a43db6235b606fab67c273ff363e99adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa5c34a603efdbbbb7ffdba79a8467c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#adaa5c34a603efdbbbb7ffdba79a8467c">operator+</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;mat) const</td></tr>
+<tr class="separator:adaa5c34a603efdbbbb7ffdba79a8467c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47412548128b9361168c10a04180072d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a47412548128b9361168c10a04180072d">operator-</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;mat) const</td></tr>
+<tr class="separator:a47412548128b9361168c10a04180072d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95b96057845f7931104cbcfa33152f11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a95b96057845f7931104cbcfa33152f11">operator*</a> (const <a class="el" href="class_matrix.html">Matrix</a> &amp;mat) const</td></tr>
+<tr class="separator:a95b96057845f7931104cbcfa33152f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6c58806b37d31210c8578424378c4c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a5e6c58806b37d31210c8578424378c4c">operator*</a> (const std::vector&lt; T &gt; &amp;vec) const</td></tr>
+<tr class="separator:a5e6c58806b37d31210c8578424378c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4219e721178fb9c2049adf13b458cddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a4219e721178fb9c2049adf13b458cddc">operator+=</a> (<a class="el" href="class_matrix.html">Matrix</a> &amp;mat)</td></tr>
+<tr class="separator:a4219e721178fb9c2049adf13b458cddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ff54b2a0fcecd62547abdb988259eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a44ff54b2a0fcecd62547abdb988259eb">operator+=</a> (long long num)</td></tr>
+<tr class="separator:a44ff54b2a0fcecd62547abdb988259eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6790afeb5a02e839aca823bb6c54226e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a6790afeb5a02e839aca823bb6c54226e">operator-=</a> (<a class="el" href="class_matrix.html">Matrix</a> &amp;mat)</td></tr>
+<tr class="separator:a6790afeb5a02e839aca823bb6c54226e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b486b6d51cc9dacd0afe8d3b06dc4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a60b486b6d51cc9dacd0afe8d3b06dc4d">operator-=</a> (long long num)</td></tr>
+<tr class="separator:a60b486b6d51cc9dacd0afe8d3b06dc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad526b476a722aa36448f45893227b4bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#ad526b476a722aa36448f45893227b4bd">operator*=</a> (<a class="el" href="class_matrix.html">Matrix</a> &amp;mat)</td></tr>
+<tr class="separator:ad526b476a722aa36448f45893227b4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6150a77f9b491d322e2c4b8808a51231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a6150a77f9b491d322e2c4b8808a51231">operator*=</a> (long long num)</td></tr>
+<tr class="separator:a6150a77f9b491d322e2c4b8808a51231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b7cc8722c4d445ae5ec50abd32fdc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a90b7cc8722c4d445ae5ec50abd32fdc9">identity</a> (long long size, T val)</td></tr>
+<tr class="separator:a90b7cc8722c4d445ae5ec50abd32fdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4a542e7086590c8aee68504c1d890a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a6d4a542e7086590c8aee68504c1d890a">out</a> ()</td></tr>
+<tr class="separator:a6d4a542e7086590c8aee68504c1d890a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09619d9b065d653899ef016076060d9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a09619d9b065d653899ef016076060d9c">out_Mod</a> ()</td></tr>
+<tr class="separator:a09619d9b065d653899ef016076060d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ade1a88214b650979bb2db4f1af342835"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#ade1a88214b650979bb2db4f1af342835">m</a></td></tr>
 <tr class="separator:ade1a88214b650979bb2db4f1af342835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a9ba86730bdf328ba2315b12089649"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a24a9ba86730bdf328ba2315b12089649">height</a></td></tr>
+<tr class="separator:a24a9ba86730bdf328ba2315b12089649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b19db15da85573154674213ed7e18b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#a9b19db15da85573154674213ed7e18b4">width</a></td></tr>
+<tr class="separator:a9b19db15da85573154674213ed7e18b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa00fbe4518292a174640c4e7fb84be8e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html#aa00fbe4518292a174640c4e7fb84be8e">dat</a></td></tr>
+<tr class="separator:aa00fbe4518292a174640c4e7fb84be8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
-class Matrix&lt; T &gt;</h3>
+struct Matrix&lt; T &gt;</h3>
 
 <p>行列計算クラス </p>
 <p>演算が実行できる：mat1 + mat2、mat1 - mat2、mat1 * mat2; </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9d567e3a121b1be0c3f9c461cab524fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d567e3a121b1be0c3f9c461cab524fe">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d567e3a121b1be0c3f9c461cab524fe">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +189,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ae6ed53a493b7624b2fe49c16df755c47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6ed53a493b7624b2fe49c16df755c47">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ed53a493b7624b2fe49c16df755c47">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +229,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a2f84eeabd5f0d096094721ca4e3da0ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f84eeabd5f0d096094721ca4e3da0ac">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f84eeabd5f0d096094721ca4e3da0ac">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,17 +255,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>コンストラクタ（要素を全て指定して初期化） </p>
-<p>std::initializer_listを使うことで配列をコンストラクで受けることができた</p>
-<p>例：</p>
-<p>0 1 0</p>
-<p>-1 0 0</p>
-<p>0 0 1 の場合</p>
-<p>Matrix&lt;long long&gt; mat3({{0, 1, 0}, {-1, 0, 0}, {0, 0, 1}}); </p>
+<p>std::initializer_listを使うことで配列をコンストラクで受けることができた <br  />
+ 例 <br  />
+ 0 1 0 <br  />
+ -1 0 0 <br  />
+ 0 0 1 の場合 <br  />
+ Matrix&lt;long long&gt; mat3({{0, 1, 0}, {-1, 0, 0}, {0, 0, 1}}); <br  />
+ </p>
 
 </div>
 </div>
 <a id="af041d4d03bf673691d321e8fe06ee47e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af041d4d03bf673691d321e8fe06ee47e">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af041d4d03bf673691d321e8fe06ee47e">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,8 +302,136 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>コンストラクタ（単位正方行列、零行列として初期化） </p>
-<p>単位行列で初期化：Matrix&lt;long long&gt; mat1(3, "unit");</p>
-<p>零行列で初期化：Matrix&lt;long long&gt; mat2(3, "zero"); </p>
+<p>単位行列で初期化：Matrix&lt;long long&gt; mat1(3, "unit"); <br  />
+ 零行列で初期化：Matrix&lt;long long&gt; mat2(3, "zero"); <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9d567e3a121b1be0c3f9c461cab524fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d567e3a121b1be0c3f9c461cab524fe">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::<a class="el" href="class_matrix.html">Matrix</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8599bc01bb607d25f2cb1c9859558f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8599bc01bb607d25f2cb1c9859558f41">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::<a class="el" href="class_matrix.html">Matrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>init</em> = <code>T()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6f2b59abaebd0c2f2c898304123c0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6f2b59abaebd0c2f2c898304123c0ce">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::<a class="el" href="class_matrix.html">Matrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a779d659f81083c11d622e6d2bad469f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779d659f81083c11d622e6d2bad469f6">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::<a class="el" href="class_matrix.html">Matrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::initializer_list&lt; std::initializer_list&lt; T &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>init_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -307,8 +484,74 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a90b7cc8722c4d445ae5ec50abd32fdc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b7cc8722c4d445ae5ec50abd32fdc9">&#9670;&nbsp;</a></span>identity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a> <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::identity </td>
+          <td>(</td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43db6235b606fab67c273ff363e99adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43db6235b606fab67c273ff363e99adf">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2bf2f28e56bb1376aa6dc979d649fdbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bf2f28e56bb1376aa6dc979d649fdbd">&#9670;&nbsp;</a></span>operator*()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf2f28e56bb1376aa6dc979d649fdbd">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,8 +578,120 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a95b96057845f7931104cbcfa33152f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95b96057845f7931104cbcfa33152f11">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a> <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e6c58806b37d31210c8578424378c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6c58806b37d31210c8578424378c4c">&#9670;&nbsp;</a></span>operator*() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6150a77f9b491d322e2c4b8808a51231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6150a77f9b491d322e2c4b8808a51231">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&amp; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad526b476a722aa36448f45893227b4bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad526b476a722aa36448f45893227b4bd">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&amp; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator*= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a17aad69c8e84ce2c6bc9971283c51520"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17aad69c8e84ce2c6bc9971283c51520">&#9670;&nbsp;</a></span>operator+()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a17aad69c8e84ce2c6bc9971283c51520">&#9670;&nbsp;</a></span>operator+() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,8 +718,92 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="adaa5c34a603efdbbbb7ffdba79a8467c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa5c34a603efdbbbb7ffdba79a8467c">&#9670;&nbsp;</a></span>operator+() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a> <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44ff54b2a0fcecd62547abdb988259eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ff54b2a0fcecd62547abdb988259eb">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&amp; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4219e721178fb9c2049adf13b458cddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4219e721178fb9c2049adf13b458cddc">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&amp; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad17777180b4168e003215dbcb4025d33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad17777180b4168e003215dbcb4025d33">&#9670;&nbsp;</a></span>operator-()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad17777180b4168e003215dbcb4025d33">&#9670;&nbsp;</a></span>operator-() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,6 +819,228 @@ template&lt;typename T &gt; </div>
           <td class="paramtype">const <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47412548128b9361168c10a04180072d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47412548128b9361168c10a04180072d">&#9670;&nbsp;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a> <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60b486b6d51cc9dacd0afe8d3b06dc4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b486b6d51cc9dacd0afe8d3b06dc4d">&#9670;&nbsp;</a></span>operator-=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&amp; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6790afeb5a02e839aca823bb6c54226e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6790afeb5a02e839aca823bb6c54226e">&#9670;&nbsp;</a></span>operator-=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&amp; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0666dcd8270d10d7b48bcae49bba5796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0666dcd8270d10d7b48bcae49bba5796">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix.html">Matrix</a>&amp; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a027d7a156d24be47d0524ff8562503f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a027d7a156d24be47d0524ff8562503f3">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4578a2c037444a073787edf330405d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4578a2c037444a073787edf330405d53">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt;&amp; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d4a542e7086590c8aee68504c1d890a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4a542e7086590c8aee68504c1d890a">&#9670;&nbsp;</a></span>out()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::out </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09619d9b065d653899ef016076060d9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09619d9b065d653899ef016076060d9c">&#9670;&nbsp;</a></span>out_Mod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::out_Mod </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -419,6 +1080,38 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa00fbe4518292a174640c4e7fb84be8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa00fbe4518292a174640c4e7fb84be8e">&#9670;&nbsp;</a></span>dat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;T&gt; &gt; <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::dat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24a9ba86730bdf328ba2315b12089649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a9ba86730bdf328ba2315b12089649">&#9670;&nbsp;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ade1a88214b650979bb2db4f1af342835"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade1a88214b650979bb2db4f1af342835">&#9670;&nbsp;</a></span>m</h2>
 
@@ -435,8 +1128,25 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="a9b19db15da85573154674213ed7e18b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b19db15da85573154674213ed7e18b4">&#9670;&nbsp;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_matrix.html">Matrix</a>&lt; T &gt;::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="test_8cpp.html">test.cpp</a></li>
+<li><a class="el" href="test2_8cpp.html">test2.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
