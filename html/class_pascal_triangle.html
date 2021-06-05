@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>パスカルの三角形により二項係数を計算する  
+<p>パスカルの三角形により任意のn,k&lt;Nに対して二項係数nCkを計算する  
  <a href="class_pascal_triangle.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -85,7 +85,9 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 class PascalTriangle&lt; T &gt;</h3>
 
-<p>パスカルの三角形により二項係数を計算する </p>
+<p>パスカルの三角形により任意のn,k&lt;Nに対して二項係数nCkを計算する </p>
+<p>コンストラクタ計算量O(N^2)、取得クエリ計算量O(1) <br  />
+ </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aac65c01570c1106f944534cbb439816b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac65c01570c1106f944534cbb439816b">&#9670;&nbsp;</a></span>PascalTriangle()</h2>
@@ -121,7 +123,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <p>nが与えられると0&lt;=i&lt;=n, 0&lt;=j&lt;=n の全ての(i,j)についてiCjを求める <br  />
- 例 <a class="el" href="class_pascal_triangle.html" title="パスカルの三角形により二項係数を計算する">PascalTriangle</a> pt = PascalTriangle&lt;int&gt;(300); <br  />
+ 例 <a class="el" href="class_pascal_triangle.html" title="パスカルの三角形により任意のn,k&lt;Nに対して二項係数nCkを計算する">PascalTriangle</a> pt = PascalTriangle&lt;int&gt;(300); <br  />
  パスカルの三角形の構築にO(n^2)の時間がかかる <br  />
  </p>
 

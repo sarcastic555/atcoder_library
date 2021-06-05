@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dinic_298',['Dinic',['../struct_dinic.html',1,'']]],
-  ['doubling_299',['Doubling',['../struct_doubling.html',1,'']]]
+  ['dinic_299',['Dinic',['../struct_dinic.html',1,'']]],
+  ['doubling_300',['Doubling',['../struct_doubling.html',1,'']]]
 ];
