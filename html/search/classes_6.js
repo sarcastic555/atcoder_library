@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['lazysegmenttreesum_304',['LazySegmentTreeSum',['../class_lazy_segment_tree_sum.html',1,'']]],
-  ['line_305',['Line',['../struct_line.html',1,'']]]
+  ['pascaltriangle_115',['PascalTriangle',['../class_pascal_triangle.html',1,'']]],
+  ['point2d_116',['Point2D',['../class_point2_d.html',1,'']]],
+  ['power_117',['Power',['../class_power.html',1,'']]]
 ];

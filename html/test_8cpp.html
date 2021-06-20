@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -89,10 +90,11 @@ $(function() {
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;typeinfo&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mint.html">Mint&lt; Md &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mint.html">Mint</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ある素数（デフォルトは100000007）で割った余りを求めるためのクラス  <a href="class_mint.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_union_find.html">UnionFind</a></td></tr>
@@ -110,13 +112,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html">SegmentTree&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">セグメント木によりノードの更新および区間に対するモノイド関数の実行値を取得  <a href="class_segment_tree.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree_sum.html">LazySegmentTreeSum&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmynode.html">mynode</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">遅延セグメント木用の構造体定義  <a href="structmynode.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_lazy_segment_tree.html">MyLazySegmentTree</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">遅延セグメントツリー (更新クエリで一律に値を変更ができる) の実装  <a href="class_my_lazy_segment_tree.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html">LazySegmentTree&lt; T, F &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">遅延セグメントツリー  <a href="class_lazy_segment_tree.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_trie_node.html">TrieNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TrieTree実装のための構造体の定義  <a href="struct_trie_node.html#details">More...</a><br /></td></tr>
@@ -130,11 +127,26 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_power.html">Power&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">指数計算を行う  <a href="class_power.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html">Matrix&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix.html">Matrix&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">行列計算クラス  <a href="class_matrix.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eratosthenes.html">Eratosthenes</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">エラトステネスによる素数判定  <a href="class_eratosthenes.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mebius_function.html">MebiusFunction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">メビウス関数の値の計算  <a href="class_mebius_function.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_cost_flow.html">MinCostFlow&lt; CostType, FlowLimitType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_node_type.html">NodeType</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_func.html">Func</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8de3ed741dadc9c979a4ff17c0a9116e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a8de3ed741dadc9c979a4ff17c0a9116e">NDEBUG</a></td></tr>
+<tr class="separator:a8de3ed741dadc9c979a4ff17c0a9116e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -165,6 +177,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abbc43d7736f32a2148d003c1488e3e25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mint.html">Mint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#abbc43d7736f32a2148d003c1488e3e25">MintMax</a> (<a class="el" href="class_mint.html">Mint</a> a, <a class="el" href="class_mint.html">Mint</a> b)</td></tr>
 <tr class="memdesc:abbc43d7736f32a2148d003c1488e3e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mint型の大きい方の値を返す  <a href="test_8cpp.html#abbc43d7736f32a2148d003c1488e3e25">More...</a><br /></td></tr>
 <tr class="separator:abbc43d7736f32a2148d003c1488e3e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91782c4f864d5eb4d4fbe5e2f4780f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mint.html">Mint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#aa91782c4f864d5eb4d4fbe5e2f4780f1">MintSum</a> (<a class="el" href="class_mint.html">Mint</a> a, <a class="el" href="class_mint.html">Mint</a> b)</td></tr>
+<tr class="memdesc:aa91782c4f864d5eb4d4fbe5e2f4780f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mint型の足し算の結果を返す  <a href="test_8cpp.html#aa91782c4f864d5eb4d4fbe5e2f4780f1">More...</a><br /></td></tr>
+<tr class="separator:aa91782c4f864d5eb4d4fbe5e2f4780f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890e1894306ffdd4d60fe17c4cf8b1e7"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a890e1894306ffdd4d60fe17c4cf8b1e7">XOR</a> (long long a, long long b)</td></tr>
 <tr class="memdesc:a890e1894306ffdd4d60fe17c4cf8b1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">long long型のXORの値を返す  <a href="test_8cpp.html#a890e1894306ffdd4d60fe17c4cf8b1e7">More...</a><br /></td></tr>
 <tr class="separator:a890e1894306ffdd4d60fe17c4cf8b1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,20 +206,28 @@ Functions</h2></td></tr>
 <tr class="memitem:a87e9feb411be92afed3326735e71cfde"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a87e9feb411be92afed3326735e71cfde">has_intersection_for_line_segments</a> (const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;p1, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;p2, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;q1, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;q2)</td></tr>
 <tr class="memdesc:a87e9feb411be92afed3326735e71cfde"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分p1p2と線分q1q2に交点が存在するかの判定する  <a href="test_8cpp.html#a87e9feb411be92afed3326735e71cfde">More...</a><br /></td></tr>
 <tr class="separator:a87e9feb411be92afed3326735e71cfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4c861cb8f3456b680a06ffc2c7345d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abd4c861cb8f3456b680a06ffc2c7345d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#abd4c861cb8f3456b680a06ffc2c7345d">print</a> (std::vector&lt; T &gt; vec, int line, const std::string name=&quot;vector&quot;)</td></tr>
-<tr class="separator:abd4c861cb8f3456b680a06ffc2c7345d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca0e0150d67fc33027b6d34843d42fa2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aca0e0150d67fc33027b6d34843d42fa2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#aca0e0150d67fc33027b6d34843d42fa2">print</a> (std::multiset&lt; T &gt; st, int line, const std::string name=&quot;set&quot;)</td></tr>
-<tr class="separator:aca0e0150d67fc33027b6d34843d42fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab72ef7935f741e737b8da7cf8b78742c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab72ef7935f741e737b8da7cf8b78742c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ab72ef7935f741e737b8da7cf8b78742c">print</a> (std::set&lt; T &gt; st, int line, const std::string name=&quot;set&quot;)</td></tr>
-<tr class="separator:ab72ef7935f741e737b8da7cf8b78742c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a047e9d81d583363186b8dcaf59d30c93"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a047e9d81d583363186b8dcaf59d30c93"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a047e9d81d583363186b8dcaf59d30c93">print</a> (T a, int line, const std::string name=&quot;value&quot;)</td></tr>
-<tr class="separator:a047e9d81d583363186b8dcaf59d30c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699208884fc5d413c06f987332c735b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a699208884fc5d413c06f987332c735b6">print</a> (int line, const std::string name=&quot;value&quot;)</td></tr>
-<tr class="separator:a699208884fc5d413c06f987332c735b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe53fd23af0e15aa7397735c9aa496cd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abe53fd23af0e15aa7397735c9aa496cd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#abe53fd23af0e15aa7397735c9aa496cd">print</a> (const std::string name, std::vector&lt; T &gt; vec, int line=-1)</td></tr>
+<tr class="separator:abe53fd23af0e15aa7397735c9aa496cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc5fd7a19b13538f1877902e3f35f8c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:affc5fd7a19b13538f1877902e3f35f8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#affc5fd7a19b13538f1877902e3f35f8c">print</a> (const std::string name, std::multiset&lt; T &gt; st, int line=-1)</td></tr>
+<tr class="separator:affc5fd7a19b13538f1877902e3f35f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621c44eac19bc501f9fd9a59f04a52db"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a621c44eac19bc501f9fd9a59f04a52db"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a621c44eac19bc501f9fd9a59f04a52db">print</a> (const std::string name, std::set&lt; T &gt; st, int line=-1)</td></tr>
+<tr class="separator:a621c44eac19bc501f9fd9a59f04a52db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0b5ee08056d27c857685cac8f13fb0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ade0b5ee08056d27c857685cac8f13fb0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ade0b5ee08056d27c857685cac8f13fb0">print</a> (const std::string name, T a, int line=-1)</td></tr>
+<tr class="separator:ade0b5ee08056d27c857685cac8f13fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2809ccab5a4911051bb55cc879de74c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a2809ccab5a4911051bb55cc879de74c1">print</a> (const std::string name, int line=-1)</td></tr>
+<tr class="separator:a2809ccab5a4911051bb55cc879de74c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35235fa5b5c99b6dcca8d7384e9cfad8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_node_type.html">NodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a35235fa5b5c99b6dcca8d7384e9cfad8">op</a> (const <a class="el" href="struct_node_type.html">NodeType</a> &amp;v1, const <a class="el" href="struct_node_type.html">NodeType</a> &amp;v2)</td></tr>
+<tr class="separator:a35235fa5b5c99b6dcca8d7384e9cfad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab552dce77f80d7ba941edf2ae3bdcfdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_node_type.html">NodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ab552dce77f80d7ba941edf2ae3bdcfdc">f</a> (const <a class="el" href="struct_func.html">Func</a> &amp;f, const <a class="el" href="struct_node_type.html">NodeType</a> &amp;x)</td></tr>
+<tr class="separator:ab552dce77f80d7ba941edf2ae3bdcfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f56b84a22ff96cd96adc9a2409b39da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_func.html">Func</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a9f56b84a22ff96cd96adc9a2409b39da">fg</a> (const <a class="el" href="struct_func.html">Func</a> &amp;<a class="el" href="test_8cpp.html#ab552dce77f80d7ba941edf2ae3bdcfdc">f</a>, const <a class="el" href="struct_func.html">Func</a> &amp;g)</td></tr>
+<tr class="separator:a9f56b84a22ff96cd96adc9a2409b39da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a5154c35140fe9b29eec7df3d3ef5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_node_type.html">NodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a91a5154c35140fe9b29eec7df3d3ef5f">MyIntSum</a> (const <a class="el" href="struct_node_type.html">NodeType</a> &amp;a, const <a class="el" href="struct_node_type.html">NodeType</a> &amp;b)</td></tr>
+<tr class="separator:a91a5154c35140fe9b29eec7df3d3ef5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -212,13 +235,32 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a0ab77f97ea0d740720b8bf8eb68084ff"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a0ab77f97ea0d740720b8bf8eb68084ff">mod</a> = 1e9 + 7</td></tr>
 <tr class="separator:a0ab77f97ea0d740720b8bf8eb68084ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfbb269728dc4185236d28be58d9eab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a9cfbb269728dc4185236d28be58d9eab">cnt</a> = 0</td></tr>
+<tr class="separator:a9cfbb269728dc4185236d28be58d9eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af07d801074531f63910bd3efb92f8ce5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#af07d801074531f63910bd3efb92f8ce5">INF</a> = 1001001001</td></tr>
 <tr class="separator:af07d801074531f63910bd3efb92f8ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d5af252d11536d8991ef65535df15e"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ad8d5af252d11536d8991ef65535df15e">INF2</a> = 1001001001001001001</td></tr>
 <tr class="separator:ad8d5af252d11536d8991ef65535df15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43139a641c6677a9f9e393efca85148c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a43139a641c6677a9f9e393efca85148c">edges</a> [100004]</td></tr>
-<tr class="separator:a43139a641c6677a9f9e393efca85148c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e6b90aa4fa5536968dd9b89c8f6931"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_func.html">Func</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a99e6b90aa4fa5536968dd9b89c8f6931">id</a> {1, 0}</td></tr>
+<tr class="separator:a99e6b90aa4fa5536968dd9b89c8f6931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0540c7e85bee14936253ac9d4aba0ca3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_node_type.html">NodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a0540c7e85bee14936253ac9d4aba0ca3">e</a> {0, 0}</td></tr>
+<tr class="separator:a0540c7e85bee14936253ac9d4aba0ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8de3ed741dadc9c979a4ff17c0a9116e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de3ed741dadc9c979a4ff17c0a9116e">&#9670;&nbsp;</a></span>NDEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NDEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a22b4927ee63317210a9969d17f3c9a49"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22b4927ee63317210a9969d17f3c9a49">&#9670;&nbsp;</a></span>TrieNode</h2>
@@ -385,6 +427,62 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab552dce77f80d7ba941edf2ae3bdcfdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab552dce77f80d7ba941edf2ae3bdcfdc">&#9670;&nbsp;</a></span>f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_node_type.html">NodeType</a> f </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_func.html">Func</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_node_type.html">NodeType</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f56b84a22ff96cd96adc9a2409b39da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f56b84a22ff96cd96adc9a2409b39da">&#9670;&nbsp;</a></span>fg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_func.html">Func</a> fg </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_func.html">Func</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_func.html">Func</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -803,6 +901,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="aa91782c4f864d5eb4d4fbe5e2f4780f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa91782c4f864d5eb4d4fbe5e2f4780f1">&#9670;&nbsp;</a></span>MintSum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mint.html">Mint</a> MintSum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mint.html">Mint</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mint.html">Mint</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mint型の足し算の結果を返す </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">入力1</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">入力2</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>足した値 </dd></dl>
+
+</div>
+</div>
 <a id="a7ccaec525cfc4a7dc7137d8cad957220"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ccaec525cfc4a7dc7137d8cad957220">&#9670;&nbsp;</a></span>multiple_overflow()</h2>
 
@@ -838,6 +974,34 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>判定結果（trueならオーバーフローする） </dd></dl>
+
+</div>
+</div>
+<a id="a91a5154c35140fe9b29eec7df3d3ef5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a5154c35140fe9b29eec7df3d3ef5f">&#9670;&nbsp;</a></span>MyIntSum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_node_type.html">NodeType</a> MyIntSum </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_node_type.html">NodeType</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_node_type.html">NodeType</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -889,23 +1053,23 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a699208884fc5d413c06f987332c735b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a699208884fc5d413c06f987332c735b6">&#9670;&nbsp;</a></span>print() <span class="overload">[1/5]</span></h2>
+<a id="a35235fa5b5c99b6dcca8d7384e9cfad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35235fa5b5c99b6dcca8d7384e9cfad8">&#9670;&nbsp;</a></span>op()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void print </td>
+          <td class="memname"><a class="el" href="struct_node_type.html">NodeType</a> op </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_node_type.html">NodeType</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>&quot;value&quot;</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_node_type.html">NodeType</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -917,8 +1081,36 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aca0e0150d67fc33027b6d34843d42fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca0e0150d67fc33027b6d34843d42fa2">&#9670;&nbsp;</a></span>print() <span class="overload">[2/5]</span></h2>
+<a id="a2809ccab5a4911051bb55cc879de74c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2809ccab5a4911051bb55cc879de74c1">&#9670;&nbsp;</a></span>print() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affc5fd7a19b13538f1877902e3f35f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc5fd7a19b13538f1877902e3f35f8c">&#9670;&nbsp;</a></span>print() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -928,6 +1120,12 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void print </td>
           <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::multiset&lt; T &gt;&#160;</td>
           <td class="paramname"><em>st</em>, </td>
         </tr>
@@ -935,13 +1133,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>&quot;set&quot;</code>&#160;</td>
+          <td class="paramname"><em>line</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -953,8 +1145,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab72ef7935f741e737b8da7cf8b78742c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab72ef7935f741e737b8da7cf8b78742c">&#9670;&nbsp;</a></span>print() <span class="overload">[3/5]</span></h2>
+<a id="a621c44eac19bc501f9fd9a59f04a52db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a621c44eac19bc501f9fd9a59f04a52db">&#9670;&nbsp;</a></span>print() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -964,6 +1156,12 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void print </td>
           <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::set&lt; T &gt;&#160;</td>
           <td class="paramname"><em>st</em>, </td>
         </tr>
@@ -971,13 +1169,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>&quot;set&quot;</code>&#160;</td>
+          <td class="paramname"><em>line</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -989,8 +1181,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="abd4c861cb8f3456b680a06ffc2c7345d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd4c861cb8f3456b680a06ffc2c7345d">&#9670;&nbsp;</a></span>print() <span class="overload">[4/5]</span></h2>
+<a id="abe53fd23af0e15aa7397735c9aa496cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe53fd23af0e15aa7397735c9aa496cd">&#9670;&nbsp;</a></span>print() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1000,6 +1192,12 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void print </td>
           <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::vector&lt; T &gt;&#160;</td>
           <td class="paramname"><em>vec</em>, </td>
         </tr>
@@ -1007,13 +1205,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>&quot;vector&quot;</code>&#160;</td>
+          <td class="paramname"><em>line</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1025,8 +1217,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a047e9d81d583363186b8dcaf59d30c93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a047e9d81d583363186b8dcaf59d30c93">&#9670;&nbsp;</a></span>print() <span class="overload">[5/5]</span></h2>
+<a id="ade0b5ee08056d27c857685cac8f13fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0b5ee08056d27c857685cac8f13fb0">&#9670;&nbsp;</a></span>print() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1036,6 +1228,12 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void print </td>
           <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
@@ -1043,13 +1241,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>&quot;value&quot;</code>&#160;</td>
+          <td class="paramname"><em>line</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1100,14 +1292,42 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a43139a641c6677a9f9e393efca85148c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43139a641c6677a9f9e393efca85148c">&#9670;&nbsp;</a></span>edges</h2>
+<a id="a9cfbb269728dc4185236d28be58d9eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cfbb269728dc4185236d28be58d9eab">&#9670;&nbsp;</a></span>cnt</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::pair&lt;int, int&gt; &gt; edges[100004]</td>
+          <td class="memname">int cnt = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0540c7e85bee14936253ac9d4aba0ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0540c7e85bee14936253ac9d4aba0ca3">&#9670;&nbsp;</a></span>e</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_node_type.html">NodeType</a> e {0, 0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99e6b90aa4fa5536968dd9b89c8f6931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e6b90aa4fa5536968dd9b89c8f6931">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_func.html">Func</a> id {1, 0}</td>
         </tr>
       </table>
 </div><div class="memdoc">

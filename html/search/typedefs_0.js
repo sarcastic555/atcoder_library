@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['difference_5ftype_598',['difference_type',['../struct_b_pvector_1_1iterator.html#a7357b7544315a2b7efb2eddecb5f6ae2',1,'BPvector::iterator']]]
+  ['trienode_223',['TrieNode',['../test_8cpp.html#a22b4927ee63317210a9969d17f3c9a49',1,'test.cpp']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bignum_292',['BigNum',['../struct_big_num.html',1,'']]],
-  ['bpvector_293',['BPvector',['../struct_b_pvector.html',1,'']]]
+  ['calcchoosepermulation1_104',['CalcChoosePermulation1',['../class_calc_choose_permulation1.html',1,'']]],
+  ['calcchoosepermulation2_105',['CalcChoosePermulation2',['../class_calc_choose_permulation2.html',1,'']]]
 ];

@@ -1,26 +1,6 @@
 var searchData=
 [
-  ['id_108',['id',['../struct_trie_node.html#a92dbc0c0c7ec0b99946ea69460b63265',1,'TrieNode']]],
-  ['identity_109',['identity',['../class_matrix.html#a90b7cc8722c4d445ae5ec50abd32fdc9',1,'Matrix']]],
-  ['idx_110',['idx',['../struct_b_pvector_1_1_node.html#aaf057e33297c2de8aaebd92ba54a2854',1,'BPvector::Node::idx()'],['../struct_b_pvector_1_1iterator.html#af6b9d9c3c3fe0a727b236dda7c02502a',1,'BPvector::iterator::idx()']]],
-  ['immer_5fproduct_111',['iMMer_product',['../class_point2_d.html#a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c',1,'Point2D']]],
-  ['inf_112',['INF',['../test_8cpp.html#af07d801074531f63910bd3efb92f8ce5',1,'test.cpp']]],
-  ['inf2_113',['INF2',['../test_8cpp.html#ad8d5af252d11536d8991ef65535df15e',1,'test.cpp']]],
-  ['insert_114',['insert',['../struct_b_pvector.html#a94a52c88542d6c781020f421da66d859',1,'BPvector::insert(int id, T v)'],['../struct_b_pvector.html#a418a2563f8d691319892d87d6b0f8039',1,'BPvector::insert(Itr itr, T v)'],['../struct_b_pvector.html#a71a999213bf18d412fc6b407b2825ee8',1,'BPvector::insert(int id, std::vector&lt; T &gt; vec)'],['../struct_b_pvector.html#ac96a10bb52f1e2a39de32f74465ab3ec',1,'BPvector::insert(int id, BPvector bp)'],['../struct_b_pvector.html#a288f5a9ce061bd1b034f695a4f3b8dac',1,'BPvector::insert(int id, Itr first, Itr last)']]],
-  ['intersection_115',['intersection',['../struct_line.html#a1da4d52a466f411d4629cc1d82f4c053',1,'Line::intersection()'],['../struct_circle.html#ab84cebfbd79e5aa62aea6ecf8eaa2721',1,'Circle::intersection()']]],
-  ['intmax_116',['IntMax',['../test_8cpp.html#a60bacfec96b4b84fe4854220c2af6706',1,'test.cpp']]],
-  ['intmin_117',['IntMin',['../test_8cpp.html#a233934e7165e06f2917ccaa562fd8472',1,'test.cpp']]],
-  ['intsum_118',['IntSum',['../test_8cpp.html#afcd1d24bff970aa9340bf5803c5f4981',1,'test.cpp']]],
-  ['is_5fcrossed_119',['is_Crossed',['../struct_line.html#a07fa7a4e5f94093d6969926787325ad3',1,'Line']]],
-  ['is_5fintersected_120',['is_Intersected',['../struct_circle.html#a65df7fc8ea1f10ec624c0579e2d67e74',1,'Circle']]],
-  ['is_5fleaf_121',['is_leaf',['../struct_b_pvector_1_1_node.html#a2f8c77e0e37b622d07e7f3fc573aa613',1,'BPvector::Node']]],
-  ['is_5fon_122',['is_On',['../struct_line.html#aaef266e236ef47a55859cad21ee9fc74',1,'Line']]],
-  ['is_5fparallel_123',['is_Parallel',['../struct_point.html#a76d8ca38a18855268e146ba3b6724925',1,'Point']]],
-  ['is_5ftable_124',['is_table',['../struct_combination___table.html#af5c92e13a93535927d1b849aea4f170e',1,'Combination_Table']]],
-  ['issame_125',['isSame',['../struct_unionfind.html#a8e7f895b35c83cb6e945bdebbe75e4f2',1,'Unionfind::isSame()'],['../struct_potential___unionfind.html#a2c8a779cc01d46055e5f4ac00bb1899f',1,'Potential_Unionfind::isSame()']]],
-  ['issamegroup_126',['isSameGroup',['../class_union_find.html#ae95adf7d1b20a2b4427d4452cb8ecc5e',1,'UnionFind']]],
-  ['issingular_127',['isSingular',['../namespacetest.html#a468b9ad51a6359110e4fd8736a306821',1,'test']]],
-  ['iter_128',['iter',['../struct_dinic.html#a14cd0e43ddd8d1062e346d833a16218f',1,'Dinic']]],
-  ['iterator_129',['iterator',['../struct_b_pvector_1_1iterator.html',1,'BPvector&lt; T, Max &gt;::iterator'],['../struct_b_pvector_1_1iterator.html#aa8f0c65d1048949a2f80f5325419080c',1,'BPvector::iterator::iterator(Node *leaf_, int idx_, int num_)'],['../struct_b_pvector_1_1iterator.html#a684e85809162eead0a70621ace8e0493',1,'BPvector::iterator::iterator()']]],
-  ['iterator_5fcategory_130',['iterator_category',['../struct_b_pvector_1_1iterator.html#aaa2617712c683eae6cc14b545b61e80f',1,'BPvector::iterator']]]
+  ['lazysegmenttree_44',['LazySegmentTree',['../class_lazy_segment_tree.html',1,'LazySegmentTree&lt; T, F &gt;'],['../class_lazy_segment_tree.html#a86e547e2371547e74fb46f08ded33cb1',1,'LazySegmentTree::LazySegmentTree(const std::vector&lt; T &gt; &amp;vec, T(*op)(const T &amp;, const T &amp;), T e, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)'],['../class_lazy_segment_tree.html#acab1c8cab4f3be09a0015a2fc2266366',1,'LazySegmentTree::LazySegmentTree(int n, T(*op)(T, T), T e, T(*f)(F &amp;, T &amp;), F(*fg)(F, F), const F &amp;id)']]],
+  ['leaf_45',['leaf',['../class_segment_tree.html#a83b62b90b5eda57748f00f007f2f10e1',1,'SegmentTree']]],
+  ['longmax_46',['LongMax',['../test_8cpp.html#a4beefbc385b290319ad13a0ee19ec7c9',1,'test.cpp']]]
 ];

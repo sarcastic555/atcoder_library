@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['det_369',['det',['../struct_point.html#af9750c31dd9f310cd52b3ffc58265fac',1,'Point']]],
-  ['dfs_370',['dfs',['../struct_dinic.html#ae15ac103aa98428f498f341dab9545ec',1,'Dinic']]],
-  ['diff_371',['diff',['../struct_potential___unionfind.html#a50c88a550bc7433fb43c5a7ba964df2a',1,'Potential_Unionfind']]],
-  ['diff_5fangle_372',['diff_angle',['../test2_8cpp.html#af43eb39d81c7b96109d99870e28cf6e3',1,'test2.cpp']]],
-  ['dinic_373',['Dinic',['../struct_dinic.html#a7dcbb6d6abfd58fce030b938504a67ab',1,'Dinic']]],
-  ['distance_374',['distance',['../struct_point.html#aa7f48b695082f5e7f15007f1ffc175c9',1,'Point::distance()'],['../struct_line.html#affb85225b7d785f469738836b0f2ce56',1,'Line::distance()']]],
-  ['divisors_375',['Divisors',['../test2_8cpp.html#a1949ef022bf698b6e3607d5a36c13543',1,'test2.cpp']]],
-  ['dot_376',['dot',['../struct_point.html#a34f7ee01b738a489aa00b1d53a3e7003',1,'Point']]],
-  ['doubling_377',['Doubling',['../struct_doubling.html#a5201f27aa26ced287c83c8630a8b2c18',1,'Doubling']]]
+  ['f_137',['f',['../test_8cpp.html#ab552dce77f80d7ba941edf2ae3bdcfdc',1,'test.cpp']]],
+  ['fg_138',['fg',['../test_8cpp.html#a9f56b84a22ff96cd96adc9a2409b39da',1,'test.cpp']]],
+  ['fixrowone_139',['fixRowOne',['../namespacetest.html#ae082d828df7609023306f40813b70fc9',1,'test']]],
+  ['fixrowthree_140',['fixRowThree',['../namespacetest.html#a8b80d406ba5bf72e41f46f922f8dca40',1,'test']]],
+  ['fixrowtwo_141',['fixRowTwo',['../namespacetest.html#a9ec75fa432ff44a4a00e98df68ec8c4f',1,'test']]],
+  ['fixrowzero_142',['fixRowZero',['../namespacetest.html#a3bd3b9d7f81200485a4161b8996c1096',1,'test']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['query_234',['query',['../struct_seg_tree___lazy.html#a0445857615bba0a000c27f9220e8d392',1,'SegTree_Lazy::query()'],['../struct_seg_tree.html#add459029f55e6f564c4075a178417a06',1,'SegTree::query()'],['../struct_doubling.html#acc83d89dcb3cba321ed96bc3b88ceed6',1,'Doubling::query()']]],
-  ['quickpow_235',['quickpow',['../struct_mint0.html#a97dd162789e55b1ce7637de161471177',1,'Mint0::quickpow()'],['../class_mint.html#a308e929925563674e87ccec6d392dfa4',1,'Mint::quickpow()']]],
-  ['quickpow_236',['Quickpow',['../test2_8cpp.html#aaeecf98320143fc8c816917add9d22d9',1,'test2.cpp']]]
+  ['unionfind_96',['UnionFind',['../class_union_find.html',1,'UnionFind'],['../class_union_find.html#a5a6a3f5f61e15b418c3b4021521a1cb8',1,'UnionFind::UnionFind(int num)']]],
+  ['unite_97',['Unite',['../class_union_find.html#ae7b5c3da0ef64f643c311b1f257cbc9d',1,'UnionFind']]],
+  ['update_98',['Update',['../class_segment_tree.html#a6d8b9a5d168f8b37f6096414220cbacc',1,'SegmentTree::Update()'],['../class_lazy_segment_tree.html#a91196ea6d2c5acdd486ec714bb0c5203',1,'LazySegmentTree::Update()']]]
 ];
