@@ -1,37 +1,39 @@
 #!/bin/bash
+#set -eu
 
 INPUTFILE="${PWD}/input.txt"
-TARGET1="test.cpp"
-TARGET2="test2.cpp"
-RESULTDIR="result"
-OUT1="${RESULTDIR}/test.out"
-OUT2="${RESULTDIR}/test2.out"
-RESULT1="${RESULTDIR}/out.txt"
-RESULT2="${RESULTDIR}/out2.txt"
 
-mkdir -p ${RESULTDIR}
-g++ -std=c++17 ${TARGET1} -o ${OUT1}
-g++ -std=c++17 ${TARGET2} -o ${OUT2}
+cp work/test.cpp .
+cp work/test2.cpp .
 
-count=1
+g++ -std=c++11 test.cpp -o test.out
+g++ -std=c++11 test2.cpp -o test2.out
+
+## Compile random generator
+cd random_generator
+g++ generate.cpp
+if [ $? -gt 0 ]; then
+    # エラー処理
+    echo "Compile error"
+fi
+cd -
+
 while true; do
-    # Generate random input
-    ./random_generator/generate_random_tree.sh ${INPUTFILE}
-    echo "====== Trial ${count} ====="
-    echo "Input===:"
+    ./random_generator/a.out > ${INPUTFILE}
+
+    echo "====== show input start ===="
     cat ${INPUTFILE}
-
-    # Execution
-    ./${OUT1} < ${INPUTFILE} > ${RESULT1}
-    ./${OUT2} < ${INPUTFILE} > ${RESULT2}
-
-    # Check diff
-    diffcount=`diff -u ${RESULT1} ${RESULT2} | wc -l`
+    echo "====== show input end ===="
+    ./test.out < ${INPUTFILE} > out.txt
+    ./test2.out < ${INPUTFILE} > out2.txt
+    echo "=== diff output start ==="
+    diff -u out.txt out2.txt
+    echo "=== diff output end ==="
+    diffcount=`diff -u out.txt out2.txt | wc -l`
+    echo "diff1="$diffcount
     if [ $diffcount -ne 0 ]; then
-	echo "Diff found===:"
-	diff -u ${RESULT1} ${RESULT2}
-	return
+    echo "diff2="$diffcount
+	break
     fi
-    sleep 0.1
-    count=`expr $count + 1`
+    #sleep 0.1
 done
