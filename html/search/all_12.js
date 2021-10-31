@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_103',['y',['../class_point2_d.html#ac9477b55718b628606930d8d4971e835',1,'Point2D']]]
+  ['val_123',['val',['../struct_trie_node.html#ac31d45d2f8f65f93bcb112815c19c57f',1,'TrieNode']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eratosthenes_106',['Eratosthenes',['../class_eratosthenes.html',1,'']]]
+  ['eratosthenes_132',['Eratosthenes',['../class_eratosthenes.html',1,'']]]
 ];

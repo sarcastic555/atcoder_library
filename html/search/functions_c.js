@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['trienode_193',['TrieNode',['../struct_trie_node.html#ab8e57740a8347d31bb97eac5fa617f17',1,'TrieNode']]],
-  ['trietree_194',['TrieTree',['../class_trie_tree.html#a54ab282bb9ed9abcd02da5189b64a6f8',1,'TrieTree']]]
+  ['segmenttree_240',['SegmentTree',['../class_segment_tree.html#a51a4687c0dd8bb514ca5386c808f00cf',1,'SegmentTree::SegmentTree(int n, T(*_op)(const T &amp;, const T &amp;), T _e)'],['../class_segment_tree.html#ad03026811e1bfe39bc1a8947e20dd41e',1,'SegmentTree::SegmentTree(int n, T(*_op)(const T &amp;, const T &amp;), T _e, T init_value)'],['../class_segment_tree.html#a51a4687c0dd8bb514ca5386c808f00cf',1,'SegmentTree::SegmentTree(int n, T(*_op)(const T &amp;, const T &amp;), T _e)'],['../class_segment_tree.html#ad03026811e1bfe39bc1a8947e20dd41e',1,'SegmentTree::SegmentTree(int n, T(*_op)(const T &amp;, const T &amp;), T _e, T init_value)'],['../class_segment_tree.html#a51a4687c0dd8bb514ca5386c808f00cf',1,'SegmentTree::SegmentTree(int n, T(*_op)(const T &amp;, const T &amp;), T _e)'],['../class_segment_tree.html#ad03026811e1bfe39bc1a8947e20dd41e',1,'SegmentTree::SegmentTree(int n, T(*_op)(const T &amp;, const T &amp;), T _e, T init_value)']]]
 ];
