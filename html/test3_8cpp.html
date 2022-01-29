@@ -90,6 +90,7 @@ $(function() {
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;typeinfo&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;boost/optional.hpp&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -139,7 +140,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_number.html">ComplexNumber&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">複素数の計算  <a href="class_complex_number.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fraction.html">Fraction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">有理数を扱うクラス  <a href="class_fraction.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_cost_flow.html">MinCostFlow&lt; CostType, FlowLimitType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compare_first.html">CompareFirst</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -155,6 +161,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aedba368a1b4959341817a77b7f9fe7bf"><td class="memTemplParams" colspan="2">template&lt;typename... Targs&gt; </td></tr>
+<tr class="memitem:aedba368a1b4959341817a77b7f9fe7bf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#aedba368a1b4959341817a77b7f9fe7bf">print</a> (Targs... args)</td></tr>
+<tr class="memdesc:aedba368a1b4959341817a77b7f9fe7bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグモードの時のみ値をprintする関数  <a href="test3_8cpp.html#aedba368a1b4959341817a77b7f9fe7bf">More...</a><br /></td></tr>
+<tr class="separator:aedba368a1b4959341817a77b7f9fe7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ccaec525cfc4a7dc7137d8cad957220"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a7ccaec525cfc4a7dc7137d8cad957220">multiple_overflow</a> (long long a, long long b)</td></tr>
 <tr class="memdesc:a7ccaec525cfc4a7dc7137d8cad957220"><td class="mdescLeft">&#160;</td><td class="mdescRight">2つの数の積がlong longをオーバーフローする（10^18を超える）か判定  <a href="test3_8cpp.html#a7ccaec525cfc4a7dc7137d8cad957220">More...</a><br /></td></tr>
 <tr class="separator:a7ccaec525cfc4a7dc7137d8cad957220"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,7 +195,7 @@ Functions</h2></td></tr>
 <tr class="memitem:afa9d461d307cfcf285cf2fac0c362132"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#afa9d461d307cfcf285cf2fac0c362132">ext_gcd</a> (long long a, long long b, long long &amp;x, long long &amp;y)</td></tr>
 <tr class="memdesc:afa9d461d307cfcf285cf2fac0c362132"><td class="mdescLeft">&#160;</td><td class="mdescRight">拡張ユークリッド互除法により a*x+b*y=gcd(a, b)の解を求める  <a href="test3_8cpp.html#afa9d461d307cfcf285cf2fac0c362132">More...</a><br /></td></tr>
 <tr class="separator:afa9d461d307cfcf285cf2fac0c362132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77db8498eb34f9ed94fd3d0a6fcd6fef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a77db8498eb34f9ed94fd3d0a6fcd6fef">can_ext_gcd</a> (long long a, long long b, long long c, long long &amp;x, long long &amp;y)</td></tr>
+<tr class="memitem:a77db8498eb34f9ed94fd3d0a6fcd6fef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a77db8498eb34f9ed94fd3d0a6fcd6fef">can_ext_gcd</a> (long long a, long long b, long long <a class="el" href="test2_8cpp.html#ae7f5bbd142a520796ad5a3d8c5cacb67">c</a>, long long &amp;x, long long &amp;y)</td></tr>
 <tr class="memdesc:a77db8498eb34f9ed94fd3d0a6fcd6fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">拡張ユークリッド互除法の解が存在するか判定し存在すれば求める  <a href="test3_8cpp.html#a77db8498eb34f9ed94fd3d0a6fcd6fef">More...</a><br /></td></tr>
 <tr class="separator:a77db8498eb34f9ed94fd3d0a6fcd6fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63bad6950d8f73693a3c9b2cf57c834f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a63bad6950d8f73693a3c9b2cf57c834f">chinese_remainder_theorem</a> (std::vector&lt; std::pair&lt; long long, long long &gt; &gt; pairs, long long &amp;ans)</td></tr>
@@ -205,26 +215,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a87e9feb411be92afed3326735e71cfde"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a87e9feb411be92afed3326735e71cfde">has_intersection_for_line_segments</a> (const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;p1, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;p2, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;q1, const <a class="el" href="class_point2_d.html">Point2D</a>&lt; T &gt; &amp;q2)</td></tr>
 <tr class="memdesc:a87e9feb411be92afed3326735e71cfde"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分p1p2と線分q1q2に交点が存在するかの判定する  <a href="test3_8cpp.html#a87e9feb411be92afed3326735e71cfde">More...</a><br /></td></tr>
 <tr class="separator:a87e9feb411be92afed3326735e71cfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe53fd23af0e15aa7397735c9aa496cd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abe53fd23af0e15aa7397735c9aa496cd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#abe53fd23af0e15aa7397735c9aa496cd">print</a> (const std::string name, std::vector&lt; T &gt; vec, int line=-1)</td></tr>
-<tr class="separator:abe53fd23af0e15aa7397735c9aa496cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc5fd7a19b13538f1877902e3f35f8c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:affc5fd7a19b13538f1877902e3f35f8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#affc5fd7a19b13538f1877902e3f35f8c">print</a> (const std::string name, std::multiset&lt; T &gt; st, int line=-1)</td></tr>
-<tr class="separator:affc5fd7a19b13538f1877902e3f35f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a621c44eac19bc501f9fd9a59f04a52db"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a621c44eac19bc501f9fd9a59f04a52db"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a621c44eac19bc501f9fd9a59f04a52db">print</a> (const std::string name, std::set&lt; T &gt; st, int line=-1)</td></tr>
-<tr class="separator:a621c44eac19bc501f9fd9a59f04a52db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade0b5ee08056d27c857685cac8f13fb0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ade0b5ee08056d27c857685cac8f13fb0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#ade0b5ee08056d27c857685cac8f13fb0">print</a> (const std::string name, T a, int line=-1)</td></tr>
-<tr class="separator:ade0b5ee08056d27c857685cac8f13fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981c4750847c3063cf0e8ca9fab4485a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a981c4750847c3063cf0e8ca9fab4485a">print</a> (const std::string name)</td></tr>
-<tr class="separator:a981c4750847c3063cf0e8ca9fab4485a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0ab77f97ea0d740720b8bf8eb68084ff"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a0ab77f97ea0d740720b8bf8eb68084ff">mod</a> = 1e9 + 7</td></tr>
+<tr class="memitem:a0ab77f97ea0d740720b8bf8eb68084ff"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a0ab77f97ea0d740720b8bf8eb68084ff">mod</a> = 998244353</td></tr>
 <tr class="separator:a0ab77f97ea0d740720b8bf8eb68084ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cfbb269728dc4185236d28be58d9eab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#a9cfbb269728dc4185236d28be58d9eab">cnt</a> = 0</td></tr>
 <tr class="separator:a9cfbb269728dc4185236d28be58d9eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,8 +228,6 @@ Variables</h2></td></tr>
 <tr class="separator:af07d801074531f63910bd3efb92f8ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d5af252d11536d8991ef65535df15e"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#ad8d5af252d11536d8991ef65535df15e">INF2</a> = 1001001001001001001</td></tr>
 <tr class="separator:ad8d5af252d11536d8991ef65535df15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea4ce8b2ee1fb8a09ca407e5d0e334b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test3_8cpp.html#aea4ce8b2ee1fb8a09ca407e5d0e334b0">result</a> [2504][2504]</td></tr>
-<tr class="separator:aea4ce8b2ee1fb8a09ca407e5d0e334b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a8de3ed741dadc9c979a4ff17c0a9116e"></a>
@@ -958,165 +952,25 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a981c4750847c3063cf0e8ca9fab4485a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a981c4750847c3063cf0e8ca9fab4485a">&#9670;&nbsp;</a></span>print() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print </td>
-          <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="affc5fd7a19b13538f1877902e3f35f8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affc5fd7a19b13538f1877902e3f35f8c">&#9670;&nbsp;</a></span>print() <span class="overload">[2/5]</span></h2>
+<a id="aedba368a1b4959341817a77b7f9fe7bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedba368a1b4959341817a77b7f9fe7bf">&#9670;&nbsp;</a></span>print()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename... Targs&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void print </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">Targs...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::multiset&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>st</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a621c44eac19bc501f9fd9a59f04a52db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a621c44eac19bc501f9fd9a59f04a52db">&#9670;&nbsp;</a></span>print() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void print </td>
-          <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::set&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>st</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe53fd23af0e15aa7397735c9aa496cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe53fd23af0e15aa7397735c9aa496cd">&#9670;&nbsp;</a></span>print() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void print </td>
-          <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>vec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade0b5ee08056d27c857685cac8f13fb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade0b5ee08056d27c857685cac8f13fb0">&#9670;&nbsp;</a></span>print() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void print </td>
-          <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>デバッグモードの時のみ値をprintする関数 </p>
 
 </div>
 </div>
@@ -1208,21 +1062,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">long long mod = 1e9 + 7</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aea4ce8b2ee1fb8a09ca407e5d0e334b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea4ce8b2ee1fb8a09ca407e5d0e334b0">&#9670;&nbsp;</a></span>result</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int result[2504][2504]</td>
+          <td class="memname">long long mod = 998244353</td>
         </tr>
       </table>
 </div><div class="memdoc">

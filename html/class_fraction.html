@@ -84,6 +84,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a22a722a438c2bdba192135472c24c9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da0d5737ed2b06bb2304fe6ec2a6266"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fraction.html#a7da0d5737ed2b06bb2304fe6ec2a6266">operator&lt;=</a> (const <a class="el" href="class_fraction.html">Fraction</a> &amp;x) const</td></tr>
 <tr class="separator:a7da0d5737ed2b06bb2304fe6ec2a6266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b2716ba6a920f98d7dc2ce0ce4ec07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fraction.html#a43b2716ba6a920f98d7dc2ce0ce4ec07">Fraction</a> (long long denominator, long long numerator)</td></tr>
+<tr class="memdesc:a43b2716ba6a920f98d7dc2ce0ce4ec07"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="class_fraction.html#a43b2716ba6a920f98d7dc2ce0ce4ec07">More...</a><br /></td></tr>
+<tr class="separator:a43b2716ba6a920f98d7dc2ce0ce4ec07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bde2a79f1cc75763838993e9d4eeaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fraction.html#a91bde2a79f1cc75763838993e9d4eeaa">operator&lt;</a> (const <a class="el" href="class_fraction.html">Fraction</a> &amp;x) const</td></tr>
+<tr class="separator:a91bde2a79f1cc75763838993e9d4eeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a722a438c2bdba192135472c24c9fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fraction.html#a22a722a438c2bdba192135472c24c9fd">operator==</a> (const <a class="el" href="class_fraction.html">Fraction</a> &amp;x) const</td></tr>
+<tr class="separator:a22a722a438c2bdba192135472c24c9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da0d5737ed2b06bb2304fe6ec2a6266"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fraction.html#a7da0d5737ed2b06bb2304fe6ec2a6266">operator&lt;=</a> (const <a class="el" href="class_fraction.html">Fraction</a> &amp;x) const</td></tr>
+<tr class="separator:a7da0d5737ed2b06bb2304fe6ec2a6266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -96,7 +105,52 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>有理数を扱うクラス </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a43b2716ba6a920f98d7dc2ce0ce4ec07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43b2716ba6a920f98d7dc2ce0ce4ec07">&#9670;&nbsp;</a></span>Fraction()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b2716ba6a920f98d7dc2ce0ce4ec07">&#9670;&nbsp;</a></span>Fraction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Fraction::Fraction </td>
+          <td>(</td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>denominator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>numerator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">denominator</td><td>分子 </td></tr>
+    <tr><td class="paramname">numerator</td><td>分母 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a43b2716ba6a920f98d7dc2ce0ce4ec07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b2716ba6a920f98d7dc2ce0ce4ec07">&#9670;&nbsp;</a></span>Fraction() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +196,33 @@ Public Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a91bde2a79f1cc75763838993e9d4eeaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91bde2a79f1cc75763838993e9d4eeaa">&#9670;&nbsp;</a></span>operator&lt;()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91bde2a79f1cc75763838993e9d4eeaa">&#9670;&nbsp;</a></span>operator&lt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraction::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraction.html">Fraction</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91bde2a79f1cc75763838993e9d4eeaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91bde2a79f1cc75763838993e9d4eeaa">&#9670;&nbsp;</a></span>operator&lt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +248,33 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a7da0d5737ed2b06bb2304fe6ec2a6266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7da0d5737ed2b06bb2304fe6ec2a6266">&#9670;&nbsp;</a></span>operator&lt;=()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da0d5737ed2b06bb2304fe6ec2a6266">&#9670;&nbsp;</a></span>operator&lt;=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraction::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraction.html">Fraction</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7da0d5737ed2b06bb2304fe6ec2a6266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da0d5737ed2b06bb2304fe6ec2a6266">&#9670;&nbsp;</a></span>operator&lt;=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +300,33 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a22a722a438c2bdba192135472c24c9fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22a722a438c2bdba192135472c24c9fd">&#9670;&nbsp;</a></span>operator==()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a722a438c2bdba192135472c24c9fd">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraction::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraction.html">Fraction</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22a722a438c2bdba192135472c24c9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a722a438c2bdba192135472c24c9fd">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,8 +380,9 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="test_8cpp.html">test.cpp</a></li>
+<li><a class="el" href="test3_8cpp.html">test3.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

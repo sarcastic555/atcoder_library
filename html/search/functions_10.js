@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7emyclass_247',['~MyClass',['../class_my_class.html#a6606fb204da4913509cf234eea015604',1,'MyClass']]]
+  ['xor_248',['XOR',['../test_8cpp.html#a4494865a4598ee0bdb9265b13fa28a07',1,'XOR(const long long &amp;a, const long long &amp;b):&#160;test.cpp'],['../test3_8cpp.html#a4494865a4598ee0bdb9265b13fa28a07',1,'XOR(const long long &amp;a, const long long &amp;b):&#160;test3.cpp'],['../test4_8cpp.html#a4494865a4598ee0bdb9265b13fa28a07',1,'XOR(const long long &amp;a, const long long &amp;b):&#160;test4.cpp']]]
 ];
