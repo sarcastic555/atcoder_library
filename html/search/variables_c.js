@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['parent_279',['parent',['../class_graph.html#aa11b78b4de873c46120652560a2c0c44',1,'Graph']]],
-  ['preorder_280',['preorder',['../class_graph.html#a234ea869086ac073f9ef65556f7fdae4',1,'Graph']]]
+  ['parent_310',['parent',['../class_graph.html#a710ed109855d97ac8480ca5dbae16231',1,'Graph']]],
+  ['preorder_311',['preorder',['../class_graph.html#aa1c6e5cf8ca8125d650ccc03f41059ac',1,'Graph']]]
 ];
