@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trienode_184',['TrieNode',['../test_8cpp.html#a22b4927ee63317210a9969d17f3c9a49',1,'test.cpp']]]
+  ['complex_434',['complex',['../class_fourier_trasnform.html#a9ec363f772c6f2ac7c0ff74a8f488795',1,'FourierTrasnform::complex()'],['../class_fourier_trasnform.html#a9ec363f772c6f2ac7c0ff74a8f488795',1,'FourierTrasnform::complex()']]]
 ];

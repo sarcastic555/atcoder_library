@@ -74,8 +74,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e6413a4c4234eec1c0f79b7167d36c8"><td class="memItemLeft" align="right" valign="top"><a id="a5e6413a4c4234eec1c0f79b7167d36c8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CalcChoosePermutation2</b> (int n_)</td></tr>
+<tr class="memitem:a5e6413a4c4234eec1c0f79b7167d36c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calc_choose_permutation2.html#a5e6413a4c4234eec1c0f79b7167d36c8">CalcChoosePermutation2</a> (int n_)</td></tr>
 <tr class="separator:a5e6413a4c4234eec1c0f79b7167d36c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54f271cfdc32869ccd63c02331af24c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mint.html">Mint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calc_choose_permutation2.html#a54f271cfdc32869ccd63c02331af24c1">GetChoose</a> (int n_, int k_)</td></tr>
 <tr class="memdesc:a54f271cfdc32869ccd63c02331af24c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">二項係数の取得  <a href="class_calc_choose_permutation2.html#a54f271cfdc32869ccd63c02331af24c1">More...</a><br /></td></tr>
@@ -83,8 +82,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a423748a8c48ed70b8bf91123a9fd463c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mint.html">Mint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calc_choose_permutation2.html#a423748a8c48ed70b8bf91123a9fd463c">GetPermutation</a> (int n_, int k_)</td></tr>
 <tr class="memdesc:a423748a8c48ed70b8bf91123a9fd463c"><td class="mdescLeft">&#160;</td><td class="mdescRight">順列の取得  <a href="class_calc_choose_permutation2.html#a423748a8c48ed70b8bf91123a9fd463c">More...</a><br /></td></tr>
 <tr class="separator:a423748a8c48ed70b8bf91123a9fd463c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e6413a4c4234eec1c0f79b7167d36c8"><td class="memItemLeft" align="right" valign="top"><a id="a5e6413a4c4234eec1c0f79b7167d36c8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CalcChoosePermutation2</b> (int n_)</td></tr>
+<tr class="memitem:a5e6413a4c4234eec1c0f79b7167d36c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calc_choose_permutation2.html#a5e6413a4c4234eec1c0f79b7167d36c8">CalcChoosePermutation2</a> (int n_)</td></tr>
 <tr class="separator:a5e6413a4c4234eec1c0f79b7167d36c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54f271cfdc32869ccd63c02331af24c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mint.html">Mint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calc_choose_permutation2.html#a54f271cfdc32869ccd63c02331af24c1">GetChoose</a> (int n_, int k_)</td></tr>
 <tr class="memdesc:a54f271cfdc32869ccd63c02331af24c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">二項係数の取得  <a href="class_calc_choose_permutation2.html#a54f271cfdc32869ccd63c02331af24c1">More...</a><br /></td></tr>
@@ -98,9 +96,66 @@ Public Member Functions</h2></td></tr>
 <p>コンストラクタ計算量O(N)、取得クエリ計算量O(1) <br  />
  <a class="el" href="class_calc_choose_permutation2.html" title="n、k &lt;= Nを満たす任意のkに対して二項係数(nCk)、順列(nPk)の計算">CalcChoosePermutation2</a> ccp(10000); <br  />
  ccp.GetChoose(100, 2); // 1000_C_2を返す <br  />
+ ccp.GetPermutation(100, 2); // 1000_P_2を返す</p>
+<p>コンストラクタ計算量O(N)、取得クエリ計算量O(1) <br  />
+ <a class="el" href="class_calc_choose_permutation2.html" title="n、k &lt;= Nを満たす任意のkに対して二項係数(nCk)、順列(nPk)の計算">CalcChoosePermutation2</a> ccp(10000); <br  />
+ ccp.GetChoose(100, 2); // 1000_C_2を返す <br  />
  ccp.GetPermutation(100, 2); // 1000_P_2を返す <br  />
  </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5e6413a4c4234eec1c0f79b7167d36c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6413a4c4234eec1c0f79b7167d36c8">&#9670;&nbsp;</a></span>CalcChoosePermutation2() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CalcChoosePermutation2::CalcChoosePermutation2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e6413a4c4234eec1c0f79b7167d36c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6413a4c4234eec1c0f79b7167d36c8">&#9670;&nbsp;</a></span>CalcChoosePermutation2() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CalcChoosePermutation2::CalcChoosePermutation2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a54f271cfdc32869ccd63c02331af24c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54f271cfdc32869ccd63c02331af24c1">&#9670;&nbsp;</a></span>GetChoose() <span class="overload">[1/2]</span></h2>
 
@@ -291,7 +346,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="test_8cpp.html">test.cpp</a></li>
-<li>test2.cpp</li>
+<li><a class="el" href="test4_8cpp.html">test4.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

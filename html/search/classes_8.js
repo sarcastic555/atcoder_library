@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['que_104',['que',['../structque.html',1,'']]]
+  ['rollinghash_228',['RollingHash',['../class_rolling_hash.html',1,'']]]
 ];

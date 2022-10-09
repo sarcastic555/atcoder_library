@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['x_153',['x',['../class_mint.html#a28d8cd50ca65936ed8a8b1cebb782764',1,'Mint::x()'],['../class_point2_d.html#af645991722e4a2285f9aaaaf2e3435cd',1,'Point2D::x()']]],
-  ['xor_154',['XOR',['../test_8cpp.html#a4494865a4598ee0bdb9265b13fa28a07',1,'XOR(const long long &amp;a, const long long &amp;b):&#160;test.cpp'],['../test2_8cpp.html#a4494865a4598ee0bdb9265b13fa28a07',1,'XOR(const long long &amp;a, const long long &amp;b):&#160;test2.cpp'],['../test4_8cpp.html#a4494865a4598ee0bdb9265b13fa28a07',1,'XOR(const long long &amp;a, const long long &amp;b):&#160;test4.cpp']]]
+  ['y_206',['y',['../class_point2_d.html#ac9477b55718b628606930d8d4971e835',1,'Point2D::y()'],['../namespacetest2.html#a6193ff1da00e3b7e163c09661671c46e',1,'test2.y()']]],
+  ['yy_207',['yy',['../namespacetest2.html#a8d15df7650e2bd2fa7cb20c1669b4f6d',1,'test2']]]
 ];

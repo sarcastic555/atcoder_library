@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['rollinghash_105',['RollingHash',['../class_rolling_hash.html',1,'']]]
+  ['segmenttree_229',['SegmentTree',['../class_segment_tree.html',1,'']]],
+  ['stronglyconnectedcomponent_230',['StronglyConnectedComponent',['../class_strongly_connected_component.html',1,'']]]
 ];
