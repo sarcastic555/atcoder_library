@@ -74,7 +74,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acc383f4bf5004ae5dbac61414df0b941"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#acc383f4bf5004ae5dbac61414df0b941">LazySegmentTree</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="test_8cpp.html#a7daddd61181a736576a8845095243a3c">vec</a>, T(*op)(const T &amp;, const T &amp;), T e, T init, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
+<tr class="memitem:acc383f4bf5004ae5dbac61414df0b941"><td class="memItemLeft" align="right" valign="top"><a id="acc383f4bf5004ae5dbac61414df0b941"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LazySegmentTree</b> (const std::vector&lt; T &gt; &amp;vec, T(*op)(const T &amp;, const T &amp;), T e, T init, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
 <tr class="separator:acc383f4bf5004ae5dbac61414df0b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd4d17c5a15ee992fed77134d0c504df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">LazySegmentTree</a> (int n, T(*op)(const T &amp;, const T &amp;), T e, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
 <tr class="memdesc:abd4d17c5a15ee992fed77134d0c504df"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期ノードは単位元を使う想定） /  <a href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">More...</a><br /></td></tr>
@@ -85,14 +86,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4329394f431be50de540deef783a87aa"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#a4329394f431be50de540deef783a87aa">GetValue</a> (int l, int r)</td></tr>
 <tr class="memdesc:a4329394f431be50de540deef783a87aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">[l, r]の区間のopの演算結果を取得する  <a href="class_lazy_segment_tree.html#a4329394f431be50de540deef783a87aa">More...</a><br /></td></tr>
 <tr class="separator:a4329394f431be50de540deef783a87aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf958f610681f975390774dac29d18cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#aaf958f610681f975390774dac29d18cc">Print</a> ()</td></tr>
-<tr class="memdesc:aaf958f610681f975390774dac29d18cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードと遅延評価配列の値を出力する。  <a href="class_lazy_segment_tree.html#aaf958f610681f975390774dac29d18cc">More...</a><br /></td></tr>
+<tr class="memitem:aaf958f610681f975390774dac29d18cc"><td class="memItemLeft" align="right" valign="top"><a id="aaf958f610681f975390774dac29d18cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#aaf958f610681f975390774dac29d18cc">Print</a> ()</td></tr>
+<tr class="memdesc:aaf958f610681f975390774dac29d18cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードと遅延評価配列の値を出力する。 <br /></td></tr>
 <tr class="separator:aaf958f610681f975390774dac29d18cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc383f4bf5004ae5dbac61414df0b941"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#acc383f4bf5004ae5dbac61414df0b941">LazySegmentTree</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="test_8cpp.html#a7daddd61181a736576a8845095243a3c">vec</a>, T(*op)(const T &amp;, const T &amp;), T e, T init, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
-<tr class="memdesc:acc383f4bf5004ae5dbac61414df0b941"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期ノードはT型としてユーザー側で初期化したものを渡す想定）  <a href="class_lazy_segment_tree.html#acc383f4bf5004ae5dbac61414df0b941">More...</a><br /></td></tr>
+<tr class="memitem:acc383f4bf5004ae5dbac61414df0b941"><td class="memItemLeft" align="right" valign="top"><a id="acc383f4bf5004ae5dbac61414df0b941"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LazySegmentTree</b> (const std::vector&lt; T &gt; &amp;vec, T(*op)(const T &amp;, const T &amp;), T e, T init, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
 <tr class="separator:acc383f4bf5004ae5dbac61414df0b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd4d17c5a15ee992fed77134d0c504df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">LazySegmentTree</a> (int n, T(*op)(const T &amp;, const T &amp;), T e, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
-<tr class="memdesc:abd4d17c5a15ee992fed77134d0c504df"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期ノードは単位元を使う想定）  <a href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">More...</a><br /></td></tr>
+<tr class="memdesc:abd4d17c5a15ee992fed77134d0c504df"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期ノードは単位元を使う想定） /  <a href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">More...</a><br /></td></tr>
 <tr class="separator:abd4d17c5a15ee992fed77134d0c504df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91196ea6d2c5acdd486ec714bb0c5203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#a91196ea6d2c5acdd486ec714bb0c5203">Update</a> (int l, int r, F f)</td></tr>
 <tr class="memdesc:a91196ea6d2c5acdd486ec714bb0c5203"><td class="mdescLeft">&#160;</td><td class="mdescRight">[l, r]の区間の遅延写像プールに写像fを適用する  <a href="class_lazy_segment_tree.html#a91196ea6d2c5acdd486ec714bb0c5203">More...</a><br /></td></tr>
@@ -100,8 +102,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4329394f431be50de540deef783a87aa"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#a4329394f431be50de540deef783a87aa">GetValue</a> (int l, int r)</td></tr>
 <tr class="memdesc:a4329394f431be50de540deef783a87aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">[l, r]の区間のopの演算結果を取得する  <a href="class_lazy_segment_tree.html#a4329394f431be50de540deef783a87aa">More...</a><br /></td></tr>
 <tr class="separator:a4329394f431be50de540deef783a87aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf958f610681f975390774dac29d18cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#aaf958f610681f975390774dac29d18cc">Print</a> ()</td></tr>
-<tr class="memdesc:aaf958f610681f975390774dac29d18cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードと遅延評価配列の値を出力する。  <a href="class_lazy_segment_tree.html#aaf958f610681f975390774dac29d18cc">More...</a><br /></td></tr>
+<tr class="memitem:aaf958f610681f975390774dac29d18cc"><td class="memItemLeft" align="right" valign="top"><a id="aaf958f610681f975390774dac29d18cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#aaf958f610681f975390774dac29d18cc">Print</a> ()</td></tr>
+<tr class="memdesc:aaf958f610681f975390774dac29d18cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードと遅延評価配列の値を出力する。 <br /></td></tr>
+<tr class="separator:aaf958f610681f975390774dac29d18cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc383f4bf5004ae5dbac61414df0b941"><td class="memItemLeft" align="right" valign="top"><a id="acc383f4bf5004ae5dbac61414df0b941"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LazySegmentTree</b> (const std::vector&lt; T &gt; &amp;vec, T(*op)(const T &amp;, const T &amp;), T e, T init, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
+<tr class="separator:acc383f4bf5004ae5dbac61414df0b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4d17c5a15ee992fed77134d0c504df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">LazySegmentTree</a> (int n, T(*op)(const T &amp;, const T &amp;), T e, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
+<tr class="memdesc:abd4d17c5a15ee992fed77134d0c504df"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期ノードは単位元を使う想定） /  <a href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">More...</a><br /></td></tr>
+<tr class="separator:abd4d17c5a15ee992fed77134d0c504df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91196ea6d2c5acdd486ec714bb0c5203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#a91196ea6d2c5acdd486ec714bb0c5203">Update</a> (int l, int r, F f)</td></tr>
+<tr class="memdesc:a91196ea6d2c5acdd486ec714bb0c5203"><td class="mdescLeft">&#160;</td><td class="mdescRight">[l, r]の区間の遅延写像プールに写像fを適用する  <a href="class_lazy_segment_tree.html#a91196ea6d2c5acdd486ec714bb0c5203">More...</a><br /></td></tr>
+<tr class="separator:a91196ea6d2c5acdd486ec714bb0c5203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4329394f431be50de540deef783a87aa"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#a4329394f431be50de540deef783a87aa">GetValue</a> (int l, int r)</td></tr>
+<tr class="memdesc:a4329394f431be50de540deef783a87aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">[l, r]の区間のopの演算結果を取得する  <a href="class_lazy_segment_tree.html#a4329394f431be50de540deef783a87aa">More...</a><br /></td></tr>
+<tr class="separator:a4329394f431be50de540deef783a87aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf958f610681f975390774dac29d18cc"><td class="memItemLeft" align="right" valign="top"><a id="aaf958f610681f975390774dac29d18cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#aaf958f610681f975390774dac29d18cc">Print</a> ()</td></tr>
+<tr class="memdesc:aaf958f610681f975390774dac29d18cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードと遅延評価配列の値を出力する。 <br /></td></tr>
+<tr class="separator:aaf958f610681f975390774dac29d18cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc383f4bf5004ae5dbac61414df0b941"><td class="memItemLeft" align="right" valign="top"><a id="acc383f4bf5004ae5dbac61414df0b941"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LazySegmentTree</b> (const std::vector&lt; T &gt; &amp;vec, T(*op)(const T &amp;, const T &amp;), T e, T init, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
+<tr class="separator:acc383f4bf5004ae5dbac61414df0b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4d17c5a15ee992fed77134d0c504df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">LazySegmentTree</a> (int n, T(*op)(const T &amp;, const T &amp;), T e, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
+<tr class="memdesc:abd4d17c5a15ee992fed77134d0c504df"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期ノードは単位元を使う想定） /  <a href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">More...</a><br /></td></tr>
+<tr class="separator:abd4d17c5a15ee992fed77134d0c504df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91196ea6d2c5acdd486ec714bb0c5203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#a91196ea6d2c5acdd486ec714bb0c5203">Update</a> (int l, int r, F f)</td></tr>
+<tr class="memdesc:a91196ea6d2c5acdd486ec714bb0c5203"><td class="mdescLeft">&#160;</td><td class="mdescRight">[l, r]の区間の遅延写像プールに写像fを適用する  <a href="class_lazy_segment_tree.html#a91196ea6d2c5acdd486ec714bb0c5203">More...</a><br /></td></tr>
+<tr class="separator:a91196ea6d2c5acdd486ec714bb0c5203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4329394f431be50de540deef783a87aa"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#a4329394f431be50de540deef783a87aa">GetValue</a> (int l, int r)</td></tr>
+<tr class="memdesc:a4329394f431be50de540deef783a87aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">[l, r]の区間のopの演算結果を取得する  <a href="class_lazy_segment_tree.html#a4329394f431be50de540deef783a87aa">More...</a><br /></td></tr>
+<tr class="separator:a4329394f431be50de540deef783a87aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf958f610681f975390774dac29d18cc"><td class="memItemLeft" align="right" valign="top"><a id="aaf958f610681f975390774dac29d18cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#aaf958f610681f975390774dac29d18cc">Print</a> ()</td></tr>
+<tr class="memdesc:aaf958f610681f975390774dac29d18cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードと遅延評価配列の値を出力する。 <br /></td></tr>
 <tr class="separator:aaf958f610681f975390774dac29d18cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -116,25 +151,13 @@ class LazySegmentTree&lt; T, F &gt;</h3>
  </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>ノードのデータ </td></tr>
-    <tr><td class="paramname">F</td><td>写像関数の情報を表すデータ</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>クエリ処理がAtCoder公式のライブラリより数倍遅く、以下の問題がTLEになってしまう <br  />
- <a href="https://atcoder.jp/contests/practice2/tasks/practice2_k">https://atcoder.jp/contests/practice2/tasks/practice2_k</a> <br  />
- 公式のライブラリのコンセプトを使って将来的にリファクタをした方が良いかも <br  />
- <a href="https://github.com/atcoder/ac-library/blob/master/atcoder/lazysegtree.hpp">https://github.com/atcoder/ac-library/blob/master/atcoder/lazysegtree.hpp</a> <br  />
- </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>ノードのデータ </td></tr>
-    <tr><td class="paramname">F</td><td>写像関数の情報を表すデータ <br  />
- </td></tr>
+    <tr><td class="paramname">F</td><td>写像関数の情報を表すデータ </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acc383f4bf5004ae5dbac61414df0b941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc383f4bf5004ae5dbac61414df0b941">&#9670;&nbsp;</a></span>LazySegmentTree() <span class="overload">[1/4]</span></h2>
+<a id="abd4d17c5a15ee992fed77134d0c504df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4d17c5a15ee992fed77134d0c504df">&#9670;&nbsp;</a></span>LazySegmentTree() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,8 +170,8 @@ template&lt;typename T , typename F &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a>&lt; T, F &gt;::<a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vec</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -161,12 +184,6 @@ template&lt;typename T , typename F &gt; </div>
           <td></td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>init</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -199,6 +216,23 @@ template&lt;typename T , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>コンストラクタ（初期ノードは単位元を使う想定） / </p>
+<pre class="fragment">  最下層ノードの初期値は単位元となる  
+  使い方の例  
+  区間に対して値の一括更新クエリが来る状況下で区間に対する最大値を求めたい  
+  int e = 0;  
+  int f(int a, int b) {return a;}  
+  int id = 0;  
+  int IntMax(int a, int b) {return std::max(a, b);}  
+  LazySegmentTree&lt;int, int&gt; tree(10, IntMax, e, f, IntMax, id);  
+
+  @param[in] n ノードのサイズ
+  @param[in] op ノード間の演算関数
+  @param[in] e ノードの単位元
+  @param[in] f ノードに適用される写像関数 (==の演算子が定義されている必要あり)
+  @param[in] fg 写像間の合成関数 (右の写像の後にに左の写像を作用させる)
+  @param[in] id 恒等写像
+</pre> 
 </div>
 </div>
 <a id="abd4d17c5a15ee992fed77134d0c504df"></a>
@@ -280,8 +314,8 @@ template&lt;typename T , typename F &gt; </div>
 </pre> 
 </div>
 </div>
-<a id="acc383f4bf5004ae5dbac61414df0b941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc383f4bf5004ae5dbac61414df0b941">&#9670;&nbsp;</a></span>LazySegmentTree() <span class="overload">[3/4]</span></h2>
+<a id="abd4d17c5a15ee992fed77134d0c504df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4d17c5a15ee992fed77134d0c504df">&#9670;&nbsp;</a></span>LazySegmentTree() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,8 +328,8 @@ template&lt;typename T , typename F &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a>&lt; T, F &gt;::<a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vec</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -308,12 +342,6 @@ template&lt;typename T , typename F &gt; </div>
           <td></td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>init</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -346,44 +374,23 @@ template&lt;typename T , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>コンストラクタ（初期ノードはT型としてユーザー側で初期化したものを渡す想定） </p>
-<p>初期ノードと単位元が異なるケースを想定して作られたコンストラクタ <br  />
- 区間の合計を取得したい場合などは単位元と初期ノードが異なるのでこのコンストラクタを使う <br  />
- 例: 区間に対して加算クエリが来る状況下で区間の合計を取得する場合 <br  />
- 合計を取得する場合は（各ノードにおける合計の反映のさせ方が子ノード数に依存するので）子ノードのサイズをデータとして持つ構造体をノードデータとする <br  />
- struct NodeType { <br  />
- int value; <br  />
- int size; <br  />
- }; <br  />
- NodeType f(int a, NodeType b) { return NodeType{b.value+a*b.size, b.size};} <br  />
- int id = 0; <br  />
- NodeType e{0, 0}; <br  />
- int <a class="el" href="test4_8cpp.html#a3512ef1004e6c54e598fb50363523505" title="int型の足し算の結果を返す">IntSum(const int &amp; a, const int &amp; b)</a> {return a+b;} <br  />
- NodeType MyIntSum(const NodeType &amp; a, const NodeType &amp; b) { return NodeType{a.value+b.value, a.size+b.size}; }; <br  />
- std::vector&lt;NodeType &gt; init_vec(10, NodeType{0, 1}); <br  />
- LazySegmentTree&lt;NodeType, int&gt; tree(init_vec, MyIntSum, e, f, IntSum, id); <br  />
-</p>
-<p>注意：関数型のstructを定義する場合は==演算子を定義すること <br  />
- 例 <br  />
- struct Func { <br  />
- <a class="el" href="class_mint.html">Mint</a> b; <br  />
- <a class="el" href="class_mint.html">Mint</a> c; <br  />
- bool operator==(const Func f) { <br  />
- return (b==f.b.x &amp;&amp; c==f.c); <br  />
- } <br  />
- }; </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vec</td><td>ユーザー側で初期化されたノード配列(単位元を使わない場合) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>ノード間の演算関数 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>ノードの単位元 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>最下層ノードのvec以外の部分の初期設定値 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>ノードに適用される写像関数 (==の演算子が定義されている必要あり) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fg</td><td>写像間の合成関数 (右の写像の後にに左の写像を作用させる) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>恒等写像 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>コンストラクタ（初期ノードは単位元を使う想定） / </p>
+<pre class="fragment">  最下層ノードの初期値は単位元となる  
+  使い方の例  
+  区間に対して値の一括更新クエリが来る状況下で区間に対する最大値を求めたい  
+  int e = 0;  
+  int f(int a, int b) {return a;}  
+  int id = 0;  
+  int IntMax(int a, int b) {return std::max(a, b);}  
+  LazySegmentTree&lt;int, int&gt; tree(10, IntMax, e, f, IntMax, id);  
 
+  @param[in] n ノードのサイズ
+  @param[in] op ノード間の演算関数
+  @param[in] e ノードの単位元
+  @param[in] f ノードに適用される写像関数 (==の演算子が定義されている必要あり)
+  @param[in] fg 写像間の合成関数 (右の写像の後にに左の写像を作用させる)
+  @param[in] id 恒等写像
+</pre> 
 </div>
 </div>
 <a id="abd4d17c5a15ee992fed77134d0c504df"></a>
@@ -446,33 +453,28 @@ template&lt;typename T , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>コンストラクタ（初期ノードは単位元を使う想定） </p>
-<p>最下層ノードの初期値は単位元となる <br  />
- 使い方の例 <br  />
- 区間に対して値の一括更新クエリが来る状況下で区間に対する最大値を求めたい <br  />
- int e = 0; <br  />
- int f(int a, int b) {return a;} <br  />
- int id = 0; <br  />
- int IntMax(int a, int b) {return std::max(a, b);} <br  />
- LazySegmentTree&lt;int, int&gt; tree(10, IntMax, e, f, IntMax, id); <br  />
-</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>ノードのサイズ </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>ノード間の演算関数 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>ノードの単位元 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>ノードに適用される写像関数 (==の演算子が定義されている必要あり) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fg</td><td>写像間の合成関数 (右の写像の後にに左の写像を作用させる) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>恒等写像 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>コンストラクタ（初期ノードは単位元を使う想定） / </p>
+<pre class="fragment">  最下層ノードの初期値は単位元となる  
+  使い方の例  
+  区間に対して値の一括更新クエリが来る状況下で区間に対する最大値を求めたい  
+  int e = 0;  
+  int f(int a, int b) {return a;}  
+  int id = 0;  
+  int IntMax(int a, int b) {return std::max(a, b);}  
+  LazySegmentTree&lt;int, int&gt; tree(10, IntMax, e, f, IntMax, id);  
 
+  @param[in] n ノードのサイズ
+  @param[in] op ノード間の演算関数
+  @param[in] e ノードの単位元
+  @param[in] f ノードに適用される写像関数 (==の演算子が定義されている必要あり)
+  @param[in] fg 写像間の合成関数 (右の写像の後にに左の写像を作用させる)
+  @param[in] id 恒等写像
+</pre> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4329394f431be50de540deef783a87aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4329394f431be50de540deef783a87aa">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4329394f431be50de540deef783a87aa">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,7 +522,7 @@ template&lt;typename T , typename F &gt; </div>
 </div>
 </div>
 <a id="a4329394f431be50de540deef783a87aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4329394f431be50de540deef783a87aa">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4329394f431be50de540deef783a87aa">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -567,8 +569,8 @@ template&lt;typename T , typename F &gt; </div>
 
 </div>
 </div>
-<a id="aaf958f610681f975390774dac29d18cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf958f610681f975390774dac29d18cc">&#9670;&nbsp;</a></span>Print() <span class="overload">[1/2]</span></h2>
+<a id="a4329394f431be50de540deef783a87aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4329394f431be50de540deef783a87aa">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -579,10 +581,21 @@ template&lt;typename T , typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a>&lt; T, F &gt;::Print </td>
+          <td class="memname">T <a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a>&lt; T, F &gt;::GetValue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -592,12 +605,20 @@ template&lt;typename T , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>ノードと遅延評価配列の値を出力する。 </p>
+<p>[l, r]の区間のopの演算結果を取得する </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>演算を適用する閉区間の左端インデックス </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>演算を適用する閉区間の右端インデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>演算結果(区間和用にsize変数を持っている場合はsize変数はクエリ区間長さを表す) </dd></dl>
 
 </div>
 </div>
-<a id="aaf958f610681f975390774dac29d18cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf958f610681f975390774dac29d18cc">&#9670;&nbsp;</a></span>Print() <span class="overload">[2/2]</span></h2>
+<a id="a4329394f431be50de540deef783a87aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4329394f431be50de540deef783a87aa">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -608,10 +629,21 @@ template&lt;typename T , typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a>&lt; T, F &gt;::Print </td>
+          <td class="memname">T <a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a>&lt; T, F &gt;::GetValue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -621,12 +653,20 @@ template&lt;typename T , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>ノードと遅延評価配列の値を出力する。 </p>
+<p>[l, r]の区間のopの演算結果を取得する </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>演算を適用する閉区間の左端インデックス </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>演算を適用する閉区間の右端インデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>演算結果(区間和用にsize変数を持っている場合はsize変数はクエリ区間長さを表す) </dd></dl>
 
 </div>
 </div>
 <a id="a91196ea6d2c5acdd486ec714bb0c5203"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91196ea6d2c5acdd486ec714bb0c5203">&#9670;&nbsp;</a></span>Update() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91196ea6d2c5acdd486ec714bb0c5203">&#9670;&nbsp;</a></span>Update() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -680,7 +720,115 @@ template&lt;typename T , typename F &gt; </div>
 </div>
 </div>
 <a id="a91196ea6d2c5acdd486ec714bb0c5203"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91196ea6d2c5acdd486ec714bb0c5203">&#9670;&nbsp;</a></span>Update() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91196ea6d2c5acdd486ec714bb0c5203">&#9670;&nbsp;</a></span>Update() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a>&lt; T, F &gt;::Update </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[l, r]の区間の遅延写像プールに写像fを適用する </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>写像を適用する閉区間の左端インデックス </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>写像を適用する閉区間の右端インデックス </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>適用する写像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a91196ea6d2c5acdd486ec714bb0c5203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91196ea6d2c5acdd486ec714bb0c5203">&#9670;&nbsp;</a></span>Update() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_lazy_segment_tree.html">LazySegmentTree</a>&lt; T, F &gt;::Update </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[l, r]の区間の遅延写像プールに写像fを適用する </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>写像を適用する閉区間の左端インデックス </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>写像を適用する閉区間の右端インデックス </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>適用する写像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a91196ea6d2c5acdd486ec714bb0c5203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91196ea6d2c5acdd486ec714bb0c5203">&#9670;&nbsp;</a></span>Update() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -735,7 +883,9 @@ template&lt;typename T , typename F &gt; </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="test_8cpp.html">test.cpp</a></li>
-<li><a class="el" href="test4_8cpp.html">test4.cpp</a></li>
+<li>test2.cpp</li>
+<li>test3.cpp</li>
+<li>test4.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

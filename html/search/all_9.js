@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['k_79',['k',['../class_graph.html#a725cf9a03f327693186cef437a573904',1,'Graph']]],
-  ['kitamasa_80',['Kitamasa',['../class_kitamasa.html',1,'']]],
-  ['kk_81',['kk',['../namespacetest2.html#ae9fe57c11118afdcde6f99cbffb007a0',1,'test2']]]
+  ['outer_5fproduct_52',['outer_product',['../class_point2_d.html#abeb81de6ffc2e5ca8a0d996237257cdd',1,'Point2D::outer_product(const Point2D &amp;a) const'],['../class_point2_d.html#abeb81de6ffc2e5ca8a0d996237257cdd',1,'Point2D::outer_product(const Point2D &amp;a) const'],['../class_point2_d.html#abeb81de6ffc2e5ca8a0d996237257cdd',1,'Point2D::outer_product(const Point2D &amp;a) const'],['../class_point2_d.html#abeb81de6ffc2e5ca8a0d996237257cdd',1,'Point2D::outer_product(const Point2D &amp;a) const']]]
 ];
