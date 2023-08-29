@@ -169,7 +169,6 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">隣接k項間の漸化式と初期値が与えられた時、第n項の値をKitamasa法により求める  <a href="class_kitamasa.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rolling_hash.html">RollingHash&lt; base, mod &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列や数字列に対してローリングハッシュを計算する  <a href="class_rolling_hash.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -203,9 +202,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ll</b> = long long</
 <tr class="memitem:a2b6f71f267a26c01b6be675d8fc945dd"><td class="memItemLeft" align="right" valign="top"><a id="a2b6f71f267a26c01b6be675d8fc945dd"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ii</b> = int</td></tr>
 <tr class="separator:a2b6f71f267a26c01b6be675d8fc945dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0836ec062a17c0e219606ec864bba67b"><td class="memItemLeft" align="right" valign="top"><a id="a0836ec062a17c0e219606ec864bba67b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>P</b> = std::pair&lt; ll, ii &gt;</td></tr>
-<tr class="separator:a0836ec062a17c0e219606ec864bba67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44345cf158b48501722208781153266"><td class="memItemLeft" align="right" valign="top"><a id="ae44345cf158b48501722208781153266"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>P</b> = std::pair&lt; ii, ll &gt;</td></tr>
+<tr class="separator:ae44345cf158b48501722208781153266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -233,8 +232,8 @@ template&lt;typename... Targs&gt; </td></tr>
 <tr class="memitem:a63bad6950d8f73693a3c9b2cf57c834f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a63bad6950d8f73693a3c9b2cf57c834f">chinese_remainder_theorem</a> (std::vector&lt; std::pair&lt; long long, long long &gt; &gt; pairs, long long &amp;ans)</td></tr>
 <tr class="memdesc:a63bad6950d8f73693a3c9b2cf57c834f"><td class="mdescLeft">&#160;</td><td class="mdescRight">中国剰余の定理の解を求める  <a href="test_8cpp.html#a63bad6950d8f73693a3c9b2cf57c834f">More...</a><br /></td></tr>
 <tr class="separator:a63bad6950d8f73693a3c9b2cf57c834f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0d335b0c11a98a6e6c9a3f34ddaf404"><td class="memItemLeft" align="right" valign="top"><a id="ad0d335b0c11a98a6e6c9a3f34ddaf404"></a>
-std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDigit</b> (long long v, int n=10, int size=-1)</td></tr>
+<tr class="memitem:ad0d335b0c11a98a6e6c9a3f34ddaf404"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ad0d335b0c11a98a6e6c9a3f34ddaf404">GetDigit</a> (long long v, int n=10, int size=-1)</td></tr>
+<tr class="memdesc:ad0d335b0c11a98a6e6c9a3f34ddaf404"><td class="mdescLeft">&#160;</td><td class="mdescRight">n進数表示で各桁の数字を配列として出力する関数  <a href="test_8cpp.html#ad0d335b0c11a98a6e6c9a3f34ddaf404">More...</a><br /></td></tr>
 <tr class="separator:ad0d335b0c11a98a6e6c9a3f34ddaf404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f2d96ce5400eeeb0f3929d26bb9578e"><td class="memItemLeft" align="right" valign="top">std::map&lt; long long, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a3f2d96ce5400eeeb0f3929d26bb9578e">prime_factorization</a> (long long n)</td></tr>
 <tr class="memdesc:a3f2d96ce5400eeeb0f3929d26bb9578e"><td class="mdescLeft">&#160;</td><td class="mdescRight">素因数分解を行う  <a href="test_8cpp.html#a3f2d96ce5400eeeb0f3929d26bb9578e">More...</a><br /></td></tr>
@@ -263,15 +262,6 @@ template&lt;typename T , typename U , std::enable_if_t&lt; std::is_arithmetic&lt
 template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:aecd1b68e552f93f2befc4b26819b6a30"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mymax</b> (const <a class="el" href="class_my_primitive.html">MyPrimitive</a>&lt; T &gt; a, const <a class="el" href="class_my_primitive.html">MyPrimitive</a>&lt; U &gt; b)</td></tr>
 <tr class="separator:aecd1b68e552f93f2befc4b26819b6a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0a35386ce0f0ad67f666a5cfe15fa2"><td class="memItemLeft" align="right" valign="top"><a id="a3a0a35386ce0f0ad67f666a5cfe15fa2"></a>
-const ll&#160;</td><td class="memItemRight" valign="bottom"><b>INF2</b> (1001001001001001001)</td></tr>
-<tr class="separator:a3a0a35386ce0f0ad67f666a5cfe15fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdd9aea28231e1bae269dabc142baf9f"><td class="memItemLeft" align="right" valign="top"><a id="afdd9aea28231e1bae269dabc142baf9f"></a>
-long double&#160;</td><td class="memItemRight" valign="bottom"><b>get_speed</b> (ii s)</td></tr>
-<tr class="separator:afdd9aea28231e1bae269dabc142baf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3605b307d613d587169efdd2fc153d8"><td class="memItemLeft" align="right" valign="top"><a id="ab3605b307d613d587169efdd2fc153d8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>visited_all</b> (ii s)</td></tr>
-<tr class="separator:ab3605b307d613d587169efdd2fc153d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,18 +271,12 @@ Variables</h2></td></tr>
 <tr class="memitem:a81b0439c383f858d6e85d33079a8eea5"><td class="memItemLeft" align="right" valign="top"><a id="a81b0439c383f858d6e85d33079a8eea5"></a>
 const ii&#160;</td><td class="memItemRight" valign="bottom"><b>INF</b> = 1001001001</td></tr>
 <tr class="separator:a81b0439c383f858d6e85d33079a8eea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13be6718a097a3d9290cdb4195961065"><td class="memItemLeft" align="right" valign="top"><a id="a13be6718a097a3d9290cdb4195961065"></a>
-long double&#160;</td><td class="memItemRight" valign="bottom"><b>dp</b> [(1&lt;&lt; 19)][19]</td></tr>
-<tr class="separator:a13be6718a097a3d9290cdb4195961065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46cfb2e857447a8e36faefff434a1c4e"><td class="memItemLeft" align="right" valign="top"><a id="a46cfb2e857447a8e36faefff434a1c4e"></a>
-long double&#160;</td><td class="memItemRight" valign="bottom"><b>power2</b> [6] = {1.0, 2.0, 4.0, 8.0, 16.0, 32.0}</td></tr>
-<tr class="separator:a46cfb2e857447a8e36faefff434a1c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a707bfec4c713778370c4300cc3369ee6"><td class="memItemLeft" align="right" valign="top"><a id="a707bfec4c713778370c4300cc3369ee6"></a>
-ii&#160;</td><td class="memItemRight" valign="bottom"><b>N</b></td></tr>
-<tr class="separator:a707bfec4c713778370c4300cc3369ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d079c0e7f882ded16d7a4797ab0377e"><td class="memItemLeft" align="right" valign="top"><a id="a2d079c0e7f882ded16d7a4797ab0377e"></a>
-ii&#160;</td><td class="memItemRight" valign="bottom"><b>M</b></td></tr>
-<tr class="separator:a2d079c0e7f882ded16d7a4797ab0377e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89ed363285d22e5496ba250100b0398"><td class="memItemLeft" align="right" valign="top"><a id="ab89ed363285d22e5496ba250100b0398"></a>
+const ll&#160;</td><td class="memItemRight" valign="bottom"><b>INF2</b> = 1001001001001001001</td></tr>
+<tr class="separator:ab89ed363285d22e5496ba250100b0398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca06010c2004440e8eeb547807ad536"><td class="memItemLeft" align="right" valign="top"><a id="a5ca06010c2004440e8eeb547807ad536"></a>
+<a class="el" href="class_mint.html">MyMint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dp</b> [70][2][2][2][12][12][12]</td></tr>
+<tr class="separator:a5ca06010c2004440e8eeb547807ad536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a77db8498eb34f9ed94fd3d0a6fcd6fef"></a>
@@ -443,6 +427,52 @@ ii&#160;</td><td class="memItemRight" valign="bottom"><b>M</b></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad0d335b0c11a98a6e6c9a3f34ddaf404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d335b0c11a98a6e6c9a3f34ddaf404">&#9670;&nbsp;</a></span>GetDigit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; GetDigit </td>
+          <td>(</td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>n進数表示で各桁の数字を配列として出力する関数 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>入力整数 </td></tr>
+    <tr><td class="paramname">n</td><td>何進数で値を取得したいか（デフォルトは10） </td></tr>
+    <tr><td class="paramname">size</td><td>返り値の配列のサイズを固定するかしないか (デフォルト-1だと入力値の大きさ依存)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>GetDigit(123) = [3, 2, 1] GetDigit(123, 10) = [3, 2, 1] GetDigit(6, 2) = [0, 1, 1]</p>
+<dl class="section return"><dt>Returns</dt><dd>出力配列(0番目が最下位の桁の数字に対応) </dd></dl>
 
 </div>
 </div>
