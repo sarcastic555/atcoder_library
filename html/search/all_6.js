@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kitamasa_40',['Kitamasa',['../class_kitamasa.html',1,'']]]
+  ['kitamasa_42',['Kitamasa',['../class_kitamasa.html',1,'']]]
 ];

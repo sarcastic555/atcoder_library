@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lazysegmenttree_78',['LazySegmentTree',['../class_lazy_segment_tree.html',1,'']]]
+  ['lazysegmenttree_80',['LazySegmentTree',['../class_lazy_segment_tree.html',1,'']]]
 ];

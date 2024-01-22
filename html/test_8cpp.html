@@ -107,14 +107,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_union_find.html">UnionFind</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードを結合していきながら同じグループかどうかを高速に判定するためのクラス  <a href="class_union_find.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calc_choose_permutation1.html">CalcChoosePermutation1</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定したn、k&lt;=Kを満たす任意のkに対して二項係数(nCk)、順列(nPk)の計算  <a href="class_calc_choose_permutation1.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calc_choose_permutation2.html">CalcChoosePermutation2</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">n、k &lt;= Nを満たす任意のkに対して二項係数(nCk)、順列(nPk)の計算  <a href="class_calc_choose_permutation2.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pascal_triangle.html">PascalTriangle&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">パスカルの三角形により任意のn,k&lt;Nに対して二項係数nCkを計算する  <a href="class_pascal_triangle.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calc_choose_permutation.html">CalcChoosePermutation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ある整数Nをコンストラクタで指定し、n&lt;=N、k&lt;=Nを満たす任意のm, kに対して二項係数(nCk)、順列(nPk)をO()計算する  <a href="class_calc_choose_permutation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html">SegmentTree&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">セグメント木によりノードの更新および区間に対するモノイド関数の実行値を取得  <a href="class_segment_tree.html#details">More...</a><br /></td></tr>
@@ -170,6 +164,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rolling_hash.html">RollingHash&lt; base, mod &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmystate.html">mystate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -202,9 +198,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ll</b> = long long</
 <tr class="memitem:a2b6f71f267a26c01b6be675d8fc945dd"><td class="memItemLeft" align="right" valign="top"><a id="a2b6f71f267a26c01b6be675d8fc945dd"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ii</b> = int</td></tr>
 <tr class="separator:a2b6f71f267a26c01b6be675d8fc945dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae44345cf158b48501722208781153266"><td class="memItemLeft" align="right" valign="top"><a id="ae44345cf158b48501722208781153266"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>P</b> = std::pair&lt; ii, ll &gt;</td></tr>
-<tr class="separator:ae44345cf158b48501722208781153266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659dba2058d75af237ba75b596513f7c"><td class="memItemLeft" align="right" valign="top"><a id="a659dba2058d75af237ba75b596513f7c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>P</b> = std::pair&lt; ii, ii &gt;</td></tr>
+<tr class="separator:a659dba2058d75af237ba75b596513f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -223,6 +219,9 @@ template&lt;typename... Targs&gt; </td></tr>
 <tr class="memitem:a6efa7642ccc588033b7acb57e873b8d8"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a6efa7642ccc588033b7acb57e873b8d8">getgcd</a> (long long a, long long b)</td></tr>
 <tr class="memdesc:a6efa7642ccc588033b7acb57e873b8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ユークリッド互助法により最大公約数を求める  <a href="test_8cpp.html#a6efa7642ccc588033b7acb57e873b8d8">More...</a><br /></td></tr>
 <tr class="separator:a6efa7642ccc588033b7acb57e873b8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c685ae92be31af3b7f48165ded20ae1"><td class="memItemLeft" align="right" valign="top"><a id="a2c685ae92be31af3b7f48165ded20ae1"></a>
+long double&#160;</td><td class="memItemRight" valign="bottom"><b>LongDoubleMin</b> (const long double &amp;a, const long double &amp;b)</td></tr>
+<tr class="separator:a2c685ae92be31af3b7f48165ded20ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa9d461d307cfcf285cf2fac0c362132"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#afa9d461d307cfcf285cf2fac0c362132">ext_gcd</a> (long long a, long long b, long long &amp;x, long long &amp;y)</td></tr>
 <tr class="memdesc:afa9d461d307cfcf285cf2fac0c362132"><td class="mdescLeft">&#160;</td><td class="mdescRight">拡張ユークリッド互除法により a*x+b*y=gcd(a, b)の解を求める  <a href="test_8cpp.html#afa9d461d307cfcf285cf2fac0c362132">More...</a><br /></td></tr>
 <tr class="separator:afa9d461d307cfcf285cf2fac0c362132"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +231,10 @@ template&lt;typename... Targs&gt; </td></tr>
 <tr class="memitem:a63bad6950d8f73693a3c9b2cf57c834f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a63bad6950d8f73693a3c9b2cf57c834f">chinese_remainder_theorem</a> (std::vector&lt; std::pair&lt; long long, long long &gt; &gt; pairs, long long &amp;ans)</td></tr>
 <tr class="memdesc:a63bad6950d8f73693a3c9b2cf57c834f"><td class="mdescLeft">&#160;</td><td class="mdescRight">中国剰余の定理の解を求める  <a href="test_8cpp.html#a63bad6950d8f73693a3c9b2cf57c834f">More...</a><br /></td></tr>
 <tr class="separator:a63bad6950d8f73693a3c9b2cf57c834f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9df255fba99ac49f9131f5c87e2bc6f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af9df255fba99ac49f9131f5c87e2bc6f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#af9df255fba99ac49f9131f5c87e2bc6f">compute_power</a> (const T n, long long e)</td></tr>
+<tr class="memdesc:af9df255fba99ac49f9131f5c87e2bc6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">繰り返し二乗方により、ある特定の累乗の値だけをPowerクラスより高速に求める  <a href="test_8cpp.html#af9df255fba99ac49f9131f5c87e2bc6f">More...</a><br /></td></tr>
+<tr class="separator:af9df255fba99ac49f9131f5c87e2bc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0d335b0c11a98a6e6c9a3f34ddaf404"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ad0d335b0c11a98a6e6c9a3f34ddaf404">GetDigit</a> (long long v, int n=10, int size=-1)</td></tr>
 <tr class="memdesc:ad0d335b0c11a98a6e6c9a3f34ddaf404"><td class="mdescLeft">&#160;</td><td class="mdescRight">n進数表示で各桁の数字を配列として出力する関数  <a href="test_8cpp.html#ad0d335b0c11a98a6e6c9a3f34ddaf404">More...</a><br /></td></tr>
 <tr class="separator:ad0d335b0c11a98a6e6c9a3f34ddaf404"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,21 +265,41 @@ template&lt;typename T , typename U , std::enable_if_t&lt; std::is_arithmetic&lt
 template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:aecd1b68e552f93f2befc4b26819b6a30"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mymax</b> (const <a class="el" href="class_my_primitive.html">MyPrimitive</a>&lt; T &gt; a, const <a class="el" href="class_my_primitive.html">MyPrimitive</a>&lt; U &gt; b)</td></tr>
 <tr class="separator:aecd1b68e552f93f2befc4b26819b6a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5668bd4885ce9ae3126ba689dffd07"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aae5668bd4885ce9ae3126ba689dffd07"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#aae5668bd4885ce9ae3126ba689dffd07">chmin</a> (T &amp;a, const T b)</td></tr>
+<tr class="memdesc:aae5668bd4885ce9ae3126ba689dffd07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace value with min value. a will be replaced by min(a, b)  <a href="test_8cpp.html#aae5668bd4885ce9ae3126ba689dffd07">More...</a><br /></td></tr>
+<tr class="separator:aae5668bd4885ce9ae3126ba689dffd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f1e27c9d0e5f87fe669eb8f3d1cb0e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa7f1e27c9d0e5f87fe669eb8f3d1cb0e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_8cpp.html#aa7f1e27c9d0e5f87fe669eb8f3d1cb0e">chmax</a> (T &amp;a, const T b)</td></tr>
+<tr class="memdesc:aa7f1e27c9d0e5f87fe669eb8f3d1cb0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace value with max value. a will be replaced by max(a, b)  <a href="test_8cpp.html#aa7f1e27c9d0e5f87fe669eb8f3d1cb0e">More...</a><br /></td></tr>
+<tr class="separator:aa7f1e27c9d0e5f87fe669eb8f3d1cb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789a867c4de0977212447b4ed169797c"><td class="memItemLeft" align="right" valign="top"><a id="a789a867c4de0977212447b4ed169797c"></a>
+std::vector&lt; <a class="el" href="class_mint.html">MyMint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>base1</b> (200004)</td></tr>
+<tr class="separator:a789a867c4de0977212447b4ed169797c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438af352a05b52fc7b5d428944851d9e"><td class="memItemLeft" align="right" valign="top"><a id="a438af352a05b52fc7b5d428944851d9e"></a>
+<a class="el" href="structmystate.html">mystate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MyOp</b> (const <a class="el" href="structmystate.html">mystate</a> &amp;a, const <a class="el" href="structmystate.html">mystate</a> &amp;b)</td></tr>
+<tr class="separator:a438af352a05b52fc7b5d428944851d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe35ae9c2466e11cedd154eb40875752"><td class="memItemLeft" align="right" valign="top"><a id="abe35ae9c2466e11cedd154eb40875752"></a>
+<a class="el" href="structmystate.html">mystate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MyOp2</b> (const ii &amp;a, const <a class="el" href="structmystate.html">mystate</a> &amp;b)</td></tr>
+<tr class="separator:abe35ae9c2466e11cedd154eb40875752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db7395cd02e8695d86de8458ee6811d"><td class="memItemLeft" align="right" valign="top"><a id="a5db7395cd02e8695d86de8458ee6811d"></a>
+ii&#160;</td><td class="memItemRight" valign="bottom"><b>MyOp3</b> (const ii &amp;a, const ii &amp;b)</td></tr>
+<tr class="separator:a5db7395cd02e8695d86de8458ee6811d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a81b0439c383f858d6e85d33079a8eea5"><td class="memItemLeft" align="right" valign="top"><a id="a81b0439c383f858d6e85d33079a8eea5"></a>
-const ii&#160;</td><td class="memItemRight" valign="bottom"><b>INF</b> = 1001001001</td></tr>
-<tr class="separator:a81b0439c383f858d6e85d33079a8eea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab89ed363285d22e5496ba250100b0398"><td class="memItemLeft" align="right" valign="top"><a id="ab89ed363285d22e5496ba250100b0398"></a>
-const ll&#160;</td><td class="memItemRight" valign="bottom"><b>INF2</b> = 1001001001001001001</td></tr>
-<tr class="separator:ab89ed363285d22e5496ba250100b0398"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ca06010c2004440e8eeb547807ad536"><td class="memItemLeft" align="right" valign="top"><a id="a5ca06010c2004440e8eeb547807ad536"></a>
-<a class="el" href="class_mint.html">MyMint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dp</b> [70][2][2][2][12][12][12]</td></tr>
-<tr class="separator:a5ca06010c2004440e8eeb547807ad536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b73776706c6d984befd316729b15b5"><td class="memItemLeft" align="right" valign="top"><a id="aa8b73776706c6d984befd316729b15b5"></a>
+constexpr ii&#160;</td><td class="memItemRight" valign="bottom"><b>INF</b> = 1001001001</td></tr>
+<tr class="separator:aa8b73776706c6d984befd316729b15b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9433f6e560fb697664de89ebad2f41"><td class="memItemLeft" align="right" valign="top"><a id="aeb9433f6e560fb697664de89ebad2f41"></a>
+constexpr ll&#160;</td><td class="memItemRight" valign="bottom"><b>INF2</b> = 1001001001001001001</td></tr>
+<tr class="separator:aeb9433f6e560fb697664de89ebad2f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15446cbcd8dbfdf5796e513ec33d8a45"><td class="memItemLeft" align="right" valign="top"><a id="a15446cbcd8dbfdf5796e513ec33d8a45"></a>
+<a class="el" href="class_power.html">Power</a>&lt; <a class="el" href="class_mint.html">MyMint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>power10</b></td></tr>
+<tr class="separator:a15446cbcd8dbfdf5796e513ec33d8a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a77db8498eb34f9ed94fd3d0a6fcd6fef"></a>
@@ -376,6 +399,136 @@ const ll&#160;</td><td class="memItemRight" valign="bottom"><b>INF2</b> = 100100
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>判定結果（trueなら解が存在） </dd></dl>
+
+</div>
+</div>
+<a id="aa7f1e27c9d0e5f87fe669eb8f3d1cb0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f1e27c9d0e5f87fe669eb8f3d1cb0e">&#9670;&nbsp;</a></span>chmax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void chmax </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replace value with max value. a will be replaced by max(a, b) </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>value to be replaced </td></tr>
+    <tr><td class="paramname">b</td><td>candidate value for minimum </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae5668bd4885ce9ae3126ba689dffd07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5668bd4885ce9ae3126ba689dffd07">&#9670;&nbsp;</a></span>chmin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void chmin </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replace value with min value. a will be replaced by min(a, b) </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>value to be replaced </td></tr>
+    <tr><td class="paramname">b</td><td>candidate value for minimum </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af9df255fba99ac49f9131f5c87e2bc6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9df255fba99ac49f9131f5c87e2bc6f">&#9670;&nbsp;</a></span>compute_power()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T compute_power </td>
+          <td>(</td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>繰り返し二乗方により、ある特定の累乗の値だけをPowerクラスより高速に求める </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>指数を求めたい値 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>指数の肩の値 (0以上である必要がある)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>計算量はO(log e) </p>
 
 </div>
 </div>

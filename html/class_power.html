@@ -80,12 +80,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7140a434dbda8b0dd6cbf00f4da9f5cc"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_power.html#a7140a434dbda8b0dd6cbf00f4da9f5cc">GetValue</a> (int n)</td></tr>
 <tr class="memdesc:a7140a434dbda8b0dd6cbf00f4da9f5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">指数計算の結果を取得  <a href="class_power.html#a7140a434dbda8b0dd6cbf00f4da9f5cc">More...</a><br /></td></tr>
 <tr class="separator:a7140a434dbda8b0dd6cbf00f4da9f5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8376f908f41b42b0497de23c04765a55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_power.html#a8376f908f41b42b0497de23c04765a55">Power</a> (T e, int n)</td></tr>
-<tr class="memdesc:a8376f908f41b42b0497de23c04765a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="class_power.html#a8376f908f41b42b0497de23c04765a55">More...</a><br /></td></tr>
-<tr class="separator:a8376f908f41b42b0497de23c04765a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7140a434dbda8b0dd6cbf00f4da9f5cc"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_power.html#a7140a434dbda8b0dd6cbf00f4da9f5cc">GetValue</a> (int n)</td></tr>
-<tr class="memdesc:a7140a434dbda8b0dd6cbf00f4da9f5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">指数計算の結果を取得  <a href="class_power.html#a7140a434dbda8b0dd6cbf00f4da9f5cc">More...</a><br /></td></tr>
-<tr class="separator:a7140a434dbda8b0dd6cbf00f4da9f5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -94,7 +88,7 @@ class Power&lt; T &gt;</h3>
 <p>指数計算を行う </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8376f908f41b42b0497de23c04765a55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8376f908f41b42b0497de23c04765a55">&#9670;&nbsp;</a></span>Power() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8376f908f41b42b0497de23c04765a55">&#9670;&nbsp;</a></span>Power()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,67 +135,13 @@ template&lt;typename T &gt; </div>
  Power&lt;int&gt; power2 = Power&lt;int&gt;(2, 10); <br  />
  先にグローバル定義しておいてあとでコンストラクタを呼ぶときは <br  />
  Power&lt;long long&gt; power10; <br  />
- power10 = Power&lt;long long&gt;(10, 15); <br  />
- </p>
-
-</div>
-</div>
-<a id="a8376f908f41b42b0497de23c04765a55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8376f908f41b42b0497de23c04765a55">&#9670;&nbsp;</a></span>Power() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_power.html">Power</a>&lt; T &gt;::<a class="el" href="class_power.html">Power</a> </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コンストラクタ </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">e_</td><td>指数を計算したい数 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n_</td><td>何乗まで指数を計算するか</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>2の指数を10乗まで計算したい時は <br  />
- Power&lt;int&gt; power2 = Power&lt;int&gt;(2, 10); <br  />
- 先にグローバル定義しておいてあとでコンストラクタを呼ぶときは <br  />
- Power&lt;long long&gt; power10; <br  />
- power10 = Power&lt;long long&gt;(10, 15); <br  />
- </p>
+ power10 = Power&lt;long long&gt;(10, 15); 計算量はO(n_) </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7140a434dbda8b0dd6cbf00f4da9f5cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7140a434dbda8b0dd6cbf00f4da9f5cc">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7140a434dbda8b0dd6cbf00f4da9f5cc">&#9670;&nbsp;</a></span>GetValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,46 +177,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a7140a434dbda8b0dd6cbf00f4da9f5cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7140a434dbda8b0dd6cbf00f4da9f5cc">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="class_power.html">Power</a>&lt; T &gt;::GetValue </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>指数計算の結果を取得 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>何乗の値を取得したいか </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>指数計算結果 </dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="test_8cpp.html">test.cpp</a></li>
-<li>test2.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
