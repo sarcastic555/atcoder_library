@@ -191,11 +191,13 @@ template&lt;typename T &gt; </div>
   <table class="params">
     <tr><td class="paramname">[n]</td><td>ツリーの次元 </td></tr>
     <tr><td class="paramname">[op]</td><td>演算関数 </td></tr>
-    <tr><td class="paramname">[e]</td><td>単位元</td></tr>
+    <tr><td class="paramname">[e]</td><td>単位元 <div class="fragment"><div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;int&gt;</a> st(3000, IntMax, 0); </div>
+<div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;Mint&gt;</a> st(3000, MintMax, 0);</div>
+<div class="ttc" id="aclass_segment_tree_html"><div class="ttname"><a href="class_segment_tree.html">SegmentTree</a></div><div class="ttdoc">セグメント木によりノードの更新および区間に対するモノイド関数の実行値を取得</div><div class="ttdef"><b>Definition:</b> test.cpp:683</div></div>
+</div><!-- fragment --> </td></tr>
   </table>
   </dd>
 </dl>
-<p>例：SegmentTree &lt;int&gt; st(3000, IntMax, 0); 例：SegmentTree &lt;Mint&gt; st(3000, MintMax, 0); </p>
 
 </div>
 </div>
@@ -248,8 +250,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>コンストラクタ（初期値を指定） </p>
-<p>例：SegmentTree &lt;int&gt; st(3000, IntMax, 0, 0); 例：SegmentTree &lt;Mint&gt; st(3000, MintMax, 0, 0); </p>
-
+<div class="fragment"><div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;int&gt;</a> st(3000, IntMax, 0, 0);</div>
+<div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;Mint&gt;</a> st(3000, MintMax, 0, 0);</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a558c0d266b17d8825604d2874322abce"></a>
@@ -295,8 +298,11 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>コンストラクタ（初期配列を指定） </p>
-<p>std::vector&lt;int&gt; a(n, 30); 例：SegmentTree &lt;int&gt; st(a, IntMax, 0); </p>
-
+<div class="fragment"><div class="line">std::vector&lt;int&gt; <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>(<a class="code" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, 30);</div>
+<div class="line"><a class="code" href="class_segment_tree.html">SegmentTree &lt;int&gt;</a> st(<a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>, IntMax, 0);</div>
+<div class="ttc" id="atest3_8cpp_html_a76f11d9a0a47b94f72c2d0e77fb32240"><div class="ttname"><a href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></div><div class="ttdeci">int n</div><div class="ttdef"><b>Definition:</b> test3.cpp:47</div></div>
+<div class="ttc" id="atest3_8cpp_html_adad5ea4ed090bc06856dbb6ef2bf6c9d"><div class="ttname"><a href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a></div><div class="ttdeci">int a[w]</div><div class="ttdef"><b>Definition:</b> test3.cpp:50</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a51a4687c0dd8bb514ca5386c808f00cf"></a>
@@ -633,8 +639,9 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>演算結果</dd></dl>
-<p>例：st.GetValue(0, 2000); (ex. [0,2000]の範囲の処理結果を取得) アリ本の実装より高速 </p>
+<dl class="section return"><dt>Returns</dt><dd>演算結果 <div class="fragment"><div class="line">st.GetValue(0, 2000); <span class="comment">// [0,2000]の範囲の処理結果を取得</span></div>
+</div><!-- fragment --></dd></dl>
+<p>アリ本の実装より高速 </p>
 
 </div>
 </div>
@@ -731,8 +738,9 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>演算結果</dd></dl>
-<p>例：st.GetValue(0, 2000); (ex. [0,2000]の範囲の処理結果を取得) アリ本p155参照 動作が遅いのでライブラリとして使うことは非推奨 </p>
+<dl class="section return"><dt>Returns</dt><dd>演算結果 <div class="fragment"><div class="line">st.GetValue(0, 2000); <span class="comment">// [0,2000]の範囲の処理結果を取得</span></div>
+</div><!-- fragment --> アリ本p155参照</dd></dl>
+<p>動作が遅いのでライブラリとして使うことは非推奨 </p>
 
 </div>
 </div>
@@ -825,11 +833,11 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">更新するノードのインデックス</td><td></td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">更新後の値</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">更新後の値</td><td><div class="fragment"><div class="line">st.Update(3,4); <span class="comment">// ノード3の値を4に更新</span></div>
+</div><!-- fragment --> </td></tr>
   </table>
   </dd>
 </dl>
-<p>例：st.Update(3,4); (ex.ノード3の値を4に更新) </p>
 
 </div>
 </div>

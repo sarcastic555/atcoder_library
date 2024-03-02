@@ -75,9 +75,10 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acc383f4bf5004ae5dbac61414df0b941"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#acc383f4bf5004ae5dbac61414df0b941">LazySegmentTree</a> (const std::vector&lt; T &gt; &amp;vec, T(*op)(const T &amp;, const T &amp;), T e, T init, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
+<tr class="memdesc:acc383f4bf5004ae5dbac61414df0b941"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期ノードはT型としてユーザー側で初期化したものを渡す想定）  <a href="class_lazy_segment_tree.html#acc383f4bf5004ae5dbac61414df0b941">More...</a><br /></td></tr>
 <tr class="separator:acc383f4bf5004ae5dbac61414df0b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd4d17c5a15ee992fed77134d0c504df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">LazySegmentTree</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, T(*op)(const T &amp;, const T &amp;), T e, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)</td></tr>
-<tr class="memdesc:abd4d17c5a15ee992fed77134d0c504df"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期ノードは単位元を使う想定） /  <a href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">More...</a><br /></td></tr>
+<tr class="memdesc:abd4d17c5a15ee992fed77134d0c504df"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期ノードは単位元を使う想定）  <a href="class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df">More...</a><br /></td></tr>
 <tr class="separator:abd4d17c5a15ee992fed77134d0c504df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91196ea6d2c5acdd486ec714bb0c5203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lazy_segment_tree.html#a91196ea6d2c5acdd486ec714bb0c5203">Update</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> l, <a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> r, F f)</td></tr>
 <tr class="memdesc:a91196ea6d2c5acdd486ec714bb0c5203"><td class="mdescLeft">&#160;</td><td class="mdescRight">[l, r]の区間の遅延写像プールに写像fを適用する  <a href="class_lazy_segment_tree.html#a91196ea6d2c5acdd486ec714bb0c5203">More...</a><br /></td></tr>
@@ -195,6 +196,44 @@ template&lt;typename T , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>コンストラクタ（初期ノードはT型としてユーザー側で初期化したものを渡す想定） </p>
+<p>初期ノードと単位元が異なるケースを想定して作られたコンストラクタ <br  />
+ 区間の合計を取得したい場合などは単位元と初期ノードが異なるのでこのコンストラクタを使う <br  />
+ 例: 区間に対して加算クエリが来る状況下で区間の合計を取得する場合 <br  />
+ 合計を取得する場合は（各ノードにおける合計の反映のさせ方が子ノード数に依存するので）子ノードのサイズをデータとして持つ構造体をノードデータとする </p><div class="fragment"><div class="line"><span class="keyword">struct </span>NodeType {  </div>
+<div class="line"> <span class="keywordtype">int</span> value;  </div>
+<div class="line"> <span class="keywordtype">int</span> size;  </div>
+<div class="line">};  </div>
+<div class="line">NodeType f(<span class="keywordtype">int</span> <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>, NodeType b) { <span class="keywordflow">return</span> NodeType{b.value+<a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>*b.size, b.size};}  </div>
+<div class="line"><span class="keywordtype">int</span> <span class="keywordtype">id</span> = 0;  </div>
+<div class="line">NodeType e{0, 0};  </div>
+<div class="line"><span class="keywordtype">int</span> IntSum(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp; b) {<span class="keywordflow">return</span> <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>+b;}  </div>
+<div class="line">NodeType MyIntSum(<span class="keyword">const</span> NodeType &amp; <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>, <span class="keyword">const</span> NodeType &amp; b) { <span class="keywordflow">return</span> NodeType{<a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>.value+b.value, <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>.size+b.size}; };  </div>
+<div class="line">std::vector&lt;NodeType &gt; init_vec(10, NodeType{0, 1});  </div>
+<div class="line"><a class="code" href="class_lazy_segment_tree.html">LazySegmentTree&lt;NodeType, int&gt;</a> tree(init_vec, MyIntSum, e, f, IntSum, <span class="keywordtype">id</span>);  </div>
+<div class="ttc" id="aclass_lazy_segment_tree_html"><div class="ttname"><a href="class_lazy_segment_tree.html">LazySegmentTree</a></div><div class="ttdoc">遅延セグメントツリー</div><div class="ttdef"><b>Definition:</b> test.cpp:929</div></div>
+<div class="ttc" id="atest3_8cpp_html_adad5ea4ed090bc06856dbb6ef2bf6c9d"><div class="ttname"><a href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a></div><div class="ttdeci">int a[w]</div><div class="ttdef"><b>Definition:</b> test3.cpp:50</div></div>
+</div><!-- fragment --><p>注意：関数型のstructを定義する場合は==演算子を定義すること </p><div class="fragment"><div class="line"><span class="keyword">struct </span>Func {  </div>
+<div class="line">  <a class="code" href="class_mint.html">Mint</a> b;  </div>
+<div class="line">  <a class="code" href="class_mint.html">Mint</a> c;  </div>
+<div class="line">  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> Func f) {  </div>
+<div class="line">    <span class="keywordflow">return</span> (b==f.b.x &amp;&amp; c==f.c);  </div>
+<div class="line">  }  </div>
+<div class="line">};</div>
+<div class="ttc" id="aclass_mint_html"><div class="ttname"><a href="class_mint.html">Mint</a></div><div class="ttdoc">ある素数（デフォルトは100000007）で割った余りを求めるためのクラス</div><div class="ttdef"><b>Definition:</b> test.cpp:377</div></div>
+</div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vec</td><td>ユーザー側で初期化されたノード配列(単位元を使わない場合) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>ノード間の演算関数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>ノードの単位元 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>最下層ノードのvec以外の部分の初期設定値 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>ノードに適用される写像関数 (==の演算子が定義されている必要あり) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fg</td><td>写像間の合成関数 (右の写像の後にに左の写像を作用させる) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>恒等写像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="abd4d17c5a15ee992fed77134d0c504df"></a>
@@ -257,23 +296,26 @@ template&lt;typename T , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>コンストラクタ（初期ノードは単位元を使う想定） / </p>
-<pre class="fragment">  最下層ノードの初期値は単位元となる  
-  使い方の例  
-  区間に対して値の一括更新クエリが来る状況下で区間に対する最大値を求めたい  
-  int e = 0;  
-  int f(int a, int b) {return a;}  
-  int id = 0;  
-  int IntMax(int a, int b) {return std::max(a, b);}  
-  LazySegmentTree&lt;int, int&gt; tree(10, IntMax, e, f, IntMax, id);  
+<p>コンストラクタ（初期ノードは単位元を使う想定） </p>
+<p>最下層ノードの初期値は単位元となる <br  />
+ 使い方の例 <br  />
+ 区間に対して値の一括更新クエリが来る状況下で区間に対する最大値を求めたい </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> e = 0;</div>
+<div class="line"><span class="keywordtype">int</span> f(<span class="keywordtype">int</span> <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>, <span class="keywordtype">int</span> b) {<span class="keywordflow">return</span> <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>;}</div>
+<div class="line"><span class="keywordtype">int</span> <span class="keywordtype">id</span> = 0;</div>
+<div class="line"><span class="keywordtype">int</span> IntMax(<span class="keywordtype">int</span> <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>, <span class="keywordtype">int</span> b) {<span class="keywordflow">return</span> std::max(<a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>, b);}</div>
+<div class="line"><a class="code" href="class_lazy_segment_tree.html">LazySegmentTree&lt;int, int&gt;</a> tree(10, IntMax, e, f, IntMax, <span class="keywordtype">id</span>);</div>
+</div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>ノードのサイズ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>ノード間の演算関数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>ノードの単位元 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>ノードに適用される写像関数 (==の演算子が定義されている必要あり) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fg</td><td>写像間の合成関数 (右の写像の後にに左の写像を作用させる) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>恒等写像 </td></tr>
+  </table>
+  </dd>
+</dl>
 
-  @param[in] n ノードのサイズ
-  @param[in] op ノード間の演算関数
-  @param[in] e ノードの単位元
-  @param[in] f ノードに適用される写像関数 (==の演算子が定義されている必要あり)
-  @param[in] fg 写像間の合成関数 (右の写像の後にに左の写像を作用させる)
-  @param[in] id 恒等写像
-</pre> 
 </div>
 </div>
 <a id="acc383f4bf5004ae5dbac61414df0b941"></a>

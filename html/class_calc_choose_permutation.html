@@ -95,7 +95,11 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ある整数Nをコンストラクタで指定し、n&lt;=N、k&lt;=Nを満たす任意のm, kに対して二項係数(nCk)、順列(nPk)をO()計算する </p>
-<p>コンストラクタ計算量O(N)、取得クエリ計算量O(1) <br  />
+<p>コンストラクタ計算量O(N)、取得クエリ計算量O(1) </p><div class="fragment"><div class="line"><a class="code" href="class_calc_choose_permutation.html">CalcChoosePermutation</a> ccp(10004);</div>
+<div class="line">ccp.GetChoose(10000, 2); <span class="comment">// 10000_C_2を返す</span></div>
+<div class="line">ccp.GetPermutation(10000, 2); <span class="comment">// 10000_P_2を返す</span></div>
+<div class="ttc" id="aclass_calc_choose_permutation_html"><div class="ttname"><a href="class_calc_choose_permutation.html">CalcChoosePermutation</a></div><div class="ttdoc">ある整数Nをコンストラクタで指定し、n&lt;=N、k&lt;=Nを満たす任意のm, kに対して二項係数(nCk)、順列(nPk)をO()計算する</div><div class="ttdef"><b>Definition:</b> test.cpp:635</div></div>
+</div><!-- fragment --><p>コンストラクタ計算量O(N)、取得クエリ計算量O(1) <br  />
  <a class="el" href="class_calc_choose_permutation.html" title="ある整数Nをコンストラクタで指定し、n&lt;=N、k&lt;=Nを満たす任意のm, kに対して二項係数(nCk)、順列(nPk)をO()計算する">CalcChoosePermutation</a> ccp(10004); <br  />
  ccp.GetChoose(10000, 2); // 10000_C_2を返す <br  />
  ccp.GetPermutation(10000, 2); // 10000_P_2を返す </p>

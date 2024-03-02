@@ -78,7 +78,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aee9a754c77f7d10e637348db18dc537c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point2_d.html#aee9a754c77f7d10e637348db18dc537c">Point2D</a> ()</td></tr>
 <tr class="separator:aee9a754c77f7d10e637348db18dc537c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70309cc2416d1972d203586951c7cc3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point2_d.html#a70309cc2416d1972d203586951c7cc3f">Point2D</a> (T x_, T y_)</td></tr>
-<tr class="memdesc:a70309cc2416d1972d203586951c7cc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="class_point2_d.html#a70309cc2416d1972d203586951c7cc3f">More...</a><br /></td></tr>
+<tr class="memdesc:a70309cc2416d1972d203586951c7cc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Point 2 D object.  <a href="class_point2_d.html#a70309cc2416d1972d203586951c7cc3f">More...</a><br /></td></tr>
 <tr class="separator:a70309cc2416d1972d203586951c7cc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a606e39d1b3d51ce93edf4b2aa175677e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point2_d.html">Point2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point2_d.html#a606e39d1b3d51ce93edf4b2aa175677e">operator+</a> (const <a class="el" href="class_point2_d.html">Point2D</a> &amp;<a class="el" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>) const</td></tr>
 <tr class="separator:a606e39d1b3d51ce93edf4b2aa175677e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,8 +214,17 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>コンストラクタ </p>
-<p>呼び方：Point2D &lt;int&gt; x(2, 4); </p>
+<p>Construct a new Point 2 D object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x_</td><td>x座標の値 </td></tr>
+    <tr><td class="paramname">y_</td><td>y座標の値 <div class="fragment"><div class="line"><a class="code" href="class_point2_d.html">Point2D &lt;int&gt;</a> <a class="code" href="class_point2_d.html#af645991722e4a2285f9aaaaf2e3435cd">x</a>(2, 4);</div>
+<div class="ttc" id="aclass_point2_d_html"><div class="ttname"><a href="class_point2_d.html">Point2D</a></div><div class="ttdoc">平面上での点を扱うクラス</div><div class="ttdef"><b>Definition:</b> test.cpp:1369</div></div>
+<div class="ttc" id="aclass_point2_d_html_af645991722e4a2285f9aaaaf2e3435cd"><div class="ttname"><a href="class_point2_d.html#af645991722e4a2285f9aaaaf2e3435cd">Point2D::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> test.cpp:1371</div></div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -323,8 +332,8 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>内積の計算結果</dd></dl>
 <p>内積などのために"prod"という演算子をつくってA prod Bとしたいがprodという演算子はもともとないのでオーバーライドできないため、iMMer_productという名前の関数を定義する。 <br  />
- 例 A.iMMer_product(B); </p>
-
+ </p><div class="fragment"><div class="line">A.iMMer_product(B);</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c"></a>
@@ -959,8 +968,8 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>外積の計算結果（スカラー）</dd></dl>
-<p>例：A.outer_product(B); </p>
+<dl class="section return"><dt>Returns</dt><dd>外積の計算結果（スカラー） <div class="fragment"><div class="line">A.outer_product(B);</div>
+</div><!-- fragment --> </dd></dl>
 
 </div>
 </div>
