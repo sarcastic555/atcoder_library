@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['fouriertrasnform_20',['FourierTrasnform',['../class_fourier_trasnform.html',1,'FourierTrasnform'],['../class_fourier_trasnform.html#a881d4d6278354beafc20e99d7af4ab12',1,'FourierTrasnform::FourierTrasnform()']]],
-  ['fraction_21',['Fraction',['../class_fraction.html',1,'Fraction'],['../class_fraction.html#a43b2716ba6a920f98d7dc2ce0ce4ec07',1,'Fraction::Fraction()']]]
+  ['deno_26',['deno',['../class_fraction.html#ab1445dcd7638eae91fec0c173cb19374',1,'Fraction']]],
+  ['depth_27',['depth',['../class_graph.html#a3259fd1edde76e16422af1ac6d388396',1,'Graph::depth()'],['../test_8cpp.html#ad5eb5ee8741127c57fa8f5016bc6f566',1,'depth():&#160;test.cpp']]],
+  ['dfs1_28',['dfs1',['../test_8cpp.html#a30d09fa222d02c845537334feb5313a1',1,'test.cpp']]],
+  ['dfs2_29',['dfs2',['../test_8cpp.html#adb60a2fda712e24aec53046414aa9c0f',1,'test.cpp']]]
 ];

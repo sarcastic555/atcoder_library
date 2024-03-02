@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['edge_74',['edge',['../structedge.html',1,'']]],
-  ['eratosthenes_75',['Eratosthenes',['../class_eratosthenes.html',1,'']]]
+  ['edge_174',['edge',['../structedge.html',1,'']]],
+  ['eratosthenes_175',['Eratosthenes',['../class_eratosthenes.html',1,'']]]
 ];
