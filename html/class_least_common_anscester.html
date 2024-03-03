@@ -74,16 +74,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a60f23e88758322e3dcb3c6f5042c763d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_least_common_anscester.html#a60f23e88758322e3dcb3c6f5042c763d">LeastCommonAnscester</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> n)</td></tr>
+<tr class="memitem:a60f23e88758322e3dcb3c6f5042c763d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_least_common_anscester.html#a60f23e88758322e3dcb3c6f5042c763d">LeastCommonAnscester</a> (int n)</td></tr>
 <tr class="memdesc:a60f23e88758322e3dcb3c6f5042c763d"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="class_least_common_anscester.html#a60f23e88758322e3dcb3c6f5042c763d">More...</a><br /></td></tr>
 <tr class="separator:a60f23e88758322e3dcb3c6f5042c763d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cfcc5c5fe072414540218fb4e08a24e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_least_common_anscester.html#a6cfcc5c5fe072414540218fb4e08a24e">AddEdge</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> u, <a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> v)</td></tr>
+<tr class="memitem:a6cfcc5c5fe072414540218fb4e08a24e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_least_common_anscester.html#a6cfcc5c5fe072414540218fb4e08a24e">AddEdge</a> (int u, int v)</td></tr>
 <tr class="memdesc:a6cfcc5c5fe072414540218fb4e08a24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">無向辺を登録  <a href="class_least_common_anscester.html#a6cfcc5c5fe072414540218fb4e08a24e">More...</a><br /></td></tr>
 <tr class="separator:a6cfcc5c5fe072414540218fb4e08a24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a512dcb7b5a7a35f684802d5e51edd703"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_least_common_anscester.html#a512dcb7b5a7a35f684802d5e51edd703">Setup</a> ()</td></tr>
 <tr class="memdesc:a512dcb7b5a7a35f684802d5e51edd703"><td class="mdescLeft">&#160;</td><td class="mdescRight">辺情報をもとに前計算を行う  <a href="class_least_common_anscester.html#a512dcb7b5a7a35f684802d5e51edd703">More...</a><br /></td></tr>
 <tr class="separator:a512dcb7b5a7a35f684802d5e51edd703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aba96d4b0cb901c1def4156e1f2d207"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_least_common_anscester.html#a0aba96d4b0cb901c1def4156e1f2d207">GetLCA</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> u, <a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> v) const</td></tr>
+<tr class="memitem:a0aba96d4b0cb901c1def4156e1f2d207"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_least_common_anscester.html#a0aba96d4b0cb901c1def4156e1f2d207">GetLCA</a> (int u, int v) const</td></tr>
 <tr class="memdesc:a0aba96d4b0cb901c1def4156e1f2d207"><td class="mdescLeft">&#160;</td><td class="mdescRight">2つのノードの最小共通祖先を計算  <a href="class_least_common_anscester.html#a0aba96d4b0cb901c1def4156e1f2d207">More...</a><br /></td></tr>
 <tr class="separator:a0aba96d4b0cb901c1def4156e1f2d207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -95,7 +95,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">}</div>
 <div class="line">g.Setup();  <span class="comment">// 前計算にO(NlogN)かかる</span></div>
 <div class="line"><span class="keywordtype">int</span> lca = g.GetLCA(x, y);  <span class="comment">// LCA取得はO(logN)</span></div>
-<div class="ttc" id="aclass_least_common_anscester_html"><div class="ttname"><a href="class_least_common_anscester.html">LeastCommonAnscester</a></div><div class="ttdoc">与えられた木に対して前計算をすることで、最小共通祖先取得クエリを高速で返すクラス</div><div class="ttdef"><b>Definition:</b> test.cpp:2004</div></div>
+<div class="ttc" id="aclass_least_common_anscester_html"><div class="ttname"><a href="class_least_common_anscester.html">LeastCommonAnscester</a></div><div class="ttdoc">与えられた木に対して前計算をすることで、最小共通祖先取得クエリを高速で返すクラス</div><div class="ttdef"><b>Definition:</b> test.cpp:2002</div></div>
 </div><!-- fragment --><p><br  />
  </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">LeastCommonAnscester::LeastCommonAnscester </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
@@ -146,13 +146,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void LeastCommonAnscester::AddEdge </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -189,15 +189,15 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> LeastCommonAnscester::GetLCA </td>
+          <td class="memname">int LeastCommonAnscester::GetLCA </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>

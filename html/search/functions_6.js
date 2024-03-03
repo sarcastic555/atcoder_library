@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['immer_5fproduct_243',['iMMer_product',['../class_point2_d.html#a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c',1,'Point2D::iMMer_product(const Point2D &amp;a) const'],['../class_point2_d.html#a37a4abd6ef5d9ca2ea6e8cb57e8d5b9c',1,'Point2D::iMMer_product(const Point2D &amp;a) const']]],
-  ['inv_244',['inv',['../class_complex_number.html#a79b4a360ba6c6c02a420c27530926571',1,'ComplexNumber::inv()'],['../class_complex_number.html#a79b4a360ba6c6c02a420c27530926571',1,'ComplexNumber::inv()']]],
-  ['isprime_245',['IsPrime',['../class_eratosthenes.html#ab1209e3fbd20b8415740d5aa4aae466c',1,'Eratosthenes::IsPrime(int v)'],['../class_eratosthenes.html#ab1209e3fbd20b8415740d5aa4aae466c',1,'Eratosthenes::IsPrime(int v)']]],
-  ['issamegroup_246',['isSameGroup',['../class_union_find.html#a8d2207950bb41783df539bb04ccaab30',1,'UnionFind::isSameGroup(int p, int q)'],['../class_union_find.html#a8d2207950bb41783df539bb04ccaab30',1,'UnionFind::isSameGroup(int p, int q)']]]
+  ['lazysegmenttree_200',['LazySegmentTree',['../class_lazy_segment_tree.html#acc383f4bf5004ae5dbac61414df0b941',1,'LazySegmentTree::LazySegmentTree(const std::vector&lt; T &gt; &amp;vec, T(*op)(const T &amp;, const T &amp;), T e, T init, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)'],['../class_lazy_segment_tree.html#abd4d17c5a15ee992fed77134d0c504df',1,'LazySegmentTree::LazySegmentTree(int n, T(*op)(const T &amp;, const T &amp;), T e, T(*f)(const F &amp;, const T &amp;), F(*fg)(const F &amp;, const F &amp;), const F &amp;id)']]],
+  ['leastcommonanscester_201',['LeastCommonAnscester',['../class_least_common_anscester.html#a60f23e88758322e3dcb3c6f5042c763d',1,'LeastCommonAnscester']]],
+  ['longdoublemin_202',['LongDoubleMin',['../test_8cpp.html#a2c685ae92be31af3b7f48165ded20ae1',1,'test.cpp']]]
 ];

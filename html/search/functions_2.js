@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dfs1_219',['dfs1',['../test_8cpp.html#a30d09fa222d02c845537334feb5313a1',1,'test.cpp']]],
-  ['dfs2_220',['dfs2',['../test_8cpp.html#adb60a2fda712e24aec53046414aa9c0f',1,'test.cpp']]]
+  ['eratosthenes_179',['Eratosthenes',['../class_eratosthenes.html#a457b42ab820b8660a516a8709406fa06',1,'Eratosthenes']]],
+  ['ext_5fgcd_180',['ext_gcd',['../test_8cpp.html#afa9d461d307cfcf285cf2fac0c362132',1,'test.cpp']]]
 ];

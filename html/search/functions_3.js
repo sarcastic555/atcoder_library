@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['eratosthenes_221',['Eratosthenes',['../class_eratosthenes.html#a457b42ab820b8660a516a8709406fa06',1,'Eratosthenes::Eratosthenes(int n)'],['../class_eratosthenes.html#a457b42ab820b8660a516a8709406fa06',1,'Eratosthenes::Eratosthenes(int n)']]],
-  ['ext_5fgcd_222',['ext_gcd',['../test_8cpp.html#afa9d461d307cfcf285cf2fac0c362132',1,'ext_gcd(long long a, long long b, long long &amp;x, long long &amp;y):&#160;test.cpp'],['../test2_8cpp.html#afa9d461d307cfcf285cf2fac0c362132',1,'ext_gcd(long long a, long long b, long long &amp;x, long long &amp;y):&#160;test2.cpp']]]
+  ['fouriertrasnform_181',['FourierTrasnform',['../class_fourier_trasnform.html#a881d4d6278354beafc20e99d7af4ab12',1,'FourierTrasnform']]],
+  ['fraction_182',['Fraction',['../class_fraction.html#a43b2716ba6a920f98d7dc2ce0ce4ec07',1,'Fraction']]]
 ];

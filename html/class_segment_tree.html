@@ -70,82 +70,52 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>セグメント木によりノードの更新および区間に対するモノイド関数の実行値を取得  
+<p>半群を満たすデータ構造に対して、ノードの更新および区間取得を高速に実施  
  <a href="class_segment_tree.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a51a4687c0dd8bb514ca5386c808f00cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a51a4687c0dd8bb514ca5386c808f00cf">SegmentTree</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, T(*_op)(const T &amp;, const T &amp;), T _e)</td></tr>
-<tr class="memdesc:a51a4687c0dd8bb514ca5386c808f00cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期値が指定されていないときは単位元で初期化する）  <a href="class_segment_tree.html#a51a4687c0dd8bb514ca5386c808f00cf">More...</a><br /></td></tr>
-<tr class="separator:a51a4687c0dd8bb514ca5386c808f00cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad03026811e1bfe39bc1a8947e20dd41e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#ad03026811e1bfe39bc1a8947e20dd41e">SegmentTree</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, T(*_op)(const T &amp;, const T &amp;), T _e, T init_value)</td></tr>
-<tr class="memdesc:ad03026811e1bfe39bc1a8947e20dd41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期値を指定）  <a href="class_segment_tree.html#ad03026811e1bfe39bc1a8947e20dd41e">More...</a><br /></td></tr>
-<tr class="separator:ad03026811e1bfe39bc1a8947e20dd41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a558c0d266b17d8825604d2874322abce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a558c0d266b17d8825604d2874322abce">SegmentTree</a> (std::vector&lt; T &gt; vec, T(*_op)(const T &amp;, const T &amp;), T _e)</td></tr>
-<tr class="memdesc:a558c0d266b17d8825604d2874322abce"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期配列を指定）  <a href="class_segment_tree.html#a558c0d266b17d8825604d2874322abce">More...</a><br /></td></tr>
-<tr class="separator:a558c0d266b17d8825604d2874322abce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d8b9a5d168f8b37f6096414220cbacc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a6d8b9a5d168f8b37f6096414220cbacc">Update</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, T v)</td></tr>
+<tr class="memitem:a4d29ef1439d4ddded01e819aded821bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a4d29ef1439d4ddded01e819aded821bb">SegmentTree</a> (int n, T(*_op)(const T &amp;, const T &amp;))</td></tr>
+<tr class="memdesc:a4d29ef1439d4ddded01e819aded821bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイズを指定して初期化するコンストラクタ  <a href="class_segment_tree.html#a4d29ef1439d4ddded01e819aded821bb">More...</a><br /></td></tr>
+<tr class="separator:a4d29ef1439d4ddded01e819aded821bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597df266658cdb91ecdb41218c98d005"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a597df266658cdb91ecdb41218c98d005">SegmentTree</a> (std::vector&lt; T &gt; vec, T(*_op)(const T &amp;, const T &amp;))</td></tr>
+<tr class="memdesc:a597df266658cdb91ecdb41218c98d005"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期配列を指定したコンストラクタ  <a href="class_segment_tree.html#a597df266658cdb91ecdb41218c98d005">More...</a><br /></td></tr>
+<tr class="separator:a597df266658cdb91ecdb41218c98d005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8b9a5d168f8b37f6096414220cbacc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a6d8b9a5d168f8b37f6096414220cbacc">Update</a> (int n, T v)</td></tr>
 <tr class="memdesc:a6d8b9a5d168f8b37f6096414220cbacc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードの更新  <a href="class_segment_tree.html#a6d8b9a5d168f8b37f6096414220cbacc">More...</a><br /></td></tr>
 <tr class="separator:a6d8b9a5d168f8b37f6096414220cbacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b1d37dd8d3c68e2dca811ae45be6801"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a3b1d37dd8d3c68e2dca811ae45be6801">MyGetValue</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> l, <a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> r)</td></tr>
-<tr class="memdesc:a3b1d37dd8d3c68e2dca811ae45be6801"><td class="mdescLeft">&#160;</td><td class="mdescRight">区間に対する演算結果を取得  <a href="class_segment_tree.html#a3b1d37dd8d3c68e2dca811ae45be6801">More...</a><br /></td></tr>
-<tr class="separator:a3b1d37dd8d3c68e2dca811ae45be6801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a115ba1ecee064e127c5778b072b23f2e"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a115ba1ecee064e127c5778b072b23f2e">GetValue</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> l, <a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> r)</td></tr>
+<tr class="memitem:ab1af934a07214412f254ae8677f4f3ec"><td class="memItemLeft" align="right" valign="top">NodeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#ab1af934a07214412f254ae8677f4f3ec">MyGetValue</a> (int l, int r)</td></tr>
+<tr class="memdesc:ab1af934a07214412f254ae8677f4f3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">区間に対する演算結果を取得  <a href="class_segment_tree.html#ab1af934a07214412f254ae8677f4f3ec">More...</a><br /></td></tr>
+<tr class="separator:ab1af934a07214412f254ae8677f4f3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115ba1ecee064e127c5778b072b23f2e"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a115ba1ecee064e127c5778b072b23f2e">GetValue</a> (int l, int r)</td></tr>
 <tr class="memdesc:a115ba1ecee064e127c5778b072b23f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">区間に対する演算結果を取得  <a href="class_segment_tree.html#a115ba1ecee064e127c5778b072b23f2e">More...</a><br /></td></tr>
 <tr class="separator:a115ba1ecee064e127c5778b072b23f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a52523bf11c7b35c7140b064d66ff1d"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a5a52523bf11c7b35c7140b064d66ff1d">GetNode</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:a5a52523bf11c7b35c7140b064d66ff1d"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a5a52523bf11c7b35c7140b064d66ff1d">GetNode</a> (int n)</td></tr>
 <tr class="memdesc:a5a52523bf11c7b35c7140b064d66ff1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードの値を取得  <a href="class_segment_tree.html#a5a52523bf11c7b35c7140b064d66ff1d">More...</a><br /></td></tr>
 <tr class="separator:a5a52523bf11c7b35c7140b064d66ff1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ceecdba9a4c1f47473f8f369d3d8b0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a34ceecdba9a4c1f47473f8f369d3d8b0">GetAllNodes</a> ()</td></tr>
-<tr class="memdesc:a34ceecdba9a4c1f47473f8f369d3d8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">全てのノードを返す  <a href="class_segment_tree.html#a34ceecdba9a4c1f47473f8f369d3d8b0">More...</a><br /></td></tr>
-<tr class="separator:a34ceecdba9a4c1f47473f8f369d3d8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51a4687c0dd8bb514ca5386c808f00cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a51a4687c0dd8bb514ca5386c808f00cf">SegmentTree</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, T(*_op)(const T &amp;, const T &amp;), T _e)</td></tr>
-<tr class="memdesc:a51a4687c0dd8bb514ca5386c808f00cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期値が指定されていないときは単位元で初期化する）  <a href="class_segment_tree.html#a51a4687c0dd8bb514ca5386c808f00cf">More...</a><br /></td></tr>
-<tr class="separator:a51a4687c0dd8bb514ca5386c808f00cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad03026811e1bfe39bc1a8947e20dd41e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#ad03026811e1bfe39bc1a8947e20dd41e">SegmentTree</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, T(*_op)(const T &amp;, const T &amp;), T _e, T init_value)</td></tr>
-<tr class="memdesc:ad03026811e1bfe39bc1a8947e20dd41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期値を指定）  <a href="class_segment_tree.html#ad03026811e1bfe39bc1a8947e20dd41e">More...</a><br /></td></tr>
-<tr class="separator:ad03026811e1bfe39bc1a8947e20dd41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a558c0d266b17d8825604d2874322abce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a558c0d266b17d8825604d2874322abce">SegmentTree</a> (std::vector&lt; T &gt; vec, T(*_op)(const T &amp;, const T &amp;), T _e)</td></tr>
-<tr class="memdesc:a558c0d266b17d8825604d2874322abce"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（初期配列を指定）  <a href="class_segment_tree.html#a558c0d266b17d8825604d2874322abce">More...</a><br /></td></tr>
-<tr class="separator:a558c0d266b17d8825604d2874322abce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d8b9a5d168f8b37f6096414220cbacc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a6d8b9a5d168f8b37f6096414220cbacc">Update</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, T v)</td></tr>
-<tr class="memdesc:a6d8b9a5d168f8b37f6096414220cbacc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードの更新  <a href="class_segment_tree.html#a6d8b9a5d168f8b37f6096414220cbacc">More...</a><br /></td></tr>
-<tr class="separator:a6d8b9a5d168f8b37f6096414220cbacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b1d37dd8d3c68e2dca811ae45be6801"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a3b1d37dd8d3c68e2dca811ae45be6801">MyGetValue</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> l, <a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> r)</td></tr>
-<tr class="memdesc:a3b1d37dd8d3c68e2dca811ae45be6801"><td class="mdescLeft">&#160;</td><td class="mdescRight">区間に対する演算結果を取得  <a href="class_segment_tree.html#a3b1d37dd8d3c68e2dca811ae45be6801">More...</a><br /></td></tr>
-<tr class="separator:a3b1d37dd8d3c68e2dca811ae45be6801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a115ba1ecee064e127c5778b072b23f2e"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a115ba1ecee064e127c5778b072b23f2e">GetValue</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> l, <a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> r)</td></tr>
-<tr class="memdesc:a115ba1ecee064e127c5778b072b23f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">区間に対する演算結果を取得  <a href="class_segment_tree.html#a115ba1ecee064e127c5778b072b23f2e">More...</a><br /></td></tr>
-<tr class="separator:a115ba1ecee064e127c5778b072b23f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a52523bf11c7b35c7140b064d66ff1d"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a5a52523bf11c7b35c7140b064d66ff1d">GetNode</a> (<a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a5a52523bf11c7b35c7140b064d66ff1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードの値を取得  <a href="class_segment_tree.html#a5a52523bf11c7b35c7140b064d66ff1d">More...</a><br /></td></tr>
-<tr class="separator:a5a52523bf11c7b35c7140b064d66ff1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ceecdba9a4c1f47473f8f369d3d8b0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a34ceecdba9a4c1f47473f8f369d3d8b0">GetAllNodes</a> ()</td></tr>
-<tr class="memdesc:a34ceecdba9a4c1f47473f8f369d3d8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">全てのノードを返す  <a href="class_segment_tree.html#a34ceecdba9a4c1f47473f8f369d3d8b0">More...</a><br /></td></tr>
-<tr class="separator:a34ceecdba9a4c1f47473f8f369d3d8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a83b62b90b5eda57748f00f007f2f10e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a83b62b90b5eda57748f00f007f2f10e1">leaf</a></td></tr>
+<tr class="memitem:a83b62b90b5eda57748f00f007f2f10e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a83b62b90b5eda57748f00f007f2f10e1">leaf</a></td></tr>
 <tr class="separator:a83b62b90b5eda57748f00f007f2f10e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab5a1d74da92b557e5e5147b6be44a26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#aab5a1d74da92b557e5e5147b6be44a26">num</a></td></tr>
+<tr class="memitem:aab5a1d74da92b557e5e5147b6be44a26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#aab5a1d74da92b557e5e5147b6be44a26">num</a></td></tr>
 <tr class="separator:aab5a1d74da92b557e5e5147b6be44a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfcebd9e6f41a58dbb7c28f4532e649d"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#acfcebd9e6f41a58dbb7c28f4532e649d">e</a></td></tr>
-<tr class="separator:acfcebd9e6f41a58dbb7c28f4532e649d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52474b877f7523e4978c51e23cfce7e7"><td class="memItemLeft" align="right" valign="top">T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a52474b877f7523e4978c51e23cfce7e7">op</a> )(const T &amp;, const T &amp;)</td></tr>
-<tr class="separator:a52474b877f7523e4978c51e23cfce7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a841a51bddb1ce3b9325b77530ff0766f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a841a51bddb1ce3b9325b77530ff0766f">node</a></td></tr>
-<tr class="separator:a841a51bddb1ce3b9325b77530ff0766f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a58839e3f820a0df49c32645c8bc54"><td class="memItemLeft" align="right" valign="top">std::function&lt; NodeType(const NodeType &amp;, const NodeType &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a85a58839e3f820a0df49c32645c8bc54">node_op</a></td></tr>
+<tr class="separator:a85a58839e3f820a0df49c32645c8bc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e51fa30d3a084319dee95aa76b35b9"><td class="memItemLeft" align="right" valign="top">NodeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#a30e51fa30d3a084319dee95aa76b35b9">e</a></td></tr>
+<tr class="separator:a30e51fa30d3a084319dee95aa76b35b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6ebee4562b4ce7442ea5c056172aaf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; NodeType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment_tree.html#abd6ebee4562b4ce7442ea5c056172aaf">node</a></td></tr>
+<tr class="separator:abd6ebee4562b4ce7442ea5c056172aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 class SegmentTree&lt; T &gt;</h3>
 
-<p>セグメント木によりノードの更新および区間に対するモノイド関数の実行値を取得 </p>
-<p>AtCoder libraryの方が高速 <a href="https://github.com/atcoder/ac-library/blob/master/atcoder/segtree.hpp">https://github.com/atcoder/ac-library/blob/master/atcoder/segtree.hpp</a> </p>
+<p>半群を満たすデータ構造に対して、ノードの更新および区間取得を高速に実施 </p>
+<p>AtCoder libraryの方が高速 <a href="https://github.com/atcoder/ac-library/blob/master/atcoder/segtree.hpp">https://github.com/atcoder/ac-library/blob/master/atcoder/segtree.hpp</a> モノイドではなく半群を扱いたいため、ノードのデータ構造としては&lt;bool, T&gt;とし、 firstの値がfalseであれば単位元、trueであれば単位元以外であるとして扱う。 </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a51a4687c0dd8bb514ca5386c808f00cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51a4687c0dd8bb514ca5386c808f00cf">&#9670;&nbsp;</a></span>SegmentTree() <span class="overload">[1/6]</span></h2>
+<a id="a4d29ef1439d4ddded01e819aded821bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d29ef1439d4ddded01e819aded821bb">&#9670;&nbsp;</a></span>SegmentTree() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,20 +128,14 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::<a class="el" href="class_segment_tree.html">SegmentTree</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T(*)(const T &amp;, const T &amp;)&#160;</td>
-          <td class="paramname"><em>_op</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_e</em>&#160;</td>
+          <td class="paramname"><em>_op</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -186,14 +150,62 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>コンストラクタ（初期値が指定されていないときは単位元で初期化する） </p>
+<p>サイズを指定して初期化するコンストラクタ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">[n]</td><td>ツリーの次元 </td></tr>
-    <tr><td class="paramname">[op]</td><td>演算関数 </td></tr>
-    <tr><td class="paramname">[e]</td><td>単位元 <div class="fragment"><div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;int&gt;</a> st(3000, IntMax, 0); </div>
-<div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;Mint&gt;</a> st(3000, MintMax, 0);</div>
-<div class="ttc" id="aclass_segment_tree_html"><div class="ttname"><a href="class_segment_tree.html">SegmentTree</a></div><div class="ttdoc">セグメント木によりノードの更新および区間に対するモノイド関数の実行値を取得</div><div class="ttdef"><b>Definition:</b> test.cpp:683</div></div>
+    <tr><td class="paramname">n[in]</td><td>ツリーの次元 </td></tr>
+    <tr><td class="paramname">_op[in]</td><td>群の要素間の演算関数</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>モノイドではなく半群を扱うため単位元は要求しない </p><div class="fragment"><div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;int&gt;</a> st(3000, IntMax); </div>
+<div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;Mint&gt;</a> st(3000, MintMax);</div>
+<div class="ttc" id="aclass_segment_tree_html"><div class="ttname"><a href="class_segment_tree.html">SegmentTree</a></div><div class="ttdoc">半群を満たすデータ構造に対して、ノードの更新および区間取得を高速に実施</div><div class="ttdef"><b>Definition:</b> test.cpp:685</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a597df266658cdb91ecdb41218c98d005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a597df266658cdb91ecdb41218c98d005">&#9670;&nbsp;</a></span>SegmentTree() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::<a class="el" href="class_segment_tree.html">SegmentTree</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(*)(const T &amp;, const T &amp;)&#160;</td>
+          <td class="paramname"><em>_op</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期配列を指定したコンストラクタ </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec[in]</td><td>初期化配列 </td></tr>
+    <tr><td class="paramname">_op[in]</td><td>群の要素間の演算関数 <div class="fragment"><div class="line">std::vector&lt;int&gt; a(n, 30);</div>
+<div class="line"><a class="code" href="class_segment_tree.html">SegmentTree &lt;int&gt;</a> st(a, IntMax);</div>
 </div><!-- fragment --> </td></tr>
   </table>
   </dd>
@@ -201,328 +213,9 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad03026811e1bfe39bc1a8947e20dd41e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad03026811e1bfe39bc1a8947e20dd41e">&#9670;&nbsp;</a></span>SegmentTree() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::<a class="el" href="class_segment_tree.html">SegmentTree</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T(*)(const T &amp;, const T &amp;)&#160;</td>
-          <td class="paramname"><em>_op</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>init_value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コンストラクタ（初期値を指定） </p>
-<div class="fragment"><div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;int&gt;</a> st(3000, IntMax, 0, 0);</div>
-<div class="line"><a class="code" href="class_segment_tree.html">SegmentTree&lt;Mint&gt;</a> st(3000, MintMax, 0, 0);</div>
-</div><!-- fragment --> 
-</div>
-</div>
-<a id="a558c0d266b17d8825604d2874322abce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a558c0d266b17d8825604d2874322abce">&#9670;&nbsp;</a></span>SegmentTree() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::<a class="el" href="class_segment_tree.html">SegmentTree</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>vec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T(*)(const T &amp;, const T &amp;)&#160;</td>
-          <td class="paramname"><em>_op</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_e</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コンストラクタ（初期配列を指定） </p>
-<div class="fragment"><div class="line">std::vector&lt;int&gt; <a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>(<a class="code" href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, 30);</div>
-<div class="line"><a class="code" href="class_segment_tree.html">SegmentTree &lt;int&gt;</a> st(<a class="code" href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a>, IntMax, 0);</div>
-<div class="ttc" id="atest3_8cpp_html_a76f11d9a0a47b94f72c2d0e77fb32240"><div class="ttname"><a href="test3_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></div><div class="ttdeci">int n</div><div class="ttdef"><b>Definition:</b> test3.cpp:47</div></div>
-<div class="ttc" id="atest3_8cpp_html_adad5ea4ed090bc06856dbb6ef2bf6c9d"><div class="ttname"><a href="test3_8cpp.html#adad5ea4ed090bc06856dbb6ef2bf6c9d">a</a></div><div class="ttdeci">int a[w]</div><div class="ttdef"><b>Definition:</b> test3.cpp:50</div></div>
-</div><!-- fragment --> 
-</div>
-</div>
-<a id="a51a4687c0dd8bb514ca5386c808f00cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51a4687c0dd8bb514ca5386c808f00cf">&#9670;&nbsp;</a></span>SegmentTree() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::<a class="el" href="class_segment_tree.html">SegmentTree</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T(*)(const T &amp;, const T &amp;)&#160;</td>
-          <td class="paramname"><em>_op</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_e</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コンストラクタ（初期値が指定されていないときは単位元で初期化する） </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">[n]</td><td>ツリーの次元 </td></tr>
-    <tr><td class="paramname">[op]</td><td>演算関数 </td></tr>
-    <tr><td class="paramname">[e]</td><td>単位元</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>例：SegmentTree &lt;int&gt; st(3000, IntMax, 0); 例：SegmentTree &lt;Mint&gt; st(3000, MintMax, 0); </p>
-
-</div>
-</div>
-<a id="ad03026811e1bfe39bc1a8947e20dd41e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad03026811e1bfe39bc1a8947e20dd41e">&#9670;&nbsp;</a></span>SegmentTree() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::<a class="el" href="class_segment_tree.html">SegmentTree</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T(*)(const T &amp;, const T &amp;)&#160;</td>
-          <td class="paramname"><em>_op</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>init_value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コンストラクタ（初期値を指定） </p>
-<p>例：SegmentTree &lt;int&gt; st(3000, IntMax, 0, 0); 例：SegmentTree &lt;Mint&gt; st(3000, MintMax, 0, 0); </p>
-
-</div>
-</div>
-<a id="a558c0d266b17d8825604d2874322abce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a558c0d266b17d8825604d2874322abce">&#9670;&nbsp;</a></span>SegmentTree() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::<a class="el" href="class_segment_tree.html">SegmentTree</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>vec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T(*)(const T &amp;, const T &amp;)&#160;</td>
-          <td class="paramname"><em>_op</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_e</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コンストラクタ（初期配列を指定） </p>
-<p>std::vector&lt;int&gt; a(n, 30); 例：SegmentTree &lt;int&gt; st(a, IntMax, 0); </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a34ceecdba9a4c1f47473f8f369d3d8b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34ceecdba9a4c1f47473f8f369d3d8b0">&#9670;&nbsp;</a></span>GetAllNodes() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;T&gt; <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::GetAllNodes </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>全てのノードを返す </p>
-<dl class="section return"><dt>Returns</dt><dd>全てのノードの配列 </dd></dl>
-
-</div>
-</div>
-<a id="a34ceecdba9a4c1f47473f8f369d3d8b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34ceecdba9a4c1f47473f8f369d3d8b0">&#9670;&nbsp;</a></span>GetAllNodes() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;T&gt; <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::GetAllNodes </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>全てのノードを返す </p>
-<dl class="section return"><dt>Returns</dt><dd>全てのノードの配列 </dd></dl>
-
-</div>
-</div>
 <a id="a5a52523bf11c7b35c7140b064d66ff1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a52523bf11c7b35c7140b064d66ff1d">&#9670;&nbsp;</a></span>GetNode() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a52523bf11c7b35c7140b064d66ff1d">&#9670;&nbsp;</a></span>GetNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,44 +228,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">T <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::GetNode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ノードの値を取得 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">取得したいノードのインデックス</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>ノードの値 </dd></dl>
-
-</div>
-</div>
-<a id="a5a52523bf11c7b35c7140b064d66ff1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a52523bf11c7b35c7140b064d66ff1d">&#9670;&nbsp;</a></span>GetNode() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::GetNode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
@@ -596,7 +252,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a115ba1ecee064e127c5778b072b23f2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a115ba1ecee064e127c5778b072b23f2e">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a115ba1ecee064e127c5778b072b23f2e">&#9670;&nbsp;</a></span>GetValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,13 +265,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">T <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::GetValue </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>l</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
@@ -645,8 +301,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a115ba1ecee064e127c5778b072b23f2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a115ba1ecee064e127c5778b072b23f2e">&#9670;&nbsp;</a></span>GetValue() <span class="overload">[2/2]</span></h2>
+<a id="ab1af934a07214412f254ae8677f4f3ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1af934a07214412f254ae8677f4f3ec">&#9670;&nbsp;</a></span>MyGetValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,64 +313,15 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::GetValue </td>
+          <td class="memname">NodeType <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::MyGetValue </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>l</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
-          <td class="paramname"><em>r</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>区間に対する演算結果を取得 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>区間の左端ノードのインデックス </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>区間の右端ノードのインデックス </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>演算結果</dd></dl>
-<p>例：st.GetValue(0, 2000); (ex. [0,2000]の範囲の処理結果を取得) アリ本の実装より高速 </p>
-
-</div>
-</div>
-<a id="a3b1d37dd8d3c68e2dca811ae45be6801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b1d37dd8d3c68e2dca811ae45be6801">&#9670;&nbsp;</a></span>MyGetValue() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::MyGetValue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
@@ -744,57 +351,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a3b1d37dd8d3c68e2dca811ae45be6801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b1d37dd8d3c68e2dca811ae45be6801">&#9670;&nbsp;</a></span>MyGetValue() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::MyGetValue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
-          <td class="paramname"><em>r</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>区間に対する演算結果を取得 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>区間の左端ノードのインデックス </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>区間の右端ノードのインデックス </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>演算結果</dd></dl>
-<p>例：st.GetValue(0, 2000); (ex. [0,2000]の範囲の処理結果を取得) アリ本p155参照 動作が遅いのでライブラリとして使うことは非推奨 </p>
-
-</div>
-</div>
 <a id="a6d8b9a5d168f8b37f6096414220cbacc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d8b9a5d168f8b37f6096414220cbacc">&#9670;&nbsp;</a></span>Update() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8b9a5d168f8b37f6096414220cbacc">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -807,7 +365,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::Update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -841,57 +399,9 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6d8b9a5d168f8b37f6096414220cbacc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d8b9a5d168f8b37f6096414220cbacc">&#9670;&nbsp;</a></span>Update() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::Update </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ノードの更新 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">更新するノードのインデックス</td><td></td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">更新後の値</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>例：st.Update(3,4); (ex.ノード3の値を4に更新) </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="acfcebd9e6f41a58dbb7c28f4532e649d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfcebd9e6f41a58dbb7c28f4532e649d">&#9670;&nbsp;</a></span>e</h2>
+<a id="a30e51fa30d3a084319dee95aa76b35b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30e51fa30d3a084319dee95aa76b35b9">&#9670;&nbsp;</a></span>e</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -899,7 +409,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::e</td>
+          <td class="memname">NodeType <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::e</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -915,15 +425,15 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::leaf</td>
+          <td class="memname">int <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::leaf</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a841a51bddb1ce3b9325b77530ff0766f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a841a51bddb1ce3b9325b77530ff0766f">&#9670;&nbsp;</a></span>node</h2>
+<a id="abd6ebee4562b4ce7442ea5c056172aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd6ebee4562b4ce7442ea5c056172aaf">&#9670;&nbsp;</a></span>node</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -931,7 +441,23 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; T &gt; <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::node</td>
+          <td class="memname">std::vector&lt;NodeType&gt; <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::node</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85a58839e3f820a0df49c32645c8bc54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85a58839e3f820a0df49c32645c8bc54">&#9670;&nbsp;</a></span>node_op</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;NodeType(const NodeType &amp;, const NodeType &amp;)&gt; <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::node_op</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -947,32 +473,15 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="test3_8cpp.html#ae88a82478e3818cade3f598c25437904">int</a> <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::num</td>
+          <td class="memname">int <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::num</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a52474b877f7523e4978c51e23cfce7e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52474b877f7523e4978c51e23cfce7e7">&#9670;&nbsp;</a></span>op</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T(* <a class="el" href="class_segment_tree.html">SegmentTree</a>&lt; T &gt;::op)(const T &amp;, const T &amp;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="test_8cpp.html">test.cpp</a></li>
-<li><a class="el" href="test2_8cpp.html">test2.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
